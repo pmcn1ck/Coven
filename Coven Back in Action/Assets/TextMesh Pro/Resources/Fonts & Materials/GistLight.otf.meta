@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: b324fedf8cd7ca24b9ba7b861889a2f9
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Gist
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 727d702550093cb42bc05eea65cf6014, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
