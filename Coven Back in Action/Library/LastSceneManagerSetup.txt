@@ -1,5 +1,0 @@
-sceneSetups:
-- path: Assets/Scenes/Combat Maps/Combat Greybox m1v3 (medium).unity
-  isLoaded: 1
-  isActive: 1
-  isSubScene: 0
