@@ -11,6 +11,11 @@ Coven Back in Action/Library/**
 [Ll]ogs/
 [Uu]ser[Ss]ettings/
 
+Coven Back in Action/Library/ArtifactDB
+Coven Back in Action/Library/CurrentLayout-default.dwlt
+Coven Back in Action/Library/SourceAssetDB
+
+
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
 /[Mm]emoryCaptures/
