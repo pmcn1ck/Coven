@@ -48,7 +48,6 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    m_Ints: []
     m_Floats:
     - _DetailOverlayLayer: 0
     - _DetailOverlayRotationSpeed: 0
@@ -98,7 +97,7 @@ Material:
     - _HorizonCloudColor: {r: 1, g: 1, b: 1, a: 1}
     - _HorizonColor: {r: 0.29227954, g: 0.22347811, b: 0.509434, a: 1}
     - _MoonColor: {r: 1, g: 1, b: 1, a: 1}
-    - _MoonDirection: {r: 0, g: 0, b: 1, a: 0}
+    - _MoonDirection: {r: 0.6808953, g: -0.49368677, b: 0.5409761, a: 0}
     - _MoonLightColor: {r: 0.8443396, g: 0.9841163, b: 1, a: 1}
     - _OverheadCloudColor: {r: 1, g: 1, b: 1, a: 0.09803922}
     - _SkyColor: {r: 0.19187464, g: 0.3773585, b: 0.17265932, a: 1}
@@ -220,7 +219,6 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
-    m_Ints: []
     m_Floats:
     - _OverheadCloudAltitude: 1000
     - _OverheadCloudAnimationSpeed: 50
