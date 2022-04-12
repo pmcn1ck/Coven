@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Game
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -121,7 +121,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 1
-  controlID: 137
+  controlID: 144
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -146,7 +146,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 138
+  controlID: 145
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -171,7 +171,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 70
+  controlID: 68
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -196,7 +196,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 71
+  controlID: 69
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -514,9 +514,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.28438592, y: -15.606146, z: 17.442907}
+    m_Target: {x: -6.625377, y: -3.8799496, z: -22.039783}
     speed: 2
-    m_Value: {x: -0.28438592, y: -15.606146, z: 17.442907}
+    m_Value: {x: -6.625377, y: -3.8799496, z: -22.039783}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -563,13 +563,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.39568, y: -0.002206707, z: 0.0009492683, w: -0.91838497}
+    m_Target: {x: -0.076972045, y: 0.9123337, z: -0.2019184, w: -0.3477855}
     speed: 2
-    m_Value: {x: -0.39568, y: -0.002206707, z: 0.00094926835, w: -0.91838497}
+    m_Value: {x: -0.07697192, y: 0.9123322, z: -0.20191805, w: -0.34778494}
   m_Size:
-    m_Target: 26.060322
+    m_Target: 10
     speed: 2
-    m_Value: 26.060322
+    m_Value: 10
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -692,14 +692,14 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
-    - e00: 0.8009259
+    - e00: 0.96754676
       e01: 0
       e02: 0
-      e03: 23.009277
+      e03: -259.28842
       e10: 0
-      e11: 0.8009259
+      e11: 0.96754676
       e12: 0
-      e13: 139.80556
+      e13: 101.161766
       e20: 0
       e21: 0
       e22: 1
@@ -725,9 +725,9 @@ MonoBehaviour:
       e32: 0
       e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: 2a6868c8d50dbed44bca06981ff140bf, type: 2}
+  m_AnimatorController: {fileID: 9100000, guid: 211b84f64ee8c744691ab24b01a43048, type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: 5275133408239713978, guid: 2a6868c8d50dbed44bca06981ff140bf, type: 2}
+  - m_Target: {fileID: -1785862373829135752, guid: 211b84f64ee8c744691ab24b01a43048, type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
   stateMachineGraphGUI: {fileID: 0}
@@ -778,22 +778,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Scenes/Combat Maps
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets
+  - Assets/Scenes/Combat Maps
   m_LastFoldersGridSize: 16
-  m_LastProjectPath: F:\ACC\dc3\Coven\Coven Back in Action
+  m_LastProjectPath: C:\Users\taekw\Documents\GitHub\Coven\Coven Back in Action
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 31}
-    m_SelectedIDs: 38750000
-    m_LastClickedID: 30008
-    m_ExpandedIDs: 000000003075000032750000347500003675000038750000
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 90650000
+    m_LastClickedID: 26000
+    m_ExpandedIDs: 000000005e6500008265000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -821,7 +821,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000003075000032750000347500003675000038750000
+    m_ExpandedIDs: 000000005e650000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -873,7 +873,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 53}
+    m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 16
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 289
