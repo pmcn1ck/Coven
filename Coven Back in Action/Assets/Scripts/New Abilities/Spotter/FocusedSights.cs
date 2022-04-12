@@ -16,6 +16,7 @@ public class FocusedSights : Ability
     public override IEnumerator Act(CellGrid cellGrid)
     {
         Debug.Log("Activating Focused Sights");
+        GetComponent<Unit>().ActionPoints -= 1;
         GetComponent<Unit>().BloodLust += BloodLustCost;
         GetComponent<Unit>().BloodLustSlider.value += BloodLustCost;
         int temp = GetComponent<Unit>().AttackFactor;
@@ -37,8 +38,15 @@ public class FocusedSights : Ability
 
     public override void Activate(CellGrid cellGrid)
     {
-        Debug.Log("Activating Focused Sights, Select Target plz");
-        SeekingTarget = true;
+        if(GetComponent<Unit>().ActionPoints > 0)
+        {
+            Debug.Log("Activating Focused Sights, Select Target plz");
+            SeekingTarget = true;
+        }
+        else
+        {
+            Debug.Log("Out of Action Points there, buddy");
+        }
     }
 
     public override void OnUnitClicked(Unit unit, CellGrid cellGrid)

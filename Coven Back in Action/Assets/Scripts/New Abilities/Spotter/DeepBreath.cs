@@ -19,6 +19,7 @@ public class DeepBreath : Ability
     public override IEnumerator Act(CellGrid cellGrid)
     {
         Debug.Log("Taking a Deep Breath");
+        GetComponent<Unit>().ActionPoints -= 1;
         GetComponent<Unit>().HitPoints -= Duration;
         GetComponent<Unit>().AttackFactor += AtkGain;
 
@@ -44,7 +45,7 @@ public class DeepBreath : Ability
 
     }
 
-    public void Activate(CellGrid cellGrid)
+    public override void Activate(CellGrid cellGrid)
     {
         if (CurrentlyActive == true)
         {
