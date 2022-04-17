@@ -3152,8 +3152,8 @@ MonoBehaviour:
   Obstructable: 1
   cell: {fileID: 0}
   curState: 0
-  HealthSlider: {fileID: 0}
-  DamageIndicator: {fileID: 0}
+  HealthSlider: {fileID: 1732692549648947598}
+  DamageIndicator: {fileID: 3789338748803856454}
   HitPoints: 12
   AttackRange: 3
   AttackFactor: 5
@@ -3415,6 +3415,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74a213df07cb136498bbed8272d1b2ef, type: 3}
+--- !u!114 &1732692549648947598 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1854348317363986519, guid: 74a213df07cb136498bbed8272d1b2ef, type: 3}
+  m_PrefabInstance: {fileID: 121655781288868313}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &3789338748803856454 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3829848357636653471, guid: 74a213df07cb136498bbed8272d1b2ef, type: 3}
+  m_PrefabInstance: {fileID: 121655781288868313}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6511647002273883145
 PrefabInstance:
   m_ObjectHideFlags: 0
