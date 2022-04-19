@@ -103,7 +103,7 @@ ModelImporter:
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+      additiveReferencePoseFrame: 36
     - serializedVersion: 16
       name: ShieldB_anim_damage_001_Take_001
       takeName: ShieldB_anim_damage_001_Take_001
