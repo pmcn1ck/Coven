@@ -21,6 +21,7 @@ public class DeepBreath : Ability
         Debug.Log("Taking a Deep Breath");
         GetComponent<Unit>().HitPoints -= Duration;
         GetComponent<Unit>().AttackFactor += AtkGain;
+        GetComponent<Unit>().ActionPoints--;
 
         CurrentlyActive = true;
         TurnCounter = 0;
@@ -44,7 +45,7 @@ public class DeepBreath : Ability
 
     }
 
-    public void Activate(CellGrid cellGrid)
+    public override void Activate(CellGrid cellGrid)
     {
         if (CurrentlyActive == true)
         {

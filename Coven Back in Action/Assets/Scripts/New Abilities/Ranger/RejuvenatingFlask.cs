@@ -12,6 +12,7 @@ public class RejuvenatingFlask : Ability
     public string label = "Rejuvenating Flask";
     public bool ApplyToSelf = false;
     public Unit Target;
+    public bool seekingTarget = false;
     public int HealthPenalty = 2;
 
     public override IEnumerator Act(CellGrid cellGrid)
@@ -29,9 +30,41 @@ public class RejuvenatingFlask : Ability
         yield return 0;
     }
 
-    public void Activate(CellGrid cellGrid, Unit target)
+    public override void OnUnitClicked(Unit unit, CellGrid cellGrid)
     {
-        Target = target;
-        StartCoroutine(Act(cellGrid));
+        if (seekingTarget == true)
+        {
+            if (cellGrid.GetCurrentPlayerUnits().Contains(unit))
+            {
+                Target = unit;
+                seekingTarget = false;
+                StartCoroutine(Act(cellGrid));
+            }
+            else
+            {
+                Debug.Log("Maybe you should be healing one of your allies instead?");
+            }
+        }
+        base.OnUnitClicked(unit, cellGrid);
+    }
+
+    public override void Activate(CellGrid cellGrid)
+    {
+        if (GetComponent<Unit>().ActionPoints > 0)
+        {
+            Debug.Log("Seeking target for rejuvenation");
+            seekingTarget = true;
+        }
+        else
+        {
+            Debug.Log("Not enough Action Points there, buckaroo");
+        }
+
+    }
+
+    public void Cancel()
+    {
+        seekingTarget = false;
+        Debug.Log("No longer seeking target");
     }
 }

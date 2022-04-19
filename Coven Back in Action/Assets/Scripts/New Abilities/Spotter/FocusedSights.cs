@@ -18,6 +18,7 @@ public class FocusedSights : Ability
         Debug.Log("Activating Focused Sights");
         GetComponent<Unit>().BloodLust += BloodLustCost;
         GetComponent<Unit>().BloodLustSlider.value += BloodLustCost;
+        GetComponent<Unit>().ActionPoints--;
         int temp = GetComponent<Unit>().AttackFactor;
         if (UseTracker >= 1)
         {
@@ -37,8 +38,16 @@ public class FocusedSights : Ability
 
     public override void Activate(CellGrid cellGrid)
     {
-        Debug.Log("Activating Focused Sights, Select Target plz");
-        SeekingTarget = true;
+        if (GetComponent<Unit>().ActionPoints > 0)
+        {
+            Debug.Log("Activating Focused Sights, Select Target plz");
+            SeekingTarget = true;
+        }
+        else
+        {
+            Debug.Log("Not enough Action Points, bucko");
+        }
+
     }
 
     public override void OnUnitClicked(Unit unit, CellGrid cellGrid)
