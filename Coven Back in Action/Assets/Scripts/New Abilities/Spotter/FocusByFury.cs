@@ -21,6 +21,7 @@ public class FocusByFury : Ability
     public void Reset()
     {
         label = "Focus by Fury";
+        description = "Raise your bloodlust to increase your attack range and power for 2 turns";
     }
 
     public override IEnumerator Act(CellGrid cellGrid)

@@ -19,6 +19,7 @@ public class StanceChange : Ability
     public void Reset()
     {
         label = "Stance Change";
+        description = "Sacrifice some health to temporarily lower your defense but boost your attack";
     }
     public override IEnumerator Act(CellGrid cellGrid)
     {

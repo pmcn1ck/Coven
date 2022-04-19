@@ -15,6 +15,7 @@ public class FocusedSights : Ability
     public void Reset()
     {
         label = "Focused Sights";
+        description = "Raise your bloodlust to perform a chained attack. The first shot does less damage than normal, but if used again on the next turn the damage is increased significantly";
     }
     public override IEnumerator Act(CellGrid cellGrid)
     {

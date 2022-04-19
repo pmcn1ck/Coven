@@ -21,6 +21,7 @@ public class HunkerDown : Ability
     public void Reset()
     {
         label = "Hunker Down";
+        description = "Raise your bloodlust and sacrifice some movement speed to raise your attack power. While active, cannot use Light-Footed";
     }
 
     public override IEnumerator Act(CellGrid cellGrid)

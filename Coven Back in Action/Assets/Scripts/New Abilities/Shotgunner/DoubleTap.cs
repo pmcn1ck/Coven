@@ -14,6 +14,7 @@ public class DoubleTap : Ability
     public void Reset()
     {
         label = "Double Tap";
+        description = "Raise your bloodlust to make an extra attack in on an enemy in range, but for less damage";
     }
     public override IEnumerator Act(CellGrid cellGrid)
     {

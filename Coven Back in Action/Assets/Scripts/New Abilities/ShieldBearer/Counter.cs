@@ -15,6 +15,7 @@ public class Counter : Ability
     public void Reset()
     {
         label = "Counter";
+        description = "Sacrifice some health to counterattack adjacent enemies when they hit you for a turn";
     }
     public override IEnumerator Act(CellGrid cellGrid)
     {

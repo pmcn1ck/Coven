@@ -11,6 +11,7 @@ namespace TbsFramework.Units.Abilities
     public abstract class Ability : MonoBehaviour
     {
         public string label;
+        public string description;
         //Reference to the unit that the ability is attached to
         public Unit UnitReference { get; internal set; }
 

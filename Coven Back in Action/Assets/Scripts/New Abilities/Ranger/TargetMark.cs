@@ -20,6 +20,7 @@ public class TargetMark : Ability
     public void Reset()
     {
         label = "Target Mark";
+        description = "Pick any enemy on the field and lower their defense slightly for 3 turns";
     }
     public override IEnumerator Act(CellGrid cellGrid)
     {

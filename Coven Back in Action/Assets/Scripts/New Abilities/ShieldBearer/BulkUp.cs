@@ -21,6 +21,7 @@ public class BulkUp : Ability
     public void Reset()
     {
         label = "Bulk Up";
+        description = "Raise your bloodlust to increase the defense of allies within 2 spaces";
     }
 
     public override IEnumerator Act(CellGrid cellGrid)

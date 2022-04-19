@@ -20,6 +20,7 @@ public class LightFooted : Ability
     public void Reset()
     {
         label = "Light-Footed";
+        description = "Raise your bloodlust to move further for 3 turns. While active, cannot use Hunker Down";
     }
     public override IEnumerator Act(CellGrid cellGrid)
     {

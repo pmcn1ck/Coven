@@ -17,6 +17,7 @@ public class RejuvenatingFlask : Ability
     public void Reset()
     {
         label = "Rejuvenating Flask";
+        description = "Sacrifice some of your own health to heal an ally";
     }
     public override IEnumerator Act(CellGrid cellGrid)
     {

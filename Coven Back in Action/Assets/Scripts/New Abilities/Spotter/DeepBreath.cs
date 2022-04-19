@@ -18,6 +18,7 @@ public class DeepBreath : Ability
     public void Reset()
     {
         label = "Deep Breath";
+        description = "Spend an action point to increase your attack power for the next turn";
     }
     public override IEnumerator Act(CellGrid cellGrid)
     {
