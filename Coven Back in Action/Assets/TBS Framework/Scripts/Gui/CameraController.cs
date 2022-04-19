@@ -14,6 +14,7 @@ namespace TbsFramework.Gui
     {
         public float ScrollSpeed = 15;
         public float ScrollEdge = 0.01f;
+        public bool overWorldCamera;
         public Vector2 maxPosition;
         public Vector2 minPosition;
         public Vector3 startingPos;
@@ -96,16 +97,19 @@ namespace TbsFramework.Gui
             //empty Hits
             hits.Clear();
             //for each unit belonging to the currently active player, add objects between them and camera to the list
-            foreach (Unit unit in cellGrid.GetCurrentPlayerUnits())
+            if (!overWorldCamera)
             {
-                Debug.DrawRay(this.transform.position, (unit.transform.position - this.transform.position), Color.magenta);
-
-                hits.AddRange( Physics.RaycastAll(this.transform.position, (unit.transform.position - this.transform.position), Vector3.Distance(this.transform.position, unit.transform.position)));
-                foreach (RaycastHit hit in hits)
+                foreach (Unit unit in cellGrid.GetCurrentPlayerUnits())
                 {
-                    if (hit.collider.GetComponent<ExperimentalUnit>() == null  && hit.collider.GetComponentInParent<ExperimentalUnit>() == null && hit.collider.GetComponent<BlockCell>() == null)
+                    Debug.DrawRay(this.transform.position, (unit.transform.position - this.transform.position), Color.magenta);
+
+                    hits.AddRange(Physics.RaycastAll(this.transform.position, (unit.transform.position - this.transform.position), Vector3.Distance(this.transform.position, unit.transform.position)));
+                    foreach (RaycastHit hit in hits)
                     {
-                        hit.collider.GetComponent<Renderer>().enabled = false;
+                        if (hit.collider.GetComponent<ExperimentalUnit>() == null && hit.collider.GetComponentInParent<ExperimentalUnit>() == null && hit.collider.GetComponent<BlockCell>() == null)
+                        {
+                            hit.collider.GetComponent<Renderer>().enabled = false;
+                        }
                     }
                 }
             }
