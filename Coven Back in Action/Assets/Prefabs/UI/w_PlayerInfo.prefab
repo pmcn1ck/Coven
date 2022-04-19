@@ -1991,6 +1991,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00fa7140db80b3b498d5b8472c717f37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  label: 
 --- !u!114 &8286828092022220673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2003,6 +2004,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b212915272f70f40899729e7af922c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  label: 
 --- !u!114 &6670387927400317114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2017,7 +2019,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 2064457679311920964}
   Ability: {fileID: 8977357259659207912}
+  AbilityZeroName: {fileID: 3070874110750325724}
   AbilityOneButton: {fileID: 9105125384000011919}
+  AbilityOneName: {fileID: 6316421135482516559}
   AbilityZero: {fileID: 0}
   AbilityOne: {fileID: 0}
   cellGrid: {fileID: 0}

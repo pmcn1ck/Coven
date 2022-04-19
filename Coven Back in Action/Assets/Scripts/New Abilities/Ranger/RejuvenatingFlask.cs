@@ -9,12 +9,15 @@ using System.Linq;
 
 public class RejuvenatingFlask : Ability
 {
-    public string label = "Rejuvenating Flask";
     public bool ApplyToSelf = false;
     public Unit Target;
     public bool seekingTarget = false;
     public int HealthPenalty = 2;
 
+    public void Reset()
+    {
+        label = "Rejuvenating Flask";
+    }
     public override IEnumerator Act(CellGrid cellGrid)
     {
         Debug.Log("Rejuvenating " + Target.Name);

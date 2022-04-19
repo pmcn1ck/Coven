@@ -7,11 +7,14 @@ using TbsFramework.Units.Abilities;
 
 public class DoubleTap : Ability
 {
-    public string Label = "Double Tap";
     public float BloodLustCost = 5f;
     public Unit target;
     public bool SeekingTarget = false;
 
+    public void Reset()
+    {
+        label = "Double Tap";
+    }
     public override IEnumerator Act(CellGrid cellGrid)
     {
         Debug.Log("Activating Double Tap");

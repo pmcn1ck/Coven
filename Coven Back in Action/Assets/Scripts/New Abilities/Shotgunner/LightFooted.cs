@@ -9,7 +9,6 @@ using System.Linq;
 
 public class LightFooted : Ability
 {
-    public string label = "Light-Footed";
     public int TurnCounter = 0;
     public int Duration = 3;
     public bool ApplyToSelf = true;
@@ -18,6 +17,10 @@ public class LightFooted : Ability
     public float BloodCost = 2f;
     public int MoveGain = 2;
 
+    public void Reset()
+    {
+        label = "Light-Footed";
+    }
     public override IEnumerator Act(CellGrid cellGrid)
     {
         Debug.Log("Activating Light-Footed");
@@ -49,7 +52,7 @@ public class LightFooted : Ability
 
     }
 
-    public void Activate(CellGrid cellGrid)
+    public override void Activate(CellGrid cellGrid)
     {
         if (CurrentlyActive == true)
         {

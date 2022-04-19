@@ -9,7 +9,6 @@ using System.Linq;
 
 public class StanceChange : Ability
 {
-    public string label = "Stance Change";
     public int TurnCounter = 0;
     public int Duration = 3;
     public bool ApplyToSelf = true;
@@ -17,6 +16,10 @@ public class StanceChange : Ability
     public int DefCost = 3;
     public int AtkGain = 3;
 
+    public void Reset()
+    {
+        label = "Stance Change";
+    }
     public override IEnumerator Act(CellGrid cellGrid)
     {
         Debug.Log("Activating Stance Change");
@@ -46,7 +49,7 @@ public class StanceChange : Ability
         }
 
     }
-    public void Activate(CellGrid cellGrid)
+    public override void Activate(CellGrid cellGrid)
     {
         if (CurrentlyActive == true)
         {

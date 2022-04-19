@@ -9,7 +9,6 @@ using System.Linq;
 
 public class HunkerDown : Ability
 {
-    public string label = "Light-Footed";
     public int TurnCounter = 0;
     public int Duration = 3;
     public bool ApplyToSelf = true;
@@ -18,6 +17,11 @@ public class HunkerDown : Ability
     public float BloodCost = 2f;
     public int MoveLoss = 2;
     public int AtkGain = 2;
+
+    public void Reset()
+    {
+        label = "Hunker Down";
+    }
 
     public override IEnumerator Act(CellGrid cellGrid)
     {
@@ -50,7 +54,7 @@ public class HunkerDown : Ability
 
     }
 
-    public void Activate(CellGrid cellGrid)
+    public override void Activate(CellGrid cellGrid)
     {
         if (CurrentlyActive == true)
         {

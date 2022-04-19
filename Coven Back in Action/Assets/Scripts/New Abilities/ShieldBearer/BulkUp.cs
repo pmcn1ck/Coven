@@ -9,7 +9,6 @@ using System.Linq;
 
 public class BulkUp : Ability
 {
-    public string label = "Bulk Up";
     public int Range = 2;
     public int TurnCounter = 0;
     public int Duration = 3;
@@ -18,6 +17,11 @@ public class BulkUp : Ability
     List<Unit> AffectedUnits = new List<Unit>();
     public int PlayerNumber = 0;
     public float BloodLustCost = 10f;
+
+    public void Reset()
+    {
+        label = "Bulk Up";
+    }
 
     public override IEnumerator Act(CellGrid cellGrid)
     {

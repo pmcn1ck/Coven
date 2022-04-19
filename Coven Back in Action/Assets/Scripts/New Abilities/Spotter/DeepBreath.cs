@@ -9,13 +9,16 @@ using System.Linq;
 
 public class DeepBreath : Ability
 {
-    public string label = "Deep Breath";
     public int TurnCounter = 0;
     public int Duration = 2;
     public bool ApplyToSelf = true;
     public bool CurrentlyActive = false;
     public int AtkGain = 3;
 
+    public void Reset()
+    {
+        label = "Deep Breath";
+    }
     public override IEnumerator Act(CellGrid cellGrid)
     {
         Debug.Log("Taking a Deep Breath");

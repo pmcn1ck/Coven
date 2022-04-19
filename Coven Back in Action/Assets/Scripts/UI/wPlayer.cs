@@ -12,7 +12,9 @@ public class wPlayer : MonoBehaviour
 {
     public TMP_Text text;
     public Button Ability;
+    public TMP_Text AbilityZeroName;
     public GameObject AbilityOneButton;
+    public TMP_Text AbilityOneName;
     private ExperimentalUnit attachedUnit;
     public Ability AbilityZero;
     public Ability AbilityOne;
@@ -136,6 +138,14 @@ public class wPlayer : MonoBehaviour
                     AbilityOne = attachedUnit.GetComponent<Counter>();
                 }
                 break;
+        }
+        if (AbilityZero != null)
+        {
+            AbilityZeroName.text = AbilityZero.label;
+        }
+        if (AbilityOne != null)
+        {
+            AbilityOneName.text = AbilityOne.label;
         }
     }
 

@@ -7,12 +7,15 @@ using TbsFramework.Units.Abilities;
 
 public class Counter : Ability
 {
-    public string label = "Counter";
     public int TurnCounter = 0;
     public int Duration = 1;
     public bool CurrentlyActive = false;
     public int HealthPenalty = 4;
 
+    public void Reset()
+    {
+        label = "Counter";
+    }
     public override IEnumerator Act(CellGrid cellGrid)
     {
         Debug.Log("Activating Counter");

@@ -9,7 +9,6 @@ using System.Linq;
 
 public class FocusByFury : Ability
 {
-    public string label = "Focus By Fury";
     public int TurnCounter = 0;
     public int Duration = 2;
     public bool ApplyToSelf = true;
@@ -18,6 +17,11 @@ public class FocusByFury : Ability
     public float BloodCost = 2f;
     public int MoveGain = 2;
     public int AtkGain = 3;
+
+    public void Reset()
+    {
+        label = "Focus by Fury";
+    }
 
     public override IEnumerator Act(CellGrid cellGrid)
     {
@@ -52,7 +56,7 @@ public class FocusByFury : Ability
 
     }
 
-    public void Activate(CellGrid cellGrid)
+    public override void Activate(CellGrid cellGrid)
     {
         if (CurrentlyActive == true)
         {

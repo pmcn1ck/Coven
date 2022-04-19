@@ -7,12 +7,15 @@ using TbsFramework.Units.Abilities;
 
 public class FocusedSights : Ability
 {
-    public string label = "Focused Sights";
     public int UseTracker = 0;
     public float BloodLustCost = 5f;
     public Unit target;
     public bool SeekingTarget = false;
 
+    public void Reset()
+    {
+        label = "Focused Sights";
+    }
     public override IEnumerator Act(CellGrid cellGrid)
     {
         Debug.Log("Activating Focused Sights");

@@ -9,7 +9,6 @@ using System.Linq;
 
 public class TargetMark : Ability
 {
-    public string label = "Target Mark";
     public int TurnCounter = 0;
     public int Duration = 3;
     public bool ApplyToSelf = false;
@@ -18,6 +17,10 @@ public class TargetMark : Ability
     public Unit Target;
     public int DefPenalty = 2;
 
+    public void Reset()
+    {
+        label = "Target Mark";
+    }
     public override IEnumerator Act(CellGrid cellGrid)
     {
         Debug.Log("Targeting " + Target.Name);
