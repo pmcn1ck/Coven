@@ -95,6 +95,10 @@ public class wPlayer : MonoBehaviour
                 {
                     AbilityOne = attachedUnit.GetComponent<DoubleTap>();
                 }
+                else if (attachedUnit.GetComponent<ScatterShot>() != null)
+                {
+                    AbilityOne = attachedUnit.GetComponent<ScatterShot>();
+                }
                 break;
             case eUnitType.Spotter:
                 text.text = "Spotter";
@@ -108,6 +112,10 @@ public class wPlayer : MonoBehaviour
                 if (attachedUnit.GetComponent<FocusedSights>() != null)
                 {
                     AbilityOne = attachedUnit.GetComponent<FocusedSights>();
+                }
+                else if (attachedUnit.GetComponent<SupportingFire>() != null)
+                {
+                    AbilityOne = attachedUnit.GetComponent<SupportingFire>();
                 }
                 break;
             case eUnitType.Ranger:
@@ -123,6 +131,10 @@ public class wPlayer : MonoBehaviour
                 {
                     AbilityOne = attachedUnit.GetComponent<RejuvenatingFlask>();
                 }
+                else if (attachedUnit.GetComponent<HinderingShot>() != null)
+                {
+                    AbilityOne = attachedUnit.GetComponent<HinderingShot>();
+                }
                 break;
             case eUnitType.ShieldBearer:
                 text.text = "ShieldBearer";
@@ -136,6 +148,10 @@ public class wPlayer : MonoBehaviour
                 if (attachedUnit.GetComponent<Counter>() != null)
                 {
                     AbilityOne = attachedUnit.GetComponent<Counter>();
+                }
+                else if (attachedUnit.GetComponent<ShieldBash>() != null)
+                {
+                    AbilityOne = attachedUnit.GetComponent<ShieldBash>();
                 }
                 break;
         }

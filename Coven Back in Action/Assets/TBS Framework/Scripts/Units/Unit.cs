@@ -432,6 +432,19 @@ namespace TbsFramework.Units
             {
                 GetComponent<Counter>().AttackResponse(aggressor);
             }
+            if (SupportFireTarget == true)
+            {
+                SupportFireTarget = false;
+                GameObject CG = GameObject.Find("CellGrid");
+                CellGrid cellGrid = CG.GetComponent<CellGrid>();
+                foreach (Unit u in cellGrid.GetEnemyUnits(cellGrid.Players[GetComponent<Unit>().PlayerNumber]))
+                {
+                    if (u.GetComponent<SupportingFire>() != null)
+                    {
+                        u.GetComponent<SupportingFire>().AttackResponse(this);
+                    }
+                }
+            }
         }
 
         void HideDamageIndicator() 
