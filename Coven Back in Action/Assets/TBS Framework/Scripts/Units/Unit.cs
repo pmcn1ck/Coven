@@ -137,6 +137,10 @@ namespace TbsFramework.Units
         /// </summary>
         [SerializeField]
         private float movementPoints;
+
+        [Header("Status Effects")]
+        public bool Stun;
+        public bool SupportFireTarget;
         [Header("Animation")]
         public Animator c_Animator;
         public AnimationScript animScript;
@@ -238,6 +242,11 @@ namespace TbsFramework.Units
             var state = UnitState;
             SetState(new UnitStateMarkedAsFriendly(this));
             curState = eState.friendly;
+            if (Stun == true)
+            {
+                curState = eState.finished;
+                Stun = false;
+            }
         }
         /// <summary>
         /// Method is called at the end of each turn.
