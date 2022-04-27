@@ -38,6 +38,11 @@ public class GameManager : MonoBehaviour
 
     [Space]
     [Header("Units")]
+
+    public GameObject[] unitTypes;
+    public GameObject[] Party; //player's party of units
+    public GameObject[] Reserve; //reserve units for player
+
     public GameObject CurrentUnit;
     public Unit unitToAttack;
 
@@ -58,6 +63,8 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        CreatePlayers();
+
     }
 
 
@@ -68,7 +75,14 @@ public class GameManager : MonoBehaviour
         
     }
 
- 
+    void CreatePlayers()
+    {
+        Party = new GameObject[unitTypes.Length];
+        for (int i = 0; i < unitTypes.Length; i++)
+        {
+            Party[i] = Instantiate(unitTypes[i], this.gameObject.transform);
+        }
+    }
     private void OnEnable()
     {
         SceneManager.sceneLoaded += OnSceneLoad;
