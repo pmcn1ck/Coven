@@ -9,6 +9,8 @@ public class ExperimentalUnit : Unit
     public eUnitType unitType;
     public Color LeadingColor;
     public GameObject model;
+
+
     public override void Initialize()
     {
         base.Initialize();

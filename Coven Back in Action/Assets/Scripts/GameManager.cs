@@ -64,7 +64,11 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
         CreatePlayers();
-
+        foreach (var item in Party)
+        {
+            var sUnit = item.GetComponent<Unit>();
+            sUnit.TotalHitPoints = sUnit.HitPoints;
+        }
     }
 
 
@@ -80,7 +84,7 @@ public class GameManager : MonoBehaviour
         Party = new GameObject[unitTypes.Length];
         for (int i = 0; i < unitTypes.Length; i++)
         {
-            Party[i] = Instantiate(unitTypes[i], this.gameObject.transform);
+            Party[i] = unitTypes[i];
         }
     }
     private void OnEnable()

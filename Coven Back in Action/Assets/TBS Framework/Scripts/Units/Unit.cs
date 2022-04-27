@@ -92,7 +92,8 @@ namespace TbsFramework.Units
             Buffs.Add((buff, buff.Duration));
         }
 
-        public int TotalHitPoints { get; private set; }
+        [HideInInspector]
+        public int TotalHitPoints;
         public float TotalMovementPoints { get; private set; }
         public float TotalActionPoints { get; private set; }
 
@@ -202,7 +203,7 @@ namespace TbsFramework.Units
             UnitState = new UnitStateNormal(this);
             c_Animator = gameObject.GetComponentInChildren<Animator>();
             animScript = gameObject.GetComponentInChildren<AnimationScript>();
-            TotalHitPoints = HitPoints;
+            //TotalHitPoints = HitPoints;
             TotalMovementPoints = MovementPoints;
             TotalActionPoints = ActionPoints;
         }
