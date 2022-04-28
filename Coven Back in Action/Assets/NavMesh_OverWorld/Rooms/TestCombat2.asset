@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: TestCombat2
   m_EditorClassIdentifier: 
   combatArena: 1
+  expRewards: 100
   sceneName: Combat m2v1
   eventName: Test Combat 2
   description: We be testin'

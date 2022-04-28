@@ -124,6 +124,9 @@ namespace TbsFramework.Units
         public int AttackFactor;
         public int DefenceFactor;
         public string Name;
+        public int level;
+        public int experience;
+        public bool levelUp;
         [Header("Blood Lust")]
         public double BloodLust;
         public double BloodGainMin;
@@ -774,6 +777,17 @@ namespace TbsFramework.Units
             brain.AddComponent<DamageCellEvaluator>();
             brain.AddComponent<DamageUnitEvaluator>();
         }
+
+        //this controls level ups
+        public void LevelAdvancement()
+        {
+            if (experience >= 100)
+            {
+                levelUp = true;
+            }
+        }
+
+
     }
 
     public class AttackAction

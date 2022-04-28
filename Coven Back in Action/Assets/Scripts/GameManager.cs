@@ -42,6 +42,7 @@ public class GameManager : MonoBehaviour
     public GameObject[] unitTypes;
     public GameObject[] Party; //player's party of units
     public GameObject[] Reserve; //reserve units for player
+    public int expRewards; //experience rewarded after combat complete
 
     public GameObject CurrentUnit;
     public Unit unitToAttack;
