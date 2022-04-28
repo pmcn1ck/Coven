@@ -647,7 +647,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-5930
+  m_Name: pb_Mesh-3486
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3159,7 +3159,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-5246
+  m_Name: pb_Mesh-2802
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4217,7 +4217,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9087162794785803433, guid: 8c71cb2284ac8a24480f7916ee69171a, type: 3}
       propertyPath: IsTaken
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9087162794785803433, guid: 8c71cb2284ac8a24480f7916ee69171a, type: 3}
       propertyPath: _offsetCoord.x
@@ -6782,7 +6782,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9087162794785803433, guid: 8c71cb2284ac8a24480f7916ee69171a, type: 3}
       propertyPath: IsTaken
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9087162794785803433, guid: 8c71cb2284ac8a24480f7916ee69171a, type: 3}
       propertyPath: _offsetCoord.x
@@ -7512,6 +7512,7 @@ MonoBehaviour:
   - {fileID: 8653245077123352178, guid: 21b5afb6765f51841abf8387222e7d81, type: 3}
   Party: []
   Reserve: []
+  expRewards: 0
   CurrentUnit: {fileID: 0}
   unitToAttack: {fileID: 0}
   isAttacking: 0
@@ -7928,7 +7929,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9087162794785803433, guid: 8c71cb2284ac8a24480f7916ee69171a, type: 3}
       propertyPath: IsTaken
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9087162794785803433, guid: 8c71cb2284ac8a24480f7916ee69171a, type: 3}
       propertyPath: _offsetCoord.x
@@ -8602,7 +8603,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-7802
+  m_Name: pb_Mesh-4258
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
