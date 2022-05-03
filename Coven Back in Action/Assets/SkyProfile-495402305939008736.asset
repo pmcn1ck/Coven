@@ -58,7 +58,7 @@ Material:
     - _HorizonCloudStep: 25
     - _HorizonExponent: 5
     - _HorizonStep: 1000
-    - _HorizonThickness: 1
+    - _HorizonThickness: 0.444
     - _MoonGlow: 0.24
     - _MoonLightIntensity: 0.2
     - _MoonSize: 0.07
@@ -93,14 +93,14 @@ Material:
     m_Colors:
     - _DetailOverlayTintColor: {r: 0, g: 0, b: 0, a: 0}
     - _FogColor: {r: 0, g: 0, b: 0, a: 0}
-    - _GroundColor: {r: 0.01214845, g: 0.014731441, b: 0.122641504, a: 1}
+    - _GroundColor: {r: 0.5377358, g: 0.5199804, b: 0.5199804, a: 1}
     - _HorizonCloudColor: {r: 1, g: 1, b: 1, a: 1}
-    - _HorizonColor: {r: 0.29227954, g: 0.22347811, b: 0.509434, a: 1}
+    - _HorizonColor: {r: 0.5377358, g: 0.5377358, b: 0.5377358, a: 1}
     - _MoonColor: {r: 1, g: 1, b: 1, a: 1}
-    - _MoonDirection: {r: 0.6808953, g: -0.49368677, b: 0.5409761, a: 0}
+    - _MoonDirection: {r: 0, g: 0, b: 1, a: 0}
     - _MoonLightColor: {r: 0.8443396, g: 0.9841163, b: 1, a: 1}
     - _OverheadCloudColor: {r: 1, g: 1, b: 1, a: 0.09803922}
-    - _SkyColor: {r: 0.19187464, g: 0.3773585, b: 0.17265932, a: 1}
+    - _SkyColor: {r: 0.30588236, g: 0.6313726, b: 0.6114543, a: 1}
     - _StarsColor0: {r: 0.9254902, g: 0.88081425, b: 0.5432628, a: 1}
     - _StarsColor1: {r: 1, g: 0.24056602, b: 0.8628801, a: 1}
     - _StarsColor2: {r: 0, g: 0.8351569, b: 1, a: 1}
@@ -120,13 +120,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa5278d11d9502245b5cc174a196561b, type: 3}
   m_Name: SkyProfile-495402305939008736
   m_EditorClassIdentifier: 
-  skyColor: {r: 0.19187464, g: 0.3773585, b: 0.17265932, a: 1}
-  horizonColor: {r: 0.29227954, g: 0.22347811, b: 0.509434, a: 1}
-  groundColor: {r: 0.01214845, g: 0.014731441, b: 0.122641504, a: 1}
-  horizonThickness: 1
+  skyColor: {r: 0.30588236, g: 0.6313726, b: 0.6114543, a: 1}
+  horizonColor: {r: 0.5377358, g: 0.5377358, b: 0.5377358, a: 1}
+  groundColor: {r: 0.5377358, g: 0.5199804, b: 0.5199804, a: 1}
+  horizonThickness: 0.444
   horizonExponent: 5
   horizonStep: 1000
-  fogSyncOption: 2
+  fogSyncOption: 0
   fogColor: {r: 0, g: 0, b: 0, a: 0}
   enableStars: 1
   starsStartPosition: -0.01
