@@ -20,6 +20,7 @@ namespace TbsFramework.Gui
         public Vector3 startingPos;
         public CellGrid cellGrid;
         List<RaycastHit> hits = new List<RaycastHit>();
+        int layerMask = 1 << 2;
         
         private void Start()
         {
@@ -103,7 +104,7 @@ namespace TbsFramework.Gui
                 {
                     Debug.DrawRay(this.transform.position, (unit.transform.position - this.transform.position), Color.magenta);
 
-                    hits.AddRange(Physics.RaycastAll(this.transform.position, (unit.transform.position - this.transform.position), Vector3.Distance(this.transform.position, unit.transform.position)));
+                    hits.AddRange(Physics.RaycastAll(this.transform.position, (unit.transform.position - this.transform.position), Vector3.Distance(this.transform.position, unit.transform.position), layerMask));
                     foreach (RaycastHit hit in hits)
                     {
                         if (hit.collider.GetComponent<ExperimentalUnit>() == null && hit.collider.GetComponentInParent<ExperimentalUnit>() == null && hit.collider.GetComponent<BlockCell>() == null)
