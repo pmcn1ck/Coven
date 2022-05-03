@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Linq;
+using UnityEngine.UI;
 
 public class wGamEnd : MonoBehaviour
 {
-    public GameObject upgradeRanger;
+    public GameObject w_UpgradeRanger;
+   // public Transform tUpgradeRanger;
     public GameObject upgradeShieldBearer;
     public GameObject upgradeSpotter;
     public GameObject upgradeShotgunner;
@@ -16,9 +18,13 @@ public class wGamEnd : MonoBehaviour
 
     public void OnClickUpgradeRanger()
     {
-        upgradeRanger.SetActive(true);
-        bUnitClicked.SetActive(false);
-        upgradeGrp.SetActive(true);
+        //Instantiate(w_UpgradeRanger, tUpgradeRanger);
+        w_UpgradeRanger.SetActive(true);
+
+        //upgradeRanger.SetActive(true);
+        //bUnitClicked.SetActive(false);
+        //upgradeGrp.SetActive(true);
+
     }
     public void OnClickUpgradeShieldBearer()
     {
@@ -44,15 +50,8 @@ public class wGamEnd : MonoBehaviour
 
     public void OnClickOverWorld()
     {
+   
         GameManager.gm.LoadScene(eScene.InGame);
-    }
-
-    public void OnClickDestroy()
-    {
-        upgradeGrp.SetActive(false);
-        bUnitClicked.SetActive(true);
-        
-        
     }
 
 
