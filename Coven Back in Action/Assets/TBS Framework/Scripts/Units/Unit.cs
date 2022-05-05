@@ -116,6 +116,7 @@ namespace TbsFramework.Units
         }
 
         public eState curState;
+        public ExperimentalUnit experimentalUnit;
 
         public Slider HealthSlider;
         public GameObject DamageIndicator;
@@ -126,6 +127,7 @@ namespace TbsFramework.Units
         public string Name;
         public int level;
         public int experience;
+        public int totalExperience;
         public bool levelUp;
         [Header("Blood Lust")]
         public double BloodLust;
@@ -199,6 +201,11 @@ namespace TbsFramework.Units
         /// <summary>
         /// Method called after object instantiation to initialize fields etc. 
         /// </summary>
+
+        private void Awake()
+        {
+            experimentalUnit = FindObjectOfType<ExperimentalUnit>();
+        }
         public virtual void Initialize()
         {
             Buffs = new List<(Buff, int)>();
@@ -272,6 +279,8 @@ namespace TbsFramework.Units
         /// <summary>
         /// Method is called when units HP drops below 1.
         /// </summary>
+        
+
         protected virtual void OnDestroyed()
         {
             Cell.IsTaken = false;
@@ -343,6 +352,8 @@ namespace TbsFramework.Units
         /// </summary>
         public void AttackHandler(Unit unitToAttack)
         {
+            levelUp = true;
+            experience += 10;
             transform.LookAt(unitToAttack.transform.position, Vector3.up);
             if (animScript != null)
                 animScript.runAttackAnim();
@@ -385,12 +396,15 @@ namespace TbsFramework.Units
         /// <param name="damage">Amount of damge that the attack caused</param>
         public void DefendHandler(Unit aggressor, int damage)
         {
+            
             transform.LookAt(aggressor.transform.position, Vector3.up);
             MarkAsDefending(aggressor);
             int damageTaken = Defend(aggressor, damage);
             HitPoints -= damageTaken;
             if (animScript != null)
             animScript.runDamageAnim();
+
+            
 
             if (HealthSlider != null)
             {

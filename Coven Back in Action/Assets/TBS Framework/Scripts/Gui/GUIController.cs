@@ -5,6 +5,7 @@ using TbsFramework.Players;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
+using TbsFramework.Units;
 
 namespace TbsFramework.Gui
 {
@@ -17,9 +18,12 @@ namespace TbsFramework.Gui
         public GameObject gameEndLoss;
         public GameObject gameEndWin;
         public Transform tGameEnd;
+        public Unit unit;
+        public bool isGameWon;
 
         void Awake()
         {
+            unit = FindObjectOfType<Unit>();
             CellGrid.LevelLoading += OnLevelLoading;
             CellGrid.LevelLoadingDone += OnLevelLoadingDone;
             CellGrid.GameEnded += OnGameEnded;
@@ -53,11 +57,12 @@ namespace TbsFramework.Gui
                 if (e.gameResult.WinningPlayers[i] == 0)
                 {
                     isWinningGame = true;
+                    Debug.Log("Is Winning Game" + isWinningGame);
                 }
                 //Debug.Log(e.gameResult.WinningPlayers[0]);
             }
 
-            Debug.Log("Is Winning Game" + isWinningGame);
+            
 
             
             if(EndTurnButton != null)
@@ -67,7 +72,9 @@ namespace TbsFramework.Gui
 
             if (isWinningGame)
             {
+                
                 Instantiate(gameEndWin, tGameEnd);
+                Debug.Log("player as won the game");
             }
             else
             {

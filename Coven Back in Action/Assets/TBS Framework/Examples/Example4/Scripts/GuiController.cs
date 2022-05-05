@@ -41,7 +41,7 @@ namespace TbsFramework.Example4
 
             CellGrid.GameStarted += OnGameStarted;
             CellGrid.TurnEnded += OnTurnEnded;
-            CellGrid.GameEnded += OnGameEnded;
+          //  CellGrid.GameEnded += OnGameEnded;
             CellGrid.UnitAdded += OnUnitAdded;
         }
 

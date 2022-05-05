@@ -342,6 +342,7 @@ namespace TbsFramework.Grid
                     if (GameEnded != null)
                     {
                         GameEnded.Invoke(this, new GameEndedArgs(gameResult));
+
                     }
 
                     break;

@@ -428,6 +428,7 @@ MonoBehaviour:
   gameEndLoss: {fileID: 6543111572189202227, guid: 7384410996ed0f143b082e83c5d106a6, type: 3}
   gameEndWin: {fileID: 6543111572189202227, guid: c6ef4d4c6a2b27043869c25a75991d6e, type: 3}
   tGameEnd: {fileID: 2767933310964807051}
+  unit: {fileID: 0}
 --- !u!114 &2767933310964807093
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -471,9 +472,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 0}
   Ability: {fileID: 0}
+  AbilityZeroName: {fileID: 0}
+  AbilityOneButton: {fileID: 0}
+  AbilityOneName: {fileID: 0}
   AbilityZero: {fileID: 0}
+  AbilityOne: {fileID: 0}
   cellGrid: {fileID: 0}
   wStats: {fileID: 0}
+  wAbilities: {fileID: 0}
 --- !u!1 &2767933311226620424
 GameObject:
   m_ObjectHideFlags: 0
@@ -486,6 +492,7 @@ GameObject:
   - component: {fileID: 2767933311226620468}
   - component: {fileID: 2767933311226620469}
   - component: {fileID: 2767933311226620426}
+  - component: {fileID: 1860049307}
   m_Layer: 5
   m_Name: Button_EndTurn
   m_TagString: Untagged
@@ -607,6 +614,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
+--- !u!114 &1860049307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2767933311226620424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 655039a52c5a0994ba1bf27078745e6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1895955282
 PrefabInstance:
   m_ObjectHideFlags: 0
