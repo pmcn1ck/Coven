@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   combatArena: 1
   expRewards: 100
-  sceneName: Combat m2v1
+  Scene: 4
   eventName: Delving Deeper
   description: "\tVictorious over the creatures in the lobby, the Homunculi press
     forward into the dark and cluttered back hallways of the Sanitorium. Even more

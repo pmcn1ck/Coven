@@ -6,7 +6,7 @@ public class cPauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
-
+    public GameObject optionsUI;
     // Update is called once per frame
     void Update()
     {
@@ -39,6 +39,10 @@ public class cPauseMenu : MonoBehaviour
         GameIsPaused = true;
     }
 
+    public void InitOptions()
+    {
+        Instantiate(optionsUI);
+    }
 
     public void Quit()
     {

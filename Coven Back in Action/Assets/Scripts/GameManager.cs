@@ -4,8 +4,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 using TbsFramework.Units;
+using UnityEngine.Audio;
+using System;
 
-public enum eScene {start, fe, InGame }
+public enum eScene {start, fe, InGame, Combat1, Combat2 }
 
 public class GameManager : MonoBehaviour
 {
@@ -48,6 +50,17 @@ public class GameManager : MonoBehaviour
     public Unit unitToAttack;
 
     public bool isAttacking;
+
+
+    [Space]
+    [Header("Sound")]
+    public mAudio audioManager;
+    public AudioMixerGroup masterMixer;
+    public AudioMixerGroup musicMixer;
+    public AudioMixerGroup sfxMixer;
+    public float masterVol;
+    public float musicVol = 1;
+    public float sfxVol;
 
     [Space]
     [Header("OverWorld")]
@@ -101,18 +114,29 @@ public class GameManager : MonoBehaviour
 
     void OnSceneLoad(Scene scene, LoadSceneMode mode)
     {
-
         currentScene = scene.buildIndex;
         eCurScene = (eScene)currentScene;
         switch (eCurScene)
         {
             case eScene.start:
+                audioManager.StopMusic();
+                audioManager.PlayMusic(eMusic.MainMenu);
                 SpawnStart();
                 break;
             case eScene.fe:
                 SpawnMainMenu();
                 break;
             case eScene.InGame:
+                audioManager.StopMusic();
+                audioManager.PlayMusic(eMusic.OverWorld);
+                break;
+            case eScene.Combat1:
+                audioManager.StopMusic();
+                audioManager.PlayMusic(eMusic.Combat);
+                break;
+            case eScene.Combat2:
+                audioManager.StopMusic();
+                audioManager.PlayMusic(eMusic.Combat);
                 break;
         }
 
@@ -149,7 +173,11 @@ public class GameManager : MonoBehaviour
         Debug.Log("Spawning ConvasRotation");
     }
 
-
+    public void ChangeMusicVolume(float _newValue)
+    {
+        musicMixer.audioMixer.SetFloat("musicVol", Mathf.Log10(_newValue) * 20);
+        musicVol = _newValue;
+    }
 
     
 

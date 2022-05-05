@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.2416668, g: 0.2937257, b: 0.37325013, a: 1}
+  m_IndirectSpecularColor: {r: 0.24166715, g: 0.2937256, b: 0.37325072, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5532,6 +5532,13 @@ MonoBehaviour:
   CurrentUnit: {fileID: 0}
   unitToAttack: {fileID: 0}
   isAttacking: 0
+  audioManager: {fileID: 0}
+  masterMixer: {fileID: 0}
+  musicMixer: {fileID: 0}
+  sfxMixer: {fileID: 0}
+  masterVol: 0
+  musicVol: 1
+  sfxVol: 0
   rooms: 00000000
 --- !u!4 &1424535321
 Transform:
@@ -6003,7 +6010,7 @@ PrefabInstance:
     - target: {fileID: 8927622828441749794, guid: 88be8827924a17a458c3a6fef15846eb, type: 3}
       propertyPath: room
       value: 
-      objectReference: {fileID: 11400000, guid: 6339e143359b08d438d69d7ca148b884, type: 2}
+      objectReference: {fileID: 11400000, guid: 9793f241b7ba29649873081ff8e24e45, type: 2}
     - target: {fileID: 8927622828441749794, guid: 88be8827924a17a458c3a6fef15846eb, type: 3}
       propertyPath: pPath
       value: 
@@ -6116,7 +6123,7 @@ PrefabInstance:
     - target: {fileID: 8927622828441749794, guid: 88be8827924a17a458c3a6fef15846eb, type: 3}
       propertyPath: room
       value: 
-      objectReference: {fileID: 11400000, guid: 41e8f1af1a4c15f49ad37cc3b0962a61, type: 2}
+      objectReference: {fileID: 11400000, guid: 6339e143359b08d438d69d7ca148b884, type: 2}
     - target: {fileID: 8927622828441749794, guid: 88be8827924a17a458c3a6fef15846eb, type: 3}
       propertyPath: pEvent
       value: 
@@ -6615,7 +6622,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-8776
+  m_Name: pb_Mesh351396
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2

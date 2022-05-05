@@ -10,7 +10,7 @@ public class soRoom : ScriptableObject
     public bool combatArena;
     public int expRewards;
     [Tooltip("This is case sensitive")]
-    public string sceneName;
+    public eScene Scene;
     public string eventName;
     [TextArea(15,20)]
     public string description;

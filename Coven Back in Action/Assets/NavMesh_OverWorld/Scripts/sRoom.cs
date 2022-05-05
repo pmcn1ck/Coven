@@ -63,7 +63,7 @@ public class sRoom : MonoBehaviour
     {
         if (room.combatArena)
         {
-            SceneManager.LoadScene(room.sceneName);
+            GameManager.gm.LoadScene(room.Scene);
             GameManager.gm.expRewards = room.expRewards;
             pEvent.SetActive(false);
         }

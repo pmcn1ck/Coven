@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   combatArena: 1
   expRewards: 100
-  sceneName: Combat Greybox m1v3 (medium)
+  Scene: 4
   eventName: A Bloody Reception
   description: "\tAs they stepped through the doors, the Homunculi spotted many horrible,
     mutated figures limping about in the darkened lobby. As the doors creaked shut

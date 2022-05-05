@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   combatArena: 1
   expRewards: 100
-  sceneName: Combat Greybox m1v3 (medium)
+  Scene: 3
   eventName: Test Event
   description: This is a test of the description

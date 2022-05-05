@@ -93,14 +93,14 @@ Material:
     m_Colors:
     - _DetailOverlayTintColor: {r: 0, g: 0, b: 0, a: 0}
     - _FogColor: {r: 0, g: 0, b: 0, a: 0}
-    - _GroundColor: {r: 0.7735849, g: 0.7735849, b: 0.7735849, a: 1}
+    - _GroundColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 1}
     - _HorizonCloudColor: {r: 1, g: 1, b: 1, a: 1}
     - _HorizonColor: {r: 1, g: 0.94944346, b: 0.839, a: 1}
     - _MoonColor: {r: 0, g: 0, b: 0, a: 0}
     - _MoonDirection: {r: 1, g: 1, b: 1, a: 0}
     - _MoonLightColor: {r: 0, g: 0, b: 0, a: 0}
     - _OverheadCloudColor: {r: 1, g: 1, b: 1, a: 0.5647059}
-    - _SkyColor: {r: 1, g: 1, b: 1, a: 1}
+    - _SkyColor: {r: 0.9433962, g: 0.9433962, b: 0.9433962, a: 1}
     - _StarsColor0: {r: 0, g: 0, b: 0, a: 0}
     - _StarsColor1: {r: 0, g: 0, b: 0, a: 0}
     - _StarsColor2: {r: 0, g: 0, b: 0, a: 0}
@@ -153,9 +153,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa5278d11d9502245b5cc174a196561b, type: 3}
   m_Name: m2v1 night sky
   m_EditorClassIdentifier: 
-  skyColor: {r: 1, g: 1, b: 1, a: 1}
+  skyColor: {r: 0.9433962, g: 0.9433962, b: 0.9433962, a: 1}
   horizonColor: {r: 1, g: 0.94944346, b: 0.839, a: 1}
-  groundColor: {r: 0.7735849, g: 0.7735849, b: 0.7735849, a: 1}
+  groundColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 1}
   horizonThickness: 1
   horizonExponent: 3
   horizonStep: 500
