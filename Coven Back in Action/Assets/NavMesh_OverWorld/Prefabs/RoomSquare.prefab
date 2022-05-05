@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6e2cce7407d577743b1cbb920ff5ceaf, type: 2}
+  - {fileID: 2100000, guid: 7057de0cda9f7184fbc4586585016b30, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -109,9 +109,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5becdbb4121b82b4ab68b4c83c213adf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  roomID: 0
   room: {fileID: 11400000, guid: 9793f241b7ba29649873081ff8e24e45, type: 2}
-  trigger: {fileID: 0}
+  roomConnectors: []
   pEvent: {fileID: 2339532162505222105, guid: 4242c0915a7068e4a8996694ddabe45f, type: 3}
+  pPath: {fileID: 0}
+  complete: 0
   tEventName: {fileID: 0}
   tDescription: {fileID: 0}
   tContinueButton: {fileID: 0}
