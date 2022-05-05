@@ -56,17 +56,22 @@ public class FocusedSights : Ability
 
     public override void OnUnitClicked(Unit unit, CellGrid cellGrid)
     {
-        if (unit.PlayerNumber != GetComponent<Unit>().PlayerNumber && GetComponent<Unit>().Cell.GetDistance(unit.Cell) <= GetComponent<Unit>().AttackRange)
+        if (SeekingTarget == true)
         {
-            target = unit;
-            StartCoroutine(Act(cellGrid));
-            SeekingTarget = false;
+            if (unit.PlayerNumber != GetComponent<Unit>().PlayerNumber && GetComponent<Unit>().Cell.GetDistance(unit.Cell) <= GetComponent<Unit>().AttackRange)
+            {
+                target = unit;
+                StartCoroutine(Act(cellGrid));
+                SeekingTarget = false;
+            }
+            else
+            {
+                Debug.Log("Invalid Target");
+            }
+            base.OnUnitClicked(unit, cellGrid);
+
         }
-        else
-        {
-            Debug.Log("Invalid Target");
-        }
-        base.OnUnitClicked(unit, cellGrid);
+        
     }
 
     public void Cancel()
