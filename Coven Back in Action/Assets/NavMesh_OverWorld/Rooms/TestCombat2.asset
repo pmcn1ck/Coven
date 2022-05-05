@@ -14,6 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   combatArena: 1
   expRewards: 100
-  sceneName: Combat m2v1
-  eventName: Test Combat 2
-  description: We be testin'
+  sceneName: Combat Greybox m1v3 (medium)
+  eventName: A Bloody Reception
+  description: "\tAs they stepped through the doors, the Homunculi spotted many horrible,
+    mutated figures limping about in the darkened lobby. As the doors creaked shut
+    behind them, the closest of the creatures turned slowly to face them and let
+    out an earsplitting shriek.\n\n\tAs all the other monstrous beings in the room
+    began to turn in their direction, the homunculi wordlessly drew their weapons
+    and prepared for battle."
