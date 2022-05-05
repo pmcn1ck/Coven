@@ -3114,6 +3114,7 @@ GameObject:
   - component: {fileID: 7633413518126243364}
   - component: {fileID: 5687903978329891608}
   - component: {fileID: -3973720238682622935}
+  - component: {fileID: 617948491}
   m_Layer: 0
   m_Name: ShieldBearer v3.2 (blue)
   m_TagString: Untagged
@@ -3154,8 +3155,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UnitHighlighterAggregator: {fileID: 0}
   Obstructable: 1
+  TotalHitPoints: 0
   cell: {fileID: 0}
   curState: 0
+  experimentalUnit: {fileID: 0}
   HealthSlider: {fileID: 3688663666728910032}
   DamageIndicator: {fileID: 6771457813104296719}
   HitPoints: 20
@@ -3163,6 +3166,10 @@ MonoBehaviour:
   AttackFactor: 6
   DefenceFactor: 3
   Name: ShieldBearer
+  level: 0
+  experience: 0
+  totalExperience: 0
+  levelUp: 0
   BloodLust: 0
   BloodGainMin: 0
   BloodGainMax: 0
@@ -3170,6 +3177,8 @@ MonoBehaviour:
   BloodLustSlider: {fileID: 362190855478612978}
   bullet: {fileID: 6421613917025041278, guid: 697ea058c7a09694aa2fc100cedaabf9, type: 3}
   movementPoints: 4
+  Stun: 0
+  SupportFireTarget: 0
   c_Animator: {fileID: 0}
   animScript: {fileID: 0}
   MovementAnimationSpeed: 5
@@ -3191,6 +3200,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00fa7140db80b3b498d5b8472c717f37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  label: 
+  description: 
 --- !u!114 &5103480837761839804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3203,6 +3214,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b212915272f70f40899729e7af922c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  label: 
+  description: 
 --- !u!136 &8230770142529263090
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3229,7 +3242,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fb4bf9ea051ad46bb9bd47dc4c6928, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInfo: {fileID: 0}
+  playerInfo: {fileID: 4527976801448087406, guid: 55fb965e78449644c9cf2da2bdc2b985, type: 3}
   tplayerInfor: {fileID: 0}
 --- !u!114 &1567253241033333253
 MonoBehaviour:
@@ -3243,6 +3256,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9058e8881b70c3d4da927b99649519d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  label: 
+  description: 
   trait:
   - {fileID: 11400000, guid: bd234b1316eb5c946b0774ded01c779c, type: 2}
   - {fileID: 11400000, guid: 8eacf26a194e6314d8a4a7fa3e826b5a, type: 2}
@@ -3261,6 +3276,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   label: Bulk Up
+  description: 
   Range: 2
   TurnCounter: 0
   Duration: 3
@@ -3295,6 +3311,24 @@ MonoBehaviour:
   message: 
   defense: 0
   attack: 0
+--- !u!114 &617948491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7700757830993885479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 061d7481bbf1d484e9a4880a25737dcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  label: Counter
+  description: 
+  TurnCounter: 0
+  Duration: 2
+  CurrentlyActive: 0
+  HealthPenalty: 4
 --- !u!1001 &2657234356278288060
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3417,6 +3451,10 @@ PrefabInstance:
     - target: {fileID: 5263579101661597268, guid: 5d77762f4b8822245a34c9e2f8a36f2a, type: 3}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6874946663308255200, guid: 5d77762f4b8822245a34c9e2f8a36f2a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.000025749207
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d77762f4b8822245a34c9e2f8a36f2a, type: 3}
