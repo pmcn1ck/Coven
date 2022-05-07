@@ -2515,6 +2515,8 @@ MonoBehaviour:
   upgradeShotgunner: {fileID: 0}
   upgradeGrp: {fileID: 0}
   bUnitClicked: {fileID: 7984622386948512712}
+  levelSlider: {fileID: 6029327714786182135}
+  unit: {fileID: 0}
 --- !u!1 &6543381156699555781
 GameObject:
   m_ObjectHideFlags: 0

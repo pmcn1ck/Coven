@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Linq;
 using UnityEngine.UI;
+using TbsFramework.Units;
 
 public class wGamEnd : MonoBehaviour
 {
@@ -14,18 +15,19 @@ public class wGamEnd : MonoBehaviour
     public GameObject upgradeShotgunner;
     public GameObject upgradeGrp;
     public GameObject bUnitClicked;
+    public Slider levelSlider;
+    public Unit unit;
 
 
+  
     public void OnClickUpgradeRanger()
     {
-        //Instantiate(w_UpgradeRanger, tUpgradeRanger);
         w_UpgradeRanger.SetActive(true);
-
-        //upgradeRanger.SetActive(true);
-        //bUnitClicked.SetActive(false);
-        //upgradeGrp.SetActive(true);
-
+        levelSlider.value = unit.experience;
+        
     }
+
+
     public void OnClickUpgradeShieldBearer()
     {
         upgradeShieldBearer.SetActive(true);

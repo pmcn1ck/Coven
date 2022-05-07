@@ -429,6 +429,7 @@ MonoBehaviour:
   gameEndWin: {fileID: 6543111572189202227, guid: c6ef4d4c6a2b27043869c25a75991d6e, type: 3}
   tGameEnd: {fileID: 2767933310964807051}
   unit: {fileID: 0}
+  isGameWon: 0
 --- !u!114 &2767933310964807093
 MonoBehaviour:
   m_ObjectHideFlags: 0

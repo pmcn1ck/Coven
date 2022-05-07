@@ -347,23 +347,28 @@ namespace TbsFramework.Units
 
         }
 
+        public void UnitLevelUP()
+        {
+            experience += AttackFactor;
+            if (experience == totalExperience)
+            {
+                levelUp = true;
+                if (levelUp == true)
+                {
+                    level++;
+                }
+            }
+
+        }
+
         /// <summary>
         /// Method performs an attack on given unit.
         /// </summary>
         public void AttackHandler(Unit unitToAttack)
         {
-            
+            UnitLevelUP();
 
-            
-            experience += AttackFactor;
-            if(experience == totalExperience)
-            {
-                levelUp = true;
-                if(levelUp == true)
-                {
-                    level++;
-                }
-            }
+
             Debug.Log("experience " + experience);
             transform.LookAt(unitToAttack.transform.position, Vector3.up);
             if (animScript != null)

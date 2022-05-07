@@ -75,6 +75,7 @@ namespace TbsFramework.Gui
                 
                 Instantiate(gameEndWin, tGameEnd);
                 Debug.Log("player as won the game");
+                unit = FindObjectOfType<Unit>();
             }
             else
             {
