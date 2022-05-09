@@ -44,6 +44,12 @@ public class TooltipManager : MonoBehaviour
         textComponent.text = "Attack: " + attack + "\n" + "Defense: " + defense;
     }
 
+    public void SetAndShowAbilityHint(string description)
+    {
+        gameObject.SetActive(true);
+        textComponent.text = description;
+    }
+
     public void HideToolTip()
     {
         gameObject.SetActive(false);

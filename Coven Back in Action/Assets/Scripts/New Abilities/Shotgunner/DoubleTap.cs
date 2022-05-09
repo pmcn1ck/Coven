@@ -14,7 +14,7 @@ public class DoubleTap : Ability
     public void Reset()
     {
         label = "Double Tap";
-        description = "Raise your bloodlust to make an extra attack in on an enemy in range, but for less damage";
+        description = "Raise your bloodlust to make an extra attack on an enemy in range, but for less damage";
     }
     public override IEnumerator Act(CellGrid cellGrid)
     {
@@ -37,16 +37,20 @@ public class DoubleTap : Ability
 
     public override void OnUnitClicked(Unit unit, CellGrid cellGrid)
     {
-        if (unit.PlayerNumber != GetComponent<Unit>().PlayerNumber && GetComponent<Unit>().Cell.GetDistance(unit.Cell) <= GetComponent<Unit>().AttackRange)
+        if (SeekingTarget == true)
         {
-            target = unit;
-            StartCoroutine(Act(cellGrid));
-            SeekingTarget = false;
+            if (unit.PlayerNumber != GetComponent<Unit>().PlayerNumber && GetComponent<Unit>().Cell.GetDistance(unit.Cell) <= GetComponent<Unit>().AttackRange)
+            {
+                target = unit;
+                StartCoroutine(Act(cellGrid));
+                SeekingTarget = false;
+            }
+            else
+            {
+                Debug.Log("Invalid Target");
+            }
         }
-        else
-        {
-            Debug.Log("Invalid Target");
-        }
+
         base.OnUnitClicked(unit, cellGrid);
     }
 

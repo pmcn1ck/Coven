@@ -65,17 +65,19 @@ public class wPlayer : MonoBehaviour
     {
         if (wAbilities.activeSelf == false)
         {
-            GameManager.gm.audioManager.PlaySound(eSound.click);
+
             wAbilities.SetActive(true);
             if (AbilityOne == null)
             {
                 AbilityOneButton.SetActive(false);
             }
+            GameManager.gm.audioManager.PlaySound(eSound.click);
         }
         else
         {
-            GameManager.gm.audioManager.PlaySound(eSound.click);
+
             wAbilities.SetActive(false);
+            GameManager.gm.audioManager.PlaySound(eSound.click);
         }
     }
 
