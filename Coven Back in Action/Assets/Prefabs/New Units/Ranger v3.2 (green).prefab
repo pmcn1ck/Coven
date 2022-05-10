@@ -3355,10 +3355,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8287834847528100154, guid: dc40cdd6cfa3f5d409c1ecbdc1ef630e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 66955d3a7980ac647abdfdf88da85f28, type: 2}
     - target: {fileID: 919132149155446097, guid: dc40cdd6cfa3f5d409c1ecbdc1ef630e, type: 3}
       propertyPath: m_Name
       value: Range_anim_master_004
       objectReference: {fileID: 0}
+    - target: {fileID: 1970769069754849918, guid: dc40cdd6cfa3f5d409c1ecbdc1ef630e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e39e7259693e5ad4d893b3f3259b066a, type: 2}
     - target: {fileID: 5866666021909216657, guid: dc40cdd6cfa3f5d409c1ecbdc1ef630e, type: 3}
       propertyPath: m_Controller
       value: 
