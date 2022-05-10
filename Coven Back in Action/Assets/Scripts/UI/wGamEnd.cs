@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 using System.Linq;
 using UnityEngine.UI;
 using TbsFramework.Units;
+using TbsFramework.Grid;
 
 public class wGamEnd : MonoBehaviour
 {
@@ -16,14 +17,26 @@ public class wGamEnd : MonoBehaviour
     public GameObject upgradeGrp;
     public GameObject bUnitClicked;
     public Slider levelSlider;
-    public Unit unit;
+    
+    public Text tExp;
+    CellGrid CellGrid;
 
+    private void Start()
+    {
+        //Debug.Log(" experience " + GameManager.gm.Party[0].GetComponent<Unit>().experience);
+        //Debug.Log(" experience " + GameManager.gm.Party[0].GetComponent<ExperimentalUnit>().experience);
+        //levelSlider.value = GameManager.gm.Party[0].GetComponent<Unit>().experience / 100;
+        CellGrid = FindObjectOfType<CellGrid>();
+        List<Unit> playableUnits = CellGrid.GetCurrentPlayerUnits();
+        tExp.text = playableUnits[1].experience.ToString();
+        levelSlider.value = (float)playableUnits[1].experience / 100f;
+    }
 
-  
     public void OnClickUpgradeRanger()
     {
         w_UpgradeRanger.SetActive(true);
-        levelSlider.value = unit.experience;
+    //    levelSlider.value = unit.experience;
+        
         
     }
 
