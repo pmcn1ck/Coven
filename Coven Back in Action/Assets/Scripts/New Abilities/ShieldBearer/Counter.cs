@@ -12,7 +12,7 @@ public class Counter : Ability
     public bool CurrentlyActive = false;
     public int HealthPenalty = 4;
 
-    public void Reset()
+    public void Start()
     {
         label = "Counter";
         description = "Sacrifice some health to counterattack adjacent enemies when they hit you for a turn";

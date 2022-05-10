@@ -2291,7 +2291,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e3334a0a0d540e4db7e89fd65eed16d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  description: 
+  description: placeholder *0*
   wPlayer: {fileID: 6670387927400317114}
   AbilityLevel: 0
 --- !u!114 &3786106855453623656
@@ -4353,7 +4353,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e3334a0a0d540e4db7e89fd65eed16d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  description: 
+  description: placeholder *1*
   wPlayer: {fileID: 6670387927400317114}
   AbilityLevel: 1
 --- !u!114 &3516066138871246594

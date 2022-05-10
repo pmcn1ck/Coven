@@ -16,7 +16,7 @@ public class StanceChange : Ability
     public int DefCost = 3;
     public int AtkGain = 3;
 
-    public void Reset()
+    public void Start()
     {
         label = "Stance Change";
         description = "Sacrifice some health to temporarily lower your defense but boost your attack";

@@ -17,7 +17,7 @@ public class TargetMark : Ability
     public Unit Target;
     public int DefPenalty = 2;
 
-    public void Reset()
+    public void Start()
     {
         label = "Target Mark";
         description = "Pick any enemy on the field and lower their defense slightly for 3 turns";

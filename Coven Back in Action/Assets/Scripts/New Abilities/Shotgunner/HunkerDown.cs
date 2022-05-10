@@ -18,7 +18,7 @@ public class HunkerDown : Ability
     public int MoveLoss = 2;
     public int AtkGain = 2;
 
-    public void Reset()
+    public void Start()
     {
         label = "Hunker Down";
         description = "Raise your bloodlust and sacrifice some movement speed to raise your attack power. While active, cannot use Light-Footed";

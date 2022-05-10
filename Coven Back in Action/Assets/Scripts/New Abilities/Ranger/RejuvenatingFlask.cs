@@ -14,7 +14,7 @@ public class RejuvenatingFlask : Ability
     public bool seekingTarget = false;
     public int HealthPenalty = 2;
 
-    public void Reset()
+    public void Start()
     {
         label = "Rejuvenating Flask";
         description = "Sacrifice some of your own health to heal an ally";

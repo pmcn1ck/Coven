@@ -12,7 +12,7 @@ public class SupportingFire : Ability
     public bool CurrentlyActive = false;
     public int BloodPenalty = 5;
 
-    public void Reset()
+    public void Start()
     {
         label = "Supporting Fire";
         description = "Raise your bloodlust to attack enemies whenever your allies do until next turn! (Once per enemy)";

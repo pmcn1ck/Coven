@@ -12,7 +12,7 @@ public class FocusedSights : Ability
     public Unit target;
     public bool SeekingTarget = false;
 
-    public void Reset()
+    public void Start()
     {
         label = "Focused Sights";
         description = "Raise your bloodlust to perform a chained attack. The first shot does less damage than normal, but if used again on the next turn the damage is increased significantly";

@@ -18,7 +18,7 @@ public class FocusByFury : Ability
     public int MoveGain = 2;
     public int AtkGain = 3;
 
-    public void Reset()
+    public void Start()
     {
         label = "Focus by Fury";
         description = "Raise your bloodlust to increase your attack range and power for 2 turns";

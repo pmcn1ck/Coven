@@ -11,7 +11,7 @@ public class ShieldBash : Ability
     public Unit target;
     public bool SeekingTarget = false;
 
-    public void Reset()
+    public void Start()
     {
         label = "Shield Bash";
         description = "Raise your bloodlust to attack an enemy for half damage, but stun them on their next turn";

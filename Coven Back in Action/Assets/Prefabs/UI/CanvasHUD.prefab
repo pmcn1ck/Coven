@@ -32,12 +32,12 @@ RectTransform:
   m_Children:
   - {fileID: 2767933310542892691}
   m_Father: {fileID: 2767933310964807051}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -61.5296, y: -31.689}
-  m_SizeDelta: {x: 232.8595, y: 63.378}
+  m_SizeDelta: {x: 500, y: 200}
   m_Pivot: {x: -0.00000016856939, y: -0.00000044703484}
 --- !u!222 &2767933309642047565
 CanvasRenderer:
@@ -261,7 +261,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 26.75
+  m_fontSize: 32
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -338,8 +338,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 2767933311226620427}
-  - {fileID: 2767933309642047552}
   - {fileID: 8071542284352103611}
+  - {fileID: 2767933309642047552}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -459,6 +459,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 8071542284352103610}
+  optionsUI: {fileID: 0}
 --- !u!114 &2066399867050871058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -652,7 +653,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8071542283563687913, guid: 69a10e7f6286e9e40b8ae18b0f894deb, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8071542283563687913, guid: 69a10e7f6286e9e40b8ae18b0f894deb, type: 3}
       propertyPath: m_AnchorMax.x

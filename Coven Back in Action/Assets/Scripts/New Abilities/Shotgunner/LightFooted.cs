@@ -17,7 +17,7 @@ public class LightFooted : Ability
     public float BloodCost = 2f;
     public int MoveGain = 2;
 
-    public void Reset()
+    public void Start()
     {
         label = "Light-Footed";
         description = "Raise your bloodlust to move further for 3 turns. While active, cannot use Hunker Down";

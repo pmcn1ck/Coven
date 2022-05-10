@@ -10,7 +10,7 @@ public class ScatterShot : Ability
     List<Unit> UnitsInRange = new List<Unit>();
     public float BloodCost = 15f;
 
-    public void Reset()
+    public void Start()
     {
         label = "Scatter Shot";
         description = "Raise your bloodlust significantly to deliver a light attack to up to 3 random units in your range";

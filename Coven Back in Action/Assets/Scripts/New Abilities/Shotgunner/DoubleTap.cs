@@ -11,7 +11,7 @@ public class DoubleTap : Ability
     public Unit target;
     public bool SeekingTarget = false;
 
-    public void Reset()
+    public void Start()
     {
         label = "Double Tap";
         description = "Raise your bloodlust to make an extra attack on an enemy in range, but for less damage";

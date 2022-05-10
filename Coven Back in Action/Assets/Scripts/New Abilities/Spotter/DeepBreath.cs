@@ -15,7 +15,7 @@ public class DeepBreath : Ability
     public bool CurrentlyActive = false;
     public int AtkGain = 3;
 
-    public void Reset()
+    public void Start()
     {
         label = "Deep Breath";
         description = "Spend an action point to increase your attack power for the next turn";

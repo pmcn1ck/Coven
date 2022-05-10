@@ -18,7 +18,7 @@ public class BulkUp : Ability
     public int PlayerNumber = 0;
     public float BloodLustCost = 10f;
 
-    public void Reset()
+    public void Start()
     {
         label = "Bulk Up";
         description = "Raise your bloodlust to increase the defense of allies within 2 spaces";

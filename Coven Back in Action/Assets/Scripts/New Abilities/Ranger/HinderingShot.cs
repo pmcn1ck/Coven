@@ -16,7 +16,7 @@ public class HinderingShot : Ability
     public int Duration = 2;
     public int movePenalty = 2;
 
-    public void Reset()
+    public void Start()
     {
         label = "Hindering Shot";
         description = "Raise your bloodlust to attack an enemy and slow their movement for 2 turns";
