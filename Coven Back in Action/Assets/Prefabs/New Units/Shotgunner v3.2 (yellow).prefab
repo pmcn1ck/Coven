@@ -3521,6 +3521,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ShotG_anim_master_004
       objectReference: {fileID: 0}
+    - target: {fileID: 2497596283808803989, guid: 667117d1ec63e224b93a61f65bea069a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7514b3b536cb34247b81595515e6be45, type: 2}
     - target: {fileID: 5866666021909216657, guid: 667117d1ec63e224b93a61f65bea069a, type: 3}
       propertyPath: m_Controller
       value: 

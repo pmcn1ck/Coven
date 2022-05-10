@@ -3485,6 +3485,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spot_anim_master_004
       objectReference: {fileID: 0}
+    - target: {fileID: 4094023392988307131, guid: a274276566f40ff4d840d1f335a99329, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5d855908a43ebb4459a20fb3aae62962, type: 2}
     - target: {fileID: 5866666021909216657, guid: a274276566f40ff4d840d1f335a99329, type: 3}
       propertyPath: m_Controller
       value: 
