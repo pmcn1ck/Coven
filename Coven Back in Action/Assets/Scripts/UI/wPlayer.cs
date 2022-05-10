@@ -52,12 +52,14 @@ public class wPlayer : MonoBehaviour
         if (wStats.activeSelf == false)
         {
             wStats.SetActive(true);
-            GameManager.gm.audioManager.PlaySound(eSound.click);
+            if (GameManager.gm.audioManager != null)
+                GameManager.gm.audioManager.PlaySound(eSound.click);
             GetComponent<sPlayerUnitStats>().ShowStats(cellGrid.GetCurrentSelectedUnit());
         }
         else
         {
-            GameManager.gm.audioManager.PlaySound(eSound.click);
+            if (GameManager.gm.audioManager != null)
+                GameManager.gm.audioManager.PlaySound(eSound.click);
             wStats.SetActive(false);
         }
     }
@@ -72,13 +74,15 @@ public class wPlayer : MonoBehaviour
             {
                 AbilityOneButton.SetActive(false);
             }
-            GameManager.gm.audioManager.PlaySound(eSound.click);
+            if (GameManager.gm.audioManager != null)
+                GameManager.gm.audioManager.PlaySound(eSound.click);
         }
         else
         {
 
             wAbilities.SetActive(false);
-            GameManager.gm.audioManager.PlaySound(eSound.click);
+            if (GameManager.gm.audioManager != null)
+                GameManager.gm.audioManager.PlaySound(eSound.click);
         }
     }
 
@@ -187,7 +191,8 @@ public class wPlayer : MonoBehaviour
 
     public void OnClickAbility(int level)
     {
-        GameManager.gm.audioManager.PlaySound(eSound.click);
+        if (GameManager.gm.audioManager != null)
+            GameManager.gm.audioManager.PlaySound(eSound.click);
         if (level == 0 && AbilityZero != null)
         {
             AbilityZero.Activate(cellGrid); ;
