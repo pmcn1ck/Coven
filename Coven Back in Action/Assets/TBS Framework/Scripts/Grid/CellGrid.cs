@@ -223,6 +223,11 @@ namespace TbsFramework.Grid
                 UnitAdded.Invoke(this, new UnitCreatedEventArgs(unit));
         }
 
+        public void AddPlayableUnit(Transform unit)
+        {
+            PlayableUnits.Add(unit.GetComponent<Unit>());
+        }
+
         private void OnUnitMoved(object sender, MovementEventArgs e)
         {
             CheckGameFinished();

@@ -3303,6 +3303,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4076303258972023147, guid: d4655fb01de9fe54e8c8b846a9e41e22, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6b85caccf2d4f0a49acc3ed2cff67058, type: 2}
     - target: {fileID: 919132149155446097, guid: d4655fb01de9fe54e8c8b846a9e41e22, type: 3}
       propertyPath: m_Name
       value: Care_anim_master_004
@@ -3311,6 +3315,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: f6c4acb6731abcb49adc1dc378b0eee7, type: 2}
+    - target: {fileID: 8475440933910369507, guid: d4655fb01de9fe54e8c8b846a9e41e22, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6b85caccf2d4f0a49acc3ed2cff67058, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4655fb01de9fe54e8c8b846a9e41e22, type: 3}
 --- !u!1 &1131584213962551202 stripped

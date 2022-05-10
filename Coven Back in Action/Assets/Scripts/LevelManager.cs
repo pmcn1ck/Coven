@@ -64,8 +64,8 @@ public class LevelManager : MonoBehaviour
     void AddUnit(int _locationNum, GameObject _unit)
     {
         Debug.Log("Spawning Unit");
-        var SpawnedUnit = Instantiate(_unit);
-        var sUnit = SpawnedUnit.GetComponent<Unit>();
+        GameObject SpawnedUnit = Instantiate(_unit);
+        ExperimentalUnit sUnit = SpawnedUnit.GetComponent<ExperimentalUnit>();
         sUnit.Cell = spawnLocations[_locationNum];
         sUnit.Cell.CurrentUnits.Add(sUnit);
         SpawnedUnit.transform.localPosition = sUnit.Cell.transform.localPosition;
@@ -76,7 +76,8 @@ public class LevelManager : MonoBehaviour
         sUnit.Initialize();
         Debug.Log("it's still working");
         //this line breaks things. might come back to haunt us for not getting it working.
-        //cellGrid.AddUnit(_unit.transform);
+        cellGrid.AddUnit(SpawnedUnit.transform);
+        cellGrid.AddPlayableUnit(SpawnedUnit.transform);
     }
 
      
