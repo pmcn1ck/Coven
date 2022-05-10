@@ -1,5 +1,40 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &601753522323746277
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2577564565275731608}
+  m_Layer: 5
+  m_Name: Pt_PlayerInfo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2577564565275731608
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 601753522323746277}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2767933310964807051}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 10, y: -10}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0, y: 1}
 --- !u!1 &2767933309642047553
 GameObject:
   m_ObjectHideFlags: 0
@@ -32,7 +67,7 @@ RectTransform:
   m_Children:
   - {fileID: 2767933310542892691}
   m_Father: {fileID: 2767933310964807051}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -339,6 +374,7 @@ RectTransform:
   m_Children:
   - {fileID: 2767933311226620427}
   - {fileID: 8071542284352103611}
+  - {fileID: 2577564565275731608}
   - {fileID: 2767933309642047552}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -445,6 +481,7 @@ MonoBehaviour:
   playerInfo: {fileID: 4527976801448087406, guid: 55fb965e78449644c9cf2da2bdc2b985, type: 3}
   cam: {fileID: 0}
   cellGrid: {fileID: 0}
+  ptPlayerInfo: {fileID: 2577564565275731608}
   wStats: {fileID: 0}
 --- !u!114 &1582869121
 MonoBehaviour:

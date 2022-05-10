@@ -11,6 +11,7 @@ public class cPlayer : MonoBehaviour
 
     public Camera cam;
     public CellGrid cellGrid;
+    public Transform ptPlayerInfo;
     bool isRang;
     wPlayer widget;
     public GameObject wStats;
@@ -65,7 +66,7 @@ public class cPlayer : MonoBehaviour
     void SpawnPlayerInfo()
     {
         isRang = true;
-        widget = Instantiate(playerInfo, this.gameObject.transform).GetComponent<wPlayer>();
+        widget = Instantiate(playerInfo, ptPlayerInfo).GetComponent<wPlayer>();
         TbsFramework.Units.Unit curUnit = cellGrid.GetCurrentSelectedUnit();
         ExperimentalUnit curExpUnit = curUnit.gameObject.GetComponent<ExperimentalUnit>();
         widget.InitUI(curExpUnit.unitType, isRang, curExpUnit, cellGrid);
