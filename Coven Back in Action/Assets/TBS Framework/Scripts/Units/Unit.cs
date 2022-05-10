@@ -418,8 +418,6 @@ namespace TbsFramework.Units
             int damageTaken = Defend(aggressor, damage);
             HitPoints -= damageTaken;
             if (animScript != null)
-            animScript.runDamageAnim();
-
             
 
             if (HealthSlider != null)
@@ -429,7 +427,7 @@ namespace TbsFramework.Units
 
             if (takeDamage != null)
             {
-                takeDamage.Play();
+                StartCoroutine("DamageWait");
             }
 
             DefenceActionPerformed();
@@ -441,13 +439,13 @@ namespace TbsFramework.Units
             if (HitPoints <= 0)
             {
                 if (animScript != null)
-                    animScript.runDeathAnim();
+                    StartCoroutine("DeathWait");
                 if (UnitDestroyed != null)
                 {
-                    UnitDestroyed.Invoke(this, new AttackEventArgs(aggressor, this, damage));
+                    StartCoroutine(DestroyUnit(aggressor, damage));
                     
                 }
-                OnDestroyed();
+                StartCoroutine("RunOnDestroy");
             }
             if (DamageIndicator != null)
             {
@@ -480,7 +478,27 @@ namespace TbsFramework.Units
                 }
             }
         }
-
+        IEnumerator DeathWait()
+        {
+            yield return new WaitForSeconds((float)1.2);
+            animScript.runDeathAnim();
+        }
+        IEnumerator DamageWait()
+        {
+            yield return new WaitForSeconds(1);
+            animScript.runDamageAnim();
+            takeDamage.Play();
+        }
+        IEnumerator DestroyUnit(Unit aggressor, int damage)
+        {
+            yield return new WaitForSeconds(3);
+                UnitDestroyed.Invoke(this, new AttackEventArgs(aggressor, this, damage));
+        }
+        IEnumerator RunOnDestroy()
+        {
+            yield return new WaitForSeconds(3);
+            OnDestroyed();
+        }
         void HideDamageIndicator() 
         {
             DamageIndicator.SetActive(false);

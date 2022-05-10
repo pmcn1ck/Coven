@@ -44,6 +44,7 @@ public class wPlayer : MonoBehaviour
 
     public void OnPointEnter()
     {
+        if (GameManager.gm.audioManager != null)
         GameManager.gm.audioManager.PlaySound(eSound.hover);
     }
     public void ToggleStats()
@@ -176,8 +177,12 @@ public class wPlayer : MonoBehaviour
 
     public void OnclickAttack()
     {
-        GameManager.gm.audioManager.PlaySound(eSound.click);
+        if (GameManager.gm.audioManager != null)
+        {
+            GameManager.gm.audioManager.PlaySound(eSound.click);
+        }
         GameManager.gm.isAttacking = true;
+
     }
 
     public void OnClickAbility(int level)

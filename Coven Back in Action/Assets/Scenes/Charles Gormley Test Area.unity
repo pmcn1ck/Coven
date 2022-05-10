@@ -3159,7 +3159,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-2802
+  m_Name: pb_Mesh-17728
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3664,7 +3664,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &890823735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3672,7 +3672,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 890823734}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e7dc499557c656b49932cd86e3f8d4ed, type: 3}
   m_Name: 
@@ -3684,6 +3684,8 @@ MonoBehaviour:
   gameEndLoss: {fileID: 6543111572189202227, guid: 7384410996ed0f143b082e83c5d106a6, type: 3}
   gameEndWin: {fileID: 6543111572189202227, guid: c6ef4d4c6a2b27043869c25a75991d6e, type: 3}
   tGameEnd: {fileID: 1537304768}
+  unit: {fileID: 0}
+  isGameWon: 0
 --- !u!4 &890823736
 Transform:
   m_ObjectHideFlags: 0
@@ -6514,7 +6516,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 1849246550}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1537304760}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e7dc499557c656b49932cd86e3f8d4ed, type: 3}
   m_Name: 
@@ -7504,7 +7506,7 @@ MonoBehaviour:
   c_Options: {fileID: 0}
   c_grabRotation: {fileID: 0}
   c_player: {fileID: 0}
-  eCurScene: 0
+  eCurScene: 3
   unitTypes:
   - {fileID: 1934263189637653615, guid: 98f8972765c969a4d8761576873d8c9e, type: 3}
   - {fileID: 7700757830993885479, guid: c2d38a1484c5e5141b703ba51438e2d4, type: 3}
@@ -7516,6 +7518,13 @@ MonoBehaviour:
   CurrentUnit: {fileID: 0}
   unitToAttack: {fileID: 0}
   isAttacking: 0
+  audioManager: {fileID: 0}
+  masterMixer: {fileID: 0}
+  musicMixer: {fileID: 0}
+  sfxMixer: {fileID: 0}
+  masterVol: 0
+  musicVol: 1
+  sfxVol: 0
   rooms: 
 --- !u!4 &1797381796 stripped
 Transform:
@@ -7549,7 +7558,7 @@ PrefabInstance:
       objectReference: {fileID: 2055544563}
     - target: {fileID: 2767933310964807050, guid: 5e565075f1d3be141a2763ff082284e8, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2767933310964807051, guid: 5e565075f1d3be141a2763ff082284e8, type: 3}
       propertyPath: m_Pivot.x
