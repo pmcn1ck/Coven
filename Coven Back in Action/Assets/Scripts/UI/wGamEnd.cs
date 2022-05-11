@@ -28,7 +28,7 @@ public class wGamEnd : MonoBehaviour
         //levelSlider.value = GameManager.gm.Party[0].GetComponent<Unit>().experience / 100;
         CellGrid = FindObjectOfType<CellGrid>();
         List<Unit> playableUnits = CellGrid.GetCurrentPlayerUnits();
-        tExp.text = playableUnits[1].experience.ToString();
+        //tExp.text = playableUnits[1].experience.ToString();
         levelSlider.value = (float)playableUnits[1].experience / 100f;
     }
 
