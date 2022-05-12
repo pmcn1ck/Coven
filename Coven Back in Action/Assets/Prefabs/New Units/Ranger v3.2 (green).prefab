@@ -3029,6 +3029,8 @@ GameObject:
   - component: {fileID: -3211297328651802242}
   - component: {fileID: 4400759244548144224}
   - component: {fileID: 5724297221707271680}
+  - component: {fileID: -2499251664733474874}
+  - component: {fileID: -6082304863663484416}
   m_Layer: 0
   m_Name: Ranger v3.2 (green)
   m_TagString: Untagged
@@ -3219,6 +3221,45 @@ MonoBehaviour:
   message: 
   defense: 0
   attack: 0
+--- !u!114 &-2499251664733474874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934263189637653615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd7adf0f024ec35458375200515dd2fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  label: Target Mark
+  description: 
+  TurnCounter: 0
+  Duration: 3
+  ApplyToSelf: 0
+  CurrentlyActive: 0
+  seekingTarget: 0
+  Target: {fileID: 0}
+  DefPenalty: 2
+--- !u!114 &-6082304863663484416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934263189637653615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2334f6648504ea144947f0b65a7f52ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  label: Rejuvenating Flask
+  description: 
+  ApplyToSelf: 0
+  Target: {fileID: 0}
+  seekingTarget: 0
+  HealthPenalty: 2
 --- !u!1 &4078678223503245554
 GameObject:
   m_ObjectHideFlags: 0

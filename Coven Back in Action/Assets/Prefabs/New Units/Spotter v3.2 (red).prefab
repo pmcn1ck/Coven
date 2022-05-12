@@ -3113,6 +3113,8 @@ GameObject:
   - component: {fileID: 4680775034838807679}
   - component: {fileID: -3782623889947839251}
   - component: {fileID: -7615028568949067067}
+  - component: {fileID: 8769690557085338211}
+  - component: {fileID: 2532989305621022534}
   m_Layer: 0
   m_Name: Spotter v3.2 (red)
   m_TagString: Untagged
@@ -3286,6 +3288,43 @@ MonoBehaviour:
   message: 
   defense: 0
   attack: 0
+--- !u!114 &8769690557085338211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8653245077123352178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 101754866254bd2499322f124447087e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  label: Focused
+  description: 
+  UseTracker: 0
+  BloodLustCost: 5
+  target: {fileID: 0}
+  SeekingTarget: 0
+--- !u!114 &2532989305621022534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8653245077123352178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87a269f23c3acfb4b80570739efdfa15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  label: Deep Breath
+  description: 
+  TurnCounter: 0
+  Duration: 2
+  ApplyToSelf: 1
+  CurrentlyActive: 0
+  AtkGain: 3
 --- !u!1001 &1679024382473490970
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3495,9 +3534,9 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 6014367ee1762bf43bf15305b82d07de, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a274276566f40ff4d840d1f335a99329, type: 3}
---- !u!1 &9207941562028552644 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a274276566f40ff4d840d1f335a99329, type: 3}
+--- !u!4 &8395552738912775038 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a274276566f40ff4d840d1f335a99329, type: 3}
   m_PrefabInstance: {fileID: 8288954010464504981}
   m_PrefabAsset: {fileID: 0}
 --- !u!95 &2477774091315704068 stripped
@@ -3505,9 +3544,9 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: a274276566f40ff4d840d1f335a99329, type: 3}
   m_PrefabInstance: {fileID: 8288954010464504981}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &8395552738912775038 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a274276566f40ff4d840d1f335a99329, type: 3}
+--- !u!1 &9207941562028552644 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a274276566f40ff4d840d1f335a99329, type: 3}
   m_PrefabInstance: {fileID: 8288954010464504981}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &690876554223957174
