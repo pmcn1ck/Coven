@@ -3024,6 +3024,7 @@ GameObject:
   - component: {fileID: 3098779361424501515}
   - component: {fileID: 8734157055948943908}
   - component: {fileID: 7082029491843242362}
+  - component: {fileID: 5806601035365236620}
   m_Layer: 0
   m_Name: Brain
   m_TagString: Untagged
@@ -3096,6 +3097,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Weight: 1
+--- !u!114 &5806601035365236620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3265789325339918144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41f17cd05467da0448ffe1e79d74f23b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4939021942460150420
 GameObject:
   m_ObjectHideFlags: 0
@@ -3111,6 +3124,7 @@ GameObject:
   - component: {fileID: 1041486944287563253}
   - component: {fileID: -8140305730151493348}
   - component: {fileID: 2551239238868661129}
+  - component: {fileID: 1854242108676169212}
   m_Layer: 0
   m_Name: Cannon Fodder v2.1 (orange)
   m_TagString: Untagged
@@ -3253,6 +3267,22 @@ MonoBehaviour:
   message: 
   defense: 0
   attack: 0
+--- !u!114 &1854242108676169212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4939021942460150420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 088dcf4851ac08f4799f3124e2fea948, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  label: 
+  description: 
+  ApplyToSelf: 1
+  AtkGain: 1
 --- !u!1001 &249202150178050803
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3525,11 +3555,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74a213df07cb136498bbed8272d1b2ef, type: 3}
---- !u!224 &3213588430280870190 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 6397673795915193356, guid: 74a213df07cb136498bbed8272d1b2ef, type: 3}
-  m_PrefabInstance: {fileID: 8381744046928549154}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &7920169511288386933 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1854348317363986519, guid: 74a213df07cb136498bbed8272d1b2ef, type: 3}
@@ -3544,5 +3569,10 @@ MonoBehaviour:
 --- !u!1 &4717438177837585597 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3829848357636653471, guid: 74a213df07cb136498bbed8272d1b2ef, type: 3}
+  m_PrefabInstance: {fileID: 8381744046928549154}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &3213588430280870190 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6397673795915193356, guid: 74a213df07cb136498bbed8272d1b2ef, type: 3}
   m_PrefabInstance: {fileID: 8381744046928549154}
   m_PrefabAsset: {fileID: 0}
