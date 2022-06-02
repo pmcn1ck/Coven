@@ -3126,6 +3126,7 @@ GameObject:
   - component: {fileID: 2293696755014324812}
   - component: {fileID: 3725840872649781465}
   - component: {fileID: 3101514719437261927}
+  - component: {fileID: 7937583619480354579}
   m_Layer: 0
   m_Name: Diseased v1
   m_TagString: Untagged
@@ -3195,7 +3196,7 @@ MonoBehaviour:
   MovementAnimationSpeed: 3
   actionPoints: 1
   PlayerNumber: 0
-  takeDamage: {fileID: 3824738891259570440}
+  particlePlayer: {fileID: 0}
   unitType: 4
   LeadingColor: {r: 1, g: 1, b: 1, a: 1}
   model: {fileID: 687668443531439714}
@@ -3283,6 +3284,22 @@ MonoBehaviour:
   label: 
   description: 
   gloop: {fileID: 21300000, guid: 26a6135da0d6f3e44aa3c6c28075cf82, type: 3}
+--- !u!114 &7937583619480354579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6078140219328328132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbb1b839c68029244bd6df860dc8d536, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attack: {fileID: 0}
+  takeDamage: {fileID: 3824738891259570440}
+  heal: {fileID: 0}
+  extraParticles: []
 --- !u!1001 &2903005022220293517
 PrefabInstance:
   m_ObjectHideFlags: 0
