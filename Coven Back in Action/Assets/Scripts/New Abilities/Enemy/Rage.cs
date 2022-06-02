@@ -21,6 +21,7 @@ public class Rage : Ability
     {
         Debug.Log("RRRRAAAAAAAARRRRGHHHBLEH (An enemy is raging)");
         GetComponent<Unit>().HitPoints -= AtkGain;
+        GetComponent<Unit>().HealthSlider.value = GetComponent<Unit>().HitPoints;
         GetComponent<Unit>().AttackFactor += AtkGain;
         GetComponent<Unit>().ActionPoints--;
 
