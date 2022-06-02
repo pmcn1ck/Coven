@@ -3115,6 +3115,7 @@ GameObject:
   - component: {fileID: 5687903978329891608}
   - component: {fileID: -3973720238682622935}
   - component: {fileID: 617948491}
+  - component: {fileID: 6309131817843391298}
   m_Layer: 0
   m_Name: ShieldBearer v3.2 (blue)
   m_TagString: Untagged
@@ -3184,6 +3185,7 @@ MonoBehaviour:
   MovementAnimationSpeed: 5
   actionPoints: 1
   PlayerNumber: 0
+  particlePlayer: {fileID: 0}
   takeDamage: {fileID: 1393029339276247355}
   unitType: 3
   LeadingColor: {r: 1, g: 1, b: 1, a: 1}
@@ -3329,6 +3331,22 @@ MonoBehaviour:
   Duration: 2
   CurrentlyActive: 0
   HealthPenalty: 4
+--- !u!114 &6309131817843391298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7700757830993885479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbb1b839c68029244bd6df860dc8d536, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attack: {fileID: 0}
+  takeDamage: {fileID: 1393029339276247355}
+  heal: {fileID: 0}
+  extraParticles: []
 --- !u!1001 &1778841143031062479
 PrefabInstance:
   m_ObjectHideFlags: 0

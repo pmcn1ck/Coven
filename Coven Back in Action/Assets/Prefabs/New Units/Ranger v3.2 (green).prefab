@@ -3031,6 +3031,7 @@ GameObject:
   - component: {fileID: 5724297221707271680}
   - component: {fileID: -2499251664733474874}
   - component: {fileID: -6082304863663484416}
+  - component: {fileID: 8159929442980626873}
   m_Layer: 0
   m_Name: Ranger v3.2 (green)
   m_TagString: Untagged
@@ -3100,6 +3101,7 @@ MonoBehaviour:
   MovementAnimationSpeed: 5
   actionPoints: 1
   PlayerNumber: 0
+  particlePlayer: {fileID: 0}
   takeDamage: {fileID: 4229684059564435856}
   unitType: 2
   LeadingColor: {r: 1, g: 1, b: 1, a: 1}
@@ -3260,6 +3262,22 @@ MonoBehaviour:
   Target: {fileID: 0}
   seekingTarget: 0
   HealthPenalty: 2
+--- !u!114 &8159929442980626873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934263189637653615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbb1b839c68029244bd6df860dc8d536, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attack: {fileID: 0}
+  takeDamage: {fileID: 4229684059564435856}
+  heal: {fileID: 0}
+  extraParticles: []
 --- !u!1 &4078678223503245554
 GameObject:
   m_ObjectHideFlags: 0
@@ -3414,6 +3432,11 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: c54e53dd31b8f944d9c7f0ee52a49d33, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc40cdd6cfa3f5d409c1ecbdc1ef630e, type: 3}
+--- !u!95 &1471018654281531362 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: dc40cdd6cfa3f5d409c1ecbdc1ef630e, type: 3}
+  m_PrefabInstance: {fileID: 4972130144529203827}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &5314783933087481634 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: dc40cdd6cfa3f5d409c1ecbdc1ef630e, type: 3}
@@ -3422,11 +3445,6 @@ GameObject:
 --- !u!4 &4794705744493651352 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: dc40cdd6cfa3f5d409c1ecbdc1ef630e, type: 3}
-  m_PrefabInstance: {fileID: 4972130144529203827}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1471018654281531362 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: dc40cdd6cfa3f5d409c1ecbdc1ef630e, type: 3}
   m_PrefabInstance: {fileID: 4972130144529203827}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &294079353983333109

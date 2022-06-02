@@ -193,7 +193,7 @@ namespace TbsFramework.Units
         /// </summary>
         public bool IsMoving { get; set; }
         [Header("Particles and Effects")]
-        public ParticleSystem takeDamage;
+        public ParticlePlayer particlePlayer;
 
         private static DijkstraPathfinding _pathfinder = new DijkstraPathfinding();
         private static IPathfinding _fallbackPathfinder = new AStarPathfinding();
@@ -213,6 +213,7 @@ namespace TbsFramework.Units
             UnitState = new UnitStateNormal(this);
             c_Animator = gameObject.GetComponentInChildren<Animator>();
             animScript = gameObject.GetComponentInChildren<AnimationScript>();
+            particlePlayer = gameObject.GetComponentInChildren<ParticlePlayer>();
             //TotalHitPoints = HitPoints;
             TotalMovementPoints = MovementPoints;
             TotalActionPoints = ActionPoints;
@@ -360,7 +361,12 @@ namespace TbsFramework.Units
             }
 
         }
-
+        //xxy
+        IEnumerator attackParticle()
+        {
+            yield return new WaitForSeconds((float)1f);
+            particlePlayer.CallAttackParticle();
+        }
         /// <summary>
         /// Method performs an attack on given unit.
         /// </summary>
@@ -373,6 +379,8 @@ namespace TbsFramework.Units
             transform.LookAt(unitToAttack.transform.position, Vector3.up);
             if (animScript != null)
                 animScript.runAttackAnim();
+            if (particlePlayer.attack != null)
+                StartCoroutine("attackParticle");
             if (AttackRange > 1 && bullet != null)
             {
                 Debug.Log("Instantiating Bullet");
@@ -425,7 +433,7 @@ namespace TbsFramework.Units
                 HealthSlider.value = HitPoints;
             }
 
-            if (takeDamage != null)
+            if (particlePlayer.takeDamage != null)
             {
                 StartCoroutine("DamageWait");
             }
@@ -487,7 +495,7 @@ namespace TbsFramework.Units
         {
             yield return new WaitForSeconds(1);
             animScript.runDamageAnim();
-            takeDamage.Play();
+            particlePlayer.CallDamageParticle();
         }
         IEnumerator DestroyUnit(Unit aggressor, int damage)
         {

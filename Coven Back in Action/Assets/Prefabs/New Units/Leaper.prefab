@@ -3109,6 +3109,7 @@ GameObject:
   - component: {fileID: 5551219936812178427}
   - component: {fileID: 5551219936812178426}
   - component: {fileID: -1638856950358509335}
+  - component: {fileID: 291062570671986074}
   m_Layer: 0
   m_Name: Leaper
   m_TagString: Untagged
@@ -3178,6 +3179,7 @@ MonoBehaviour:
   MovementAnimationSpeed: 3
   actionPoints: 1
   PlayerNumber: 0
+  particlePlayer: {fileID: 0}
   takeDamage: {fileID: 6178203656212770366}
   unitType: 4
   LeadingColor: {r: 0, g: 0, b: 0, a: 0}
@@ -3224,6 +3226,22 @@ CapsuleCollider:
   m_Height: 2.566549
   m_Direction: 1
   m_Center: {x: 0.18570375, y: 1.1000196, z: 0.034197688}
+--- !u!114 &291062570671986074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5551219936812178429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbb1b839c68029244bd6df860dc8d536, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attack: {fileID: 0}
+  takeDamage: {fileID: 6178203656212770366}
+  heal: {fileID: 0}
+  extraParticles: []
 --- !u!1001 &3512909484870395472
 PrefabInstance:
   m_ObjectHideFlags: 0

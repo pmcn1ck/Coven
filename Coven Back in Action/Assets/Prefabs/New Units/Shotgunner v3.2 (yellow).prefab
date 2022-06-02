@@ -3115,6 +3115,7 @@ GameObject:
   - component: {fileID: 377330829294270598}
   - component: {fileID: 1740701984}
   - component: {fileID: 1740701985}
+  - component: {fileID: 8682703740563828532}
   m_Layer: 0
   m_Name: Shotgunner v3.2 (yellow)
   m_TagString: Untagged
@@ -3184,6 +3185,7 @@ MonoBehaviour:
   MovementAnimationSpeed: 5
   actionPoints: 1
   PlayerNumber: 0
+  particlePlayer: {fileID: 0}
   takeDamage: {fileID: 9143594140454013982}
   unitType: 0
   LeadingColor: {r: 1, g: 1, b: 1, a: 1}
@@ -3326,6 +3328,22 @@ MonoBehaviour:
   PlayerNumber: 0
   BloodCost: 2
   MoveGain: 2
+--- !u!114 &8682703740563828532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4965115090902272237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbb1b839c68029244bd6df860dc8d536, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attack: {fileID: 0}
+  takeDamage: {fileID: 9143594140454013982}
+  heal: {fileID: 0}
+  extraParticles: []
 --- !u!1001 &1274138117988319519
 PrefabInstance:
   m_ObjectHideFlags: 0
