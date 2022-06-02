@@ -4,12 +4,14 @@ using System.Linq;
 using TbsFramework.Cells;
 using TbsFramework.Grid;
 using TbsFramework.Grid.GridStates;
+using UnityEngine;
 
 namespace TbsFramework.Units.Abilities
 {
     public class DiseasedMoveAbility : Ability
     {
         public Cell Destination { get; set; }
+        public Sprite gloop;
         private List<Cell> currentPath;
         private HashSet<Cell> pathsInRange;
 
@@ -26,6 +28,10 @@ namespace TbsFramework.Units.Abilities
                 foreach (Cell cell in path)
                 {
                     cell.MovementCost += 1;
+                    if (gloop != null)
+                    {
+                        cell.GetComponentInChildren<SpriteRenderer>().sprite = gloop;
+                    }
                 }
             }
             yield return 0;
