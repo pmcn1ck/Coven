@@ -20,6 +20,7 @@ public class Rage : Ability
     public override IEnumerator Act(CellGrid cellGrid)
     {
         Debug.Log("RRRRAAAAAAAARRRRGHHHBLEH (An enemy is raging)");
+        GetComponent<ParticlePlayer>().CallExtraParticle(0);
         GetComponent<Unit>().HitPoints -= AtkGain;
         GetComponent<Unit>().HealthSlider.value = GetComponent<Unit>().HitPoints;
         GetComponent<Unit>().AttackFactor += AtkGain;
