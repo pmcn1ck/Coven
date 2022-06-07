@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
 using TbsFramework.Units;
+using System.Collections;
 
 namespace TbsFramework.Gui
 {
@@ -72,7 +73,6 @@ namespace TbsFramework.Gui
 
             if (isWinningGame)
             {
-                
                 Instantiate(gameEndWin, tGameEnd);
                 Debug.Log("player as won the game");
                 unit = FindObjectOfType<Unit>();
@@ -83,9 +83,10 @@ namespace TbsFramework.Gui
                 GameManager.gm.rooms.RemoveAt(GameManager.gm.rooms.Count - 1);
 
             } 
-            
-  
+
         }
+
+      
 
         private void OnLevelLoading(object sender, EventArgs e)
         {

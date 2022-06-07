@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TbsFramework.Units;
+using TbsFramework.Units.Abilities;
 using UnityEngine;
 using UnityEngine.UI;
 public enum eUnitType { Shotgunner, Spotter, Ranger, ShieldBearer,None }
@@ -9,7 +10,8 @@ public class ExperimentalUnit : Unit
     public eUnitType unitType;
     public Color LeadingColor;
     public GameObject model;
-
+    public soAbility[] so_Ability;
+    public Ability[] abilities;
 
     public override void Initialize()
     {

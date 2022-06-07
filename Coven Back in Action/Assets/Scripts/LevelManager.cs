@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TbsFramework.Grid;
@@ -68,6 +69,13 @@ public class LevelManager : MonoBehaviour
         ExperimentalUnit sUnit = SpawnedUnit.GetComponent<ExperimentalUnit>();
         sUnit.Cell = spawnLocations[_locationNum];
         sUnit.Cell.CurrentUnits.Add(sUnit);
+
+        // Added by GG to handle abilities
+        if (sUnit.unitType == eUnitType.Ranger)
+        {
+            EvaluateAbilities(sUnit);
+        }
+
         SpawnedUnit.transform.localPosition = sUnit.Cell.transform.localPosition;
         SpawnedUnit.transform.localRotation = Quaternion.Euler(0, 0, 0);
         SpawnedUnit.transform.parent = unitList.transform;
@@ -78,6 +86,23 @@ public class LevelManager : MonoBehaviour
         //this line breaks things. might come back to haunt us for not getting it working.
         cellGrid.AddUnit(SpawnedUnit.transform);
         cellGrid.AddPlayableUnit(SpawnedUnit.transform);
+    }
+
+    void EvaluateAbilities (ExperimentalUnit _sUnit)
+    {
+        int count = 0;
+        //_sUnit.abilities = new TbsFramework.Units.Abilities.Ability[_sUnit.so_Ability.Length];
+        foreach (soAbility so in _sUnit.so_Ability)
+        {
+            //_sUnit.abilities[count] = Instantiate(so.prefab, _sUnit.gameObject.transform).GetComponent<TbsFramework.Units.Abilities.Ability>();
+            //Debug.Log("Unit Ability " + _sUnit.abilities[count]);
+            //count++;
+        }
+    }
+
+    void AddAbility (ExperimentalUnit _sUnit)
+    {
+        
     }
 
      

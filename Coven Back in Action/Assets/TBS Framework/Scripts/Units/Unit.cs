@@ -119,6 +119,7 @@ namespace TbsFramework.Units
         public ExperimentalUnit experimentalUnit;
 
         public Slider HealthSlider;
+        public Image HealthImage;
         public GameObject DamageIndicator;
         public int HitPoints;
         public int AttackRange;
@@ -440,7 +441,13 @@ namespace TbsFramework.Units
 
             if (HealthSlider != null)
             {
-                HealthSlider.value = HitPoints;
+                HealthSlider.value = 20/HitPoints;
+            }
+
+            if(HealthImage != null)
+            {
+                HealthImage.fillAmount = HitPoints;
+                Debug.Log(" " + HitPoints);
             }
 
             if (particlePlayer.takeDamage != null)

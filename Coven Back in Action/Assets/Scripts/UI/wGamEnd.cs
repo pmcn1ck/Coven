@@ -17,7 +17,8 @@ public class wGamEnd : MonoBehaviour
     public GameObject upgradeGrp;
     public GameObject bUnitClicked;
     public Slider levelSlider;
-    
+    public GameObject victroy;
+
     public Text tExp;
     CellGrid CellGrid;
 
@@ -29,7 +30,15 @@ public class wGamEnd : MonoBehaviour
         CellGrid = FindObjectOfType<CellGrid>();
         List<Unit> playableUnits = CellGrid.GetCurrentPlayerUnits();
         //tExp.text = playableUnits[1].experience.ToString();
-        levelSlider.value = (float)playableUnits[1].experience / 100f;
+        levelSlider.value = (float)playableUnits[1].experience /100f;
+        StartCoroutine(VictroyUi());
+    }
+
+    IEnumerator VictroyUi()
+    {
+        victroy.SetActive(true);
+        yield return new WaitForSeconds(2);
+        victroy.SetActive(false);
     }
 
     public void OnClickUpgradeRanger()
@@ -68,6 +77,9 @@ public class wGamEnd : MonoBehaviour
    
         GameManager.gm.LoadScene(eScene.InGame);
     }
+
+    
+
 
 
 }

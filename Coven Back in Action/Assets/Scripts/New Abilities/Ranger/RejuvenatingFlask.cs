@@ -54,7 +54,7 @@ public class RejuvenatingFlask : Ability
 
     public override void Activate(CellGrid cellGrid)
     {
-        if (GetComponent<Unit>().ActionPoints > 0)
+        if (GetComponentInParent<Unit>().ActionPoints > 0)
         {
             Debug.Log("Seeking target for rejuvenation");
             seekingTarget = true;

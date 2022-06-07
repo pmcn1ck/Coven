@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 using TbsFramework.Units;
+using TbsFramework.Units.Abilities;
 using UnityEngine.Audio;
 using System;
 
@@ -13,7 +14,6 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager gm;
 
-
     [Space]
     [Header("Canvas prefabs")]
     public GameObject pCanvasMainMenu; // This is the templet for the main menu
@@ -22,16 +22,12 @@ public class GameManager : MonoBehaviour
     public GameObject pCanvasRotation;
     public GameObject pCanvasRanger;
 
-
-
-
     [Space]
     [Header("Spawn Canvas Script")]
     public cMainMenu c_MainMenu; // This is the spawned main meny script
     public cOption c_Options;
     public GrabRotation c_grabRotation;
     public cPlayer c_player;
-
 
     [Space]
     [Header("Scene Manager")]
@@ -40,12 +36,12 @@ public class GameManager : MonoBehaviour
 
     [Space]
     [Header("Units")]
-
     public GameObject[] unitTypes;
     public GameObject[] Party; //player's party of units
     public GameObject[] Reserve; //reserve units for player
     public int expRewards; //experience rewarded after combat complete
-
+    public soUnit[] so_Units;
+    public Ability.eCustomAbility[] chosenAbilities; 
     public GameObject CurrentUnit;
     public Unit unitToAttack;
 
@@ -83,6 +79,19 @@ public class GameManager : MonoBehaviour
             var sUnit = item.GetComponent<Unit>();
             sUnit.TotalHitPoints = sUnit.HitPoints;
         }
+    }
+
+    public bool IsAbilityChosen(Ability _ability)
+    {
+        bool isChosen = false;
+        foreach (var item in chosenAbilities)
+        {
+            if (_ability.customAbility == item)
+            {
+                return true;
+            }
+        }
+        return false;
     }
 
 
@@ -178,7 +187,4 @@ public class GameManager : MonoBehaviour
         musicMixer.audioMixer.SetFloat("musicVol", Mathf.Log10(_newValue) * 20);
         musicVol = _newValue;
     }
-
-    
-
 }

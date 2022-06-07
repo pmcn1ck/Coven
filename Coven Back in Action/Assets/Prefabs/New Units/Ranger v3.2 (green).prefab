@@ -3029,11 +3029,8 @@ GameObject:
   - component: {fileID: -3211297328651802242}
   - component: {fileID: 4400759244548144224}
   - component: {fileID: 5724297221707271680}
-  - component: {fileID: -2499251664733474874}
-  - component: {fileID: -6082304863663484416}
-  - component: {fileID: 8159929442980626873}
-  - component: {fileID: 4271975867176586911}
-  - component: {fileID: -945634190907464724}
+  - component: {fileID: 3318536609144424455}
+  - component: {fileID: 6981025183090457476}
   m_Layer: 0
   m_Name: Ranger v3.2 (green)
   m_TagString: Untagged
@@ -3079,6 +3076,7 @@ MonoBehaviour:
   curState: 0
   experimentalUnit: {fileID: 0}
   HealthSlider: {fileID: 8156653364601124602}
+  HealthImage: {fileID: 0}
   DamageIndicator: {fileID: 2304585212336490789}
   HitPoints: 15
   AttackRange: 4
@@ -3103,10 +3101,16 @@ MonoBehaviour:
   MovementAnimationSpeed: 5
   actionPoints: 1
   PlayerNumber: 0
-  particlePlayer: {fileID: 0}
+  takeDamage: {fileID: 4229684059564435856}
   unitType: 2
   LeadingColor: {r: 1, g: 1, b: 1, a: 1}
   model: {fileID: 833517827051391862}
+  so_Ability:
+  - {fileID: 11400000, guid: 49e23e334c1021642b7cc82938390e80, type: 2}
+  - {fileID: 11400000, guid: 4c56af6f09d9cba4f8ac8393884031af, type: 2}
+  abilities:
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &5096304206411160119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3119,8 +3123,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00fa7140db80b3b498d5b8472c717f37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  customAbility: 0
   label: 
   description: 
+  levelUnlock: 0
 --- !u!114 &8433122088852916852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3133,8 +3139,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b212915272f70f40899729e7af922c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  customAbility: 0
   label: 
   description: 
+  levelUnlock: 0
 --- !u!136 &4965330948765625601
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3161,8 +3169,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf3f5d03c90f993479632da8c6a92af2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  customAbility: 0
   label: 
   description: 
+  levelUnlock: 0
   Buff: {fileID: 11400000, guid: 9b8f8a1a7dabd7946a2dd358e755e996, type: 2}
   Range: 2
   ApplyToSelf: 0
@@ -3204,8 +3214,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9058e8881b70c3d4da927b99649519d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  customAbility: 0
   label: 
   description: 
+  levelUnlock: 0
   trait: []
   Range: 1
   cellGridHolder: {fileID: 0}
@@ -3224,7 +3236,7 @@ MonoBehaviour:
   message: 
   defense: 0
   attack: 0
---- !u!114 &-2499251664733474874
+--- !u!114 &3318536609144424455
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3236,8 +3248,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd7adf0f024ec35458375200515dd2fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  label: Target Mark
+  customAbility: 1
+  label: 
   description: 
+  levelUnlock: 0
   TurnCounter: 0
   Duration: 3
   ApplyToSelf: 0
@@ -3245,7 +3259,7 @@ MonoBehaviour:
   seekingTarget: 0
   Target: {fileID: 0}
   DefPenalty: 2
---- !u!114 &-6082304863663484416
+--- !u!114 &6981025183090457476
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3257,140 +3271,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2334f6648504ea144947f0b65a7f52ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  label: Rejuvenating Flask
+  customAbility: 2
+  label: 
   description: 
+  levelUnlock: 0
   ApplyToSelf: 0
   Target: {fileID: 0}
   seekingTarget: 0
   HealthPenalty: 2
---- !u!114 &8159929442980626873
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1934263189637653615}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbb1b839c68029244bd6df860dc8d536, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attack: {fileID: 0}
-  takeDamage: {fileID: 4229684059564435856}
-  heal: {fileID: 0}
-  extraParticles: []
---- !u!114 &4271975867176586911
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1934263189637653615}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6131d3de79e6b3d4ba6e8a38b95f2959, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SoundEffects: {fileID: -945634190907464724}
-  attack: {fileID: 8300000, guid: 66a19304eb71cbf4cbc0128e8827da9f, type: 3}
-  damage: {fileID: 0}
-  extraSounds: []
---- !u!82 &-945634190907464724
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1934263189637653615}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 2077570495140990844, guid: cdee56d84d5f3304ba688eaa60c3df35, type: 2}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &4078678223503245554
 GameObject:
   m_ObjectHideFlags: 0
@@ -3545,6 +3433,11 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: c54e53dd31b8f944d9c7f0ee52a49d33, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc40cdd6cfa3f5d409c1ecbdc1ef630e, type: 3}
+--- !u!1 &5314783933087481634 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: dc40cdd6cfa3f5d409c1ecbdc1ef630e, type: 3}
+  m_PrefabInstance: {fileID: 4972130144529203827}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4794705744493651352 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: dc40cdd6cfa3f5d409c1ecbdc1ef630e, type: 3}
@@ -3553,11 +3446,6 @@ Transform:
 --- !u!95 &1471018654281531362 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: dc40cdd6cfa3f5d409c1ecbdc1ef630e, type: 3}
-  m_PrefabInstance: {fileID: 4972130144529203827}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &5314783933087481634 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: dc40cdd6cfa3f5d409c1ecbdc1ef630e, type: 3}
   m_PrefabInstance: {fileID: 4972130144529203827}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &294079353983333109
