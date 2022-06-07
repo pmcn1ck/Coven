@@ -194,7 +194,7 @@ namespace TbsFramework.Units
         public bool IsMoving { get; set; }
         [Header("Particles and Effects")]
         public ParticlePlayer particlePlayer;
-
+        public CharacterSoundManager pSoundManager;
         private static DijkstraPathfinding _pathfinder = new DijkstraPathfinding();
         private static IPathfinding _fallbackPathfinder = new AStarPathfinding();
 
@@ -214,6 +214,7 @@ namespace TbsFramework.Units
             c_Animator = gameObject.GetComponentInChildren<Animator>();
             animScript = gameObject.GetComponentInChildren<AnimationScript>();
             particlePlayer = gameObject.GetComponentInChildren<ParticlePlayer>();
+            pSoundManager = gameObject.GetComponentInChildren<CharacterSoundManager>();
             //TotalHitPoints = HitPoints;
             TotalMovementPoints = MovementPoints;
             TotalActionPoints = ActionPoints;
@@ -367,6 +368,13 @@ namespace TbsFramework.Units
             yield return new WaitForSeconds((float)1f);
             particlePlayer.CallAttackParticle();
         }
+
+        IEnumerator AttackSound()
+        {
+            yield return new WaitForSeconds(1f);
+            pSoundManager.CallAttackAudio();
+        }
+
         /// <summary>
         /// Method performs an attack on given unit.
         /// </summary>
@@ -381,6 +389,8 @@ namespace TbsFramework.Units
                 animScript.runAttackAnim();
             if (particlePlayer.attack != null)
                 StartCoroutine("attackParticle");
+            if (pSoundManager != null)
+                StartCoroutine("AttackSound");
             if (AttackRange > 1 && bullet != null)
             {
                 Debug.Log("Instantiating Bullet");
@@ -491,10 +501,17 @@ namespace TbsFramework.Units
             yield return new WaitForSeconds((float)1.2);
             animScript.runDeathAnim();
         }
+
+        IEnumerator DamageAudioWait()
+        {
+            yield return new WaitForSeconds(0.2f);
+            pSoundManager.CallDamageAudio();
+        }
         IEnumerator DamageWait()
         {
             yield return new WaitForSeconds(1);
             animScript.runDamageAnim();
+            StartCoroutine("DamageAudioWait");
             particlePlayer.CallDamageParticle();
         }
         IEnumerator DestroyUnit(Unit aggressor, int damage)
