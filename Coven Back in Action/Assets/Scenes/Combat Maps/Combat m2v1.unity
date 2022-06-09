@@ -4127,6 +4127,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CanvasHUD
       objectReference: {fileID: 0}
+    - target: {fileID: 2767933310964807055, guid: 5e565075f1d3be141a2763ff082284e8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2767933310964807093, guid: 5e565075f1d3be141a2763ff082284e8, type: 3}
       propertyPath: cam
       value: 
