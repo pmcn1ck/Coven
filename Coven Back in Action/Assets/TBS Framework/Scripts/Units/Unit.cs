@@ -503,6 +503,12 @@ namespace TbsFramework.Units
                 }
             }
         }
+
+        public void LowerDefenseHandler(Unit defender, int lowerDefense)
+        {
+            defender.DefenceFactor -= lowerDefense;
+        }
+
         IEnumerator DeathWait()
         {
             yield return new WaitForSeconds((float)1.2);

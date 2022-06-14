@@ -6545,6 +6545,14 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6119870651858527845, guid: 38f333b75b520754795c656dc9af5320, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6119870651858527845, guid: 38f333b75b520754795c656dc9af5320, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6301325898651821473, guid: 38f333b75b520754795c656dc9af5320, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -9162,6 +9170,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5892541972077274543, guid: 38f333b75b520754795c656dc9af5320, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6119870651858527845, guid: 38f333b75b520754795c656dc9af5320, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6119870651858527845, guid: 38f333b75b520754795c656dc9af5320, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
@@ -11864,6 +11880,14 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6119870651858527845, guid: 38f333b75b520754795c656dc9af5320, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6119870651858527845, guid: 38f333b75b520754795c656dc9af5320, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6301325898651821473, guid: 38f333b75b520754795c656dc9af5320, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -11958,6 +11982,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5892541972077274543, guid: 38f333b75b520754795c656dc9af5320, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6119870651858527845, guid: 38f333b75b520754795c656dc9af5320, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6119870651858527845, guid: 38f333b75b520754795c656dc9af5320, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
@@ -21929,6 +21961,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 061d7481bbf1d484e9a4880a25737dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  customAbility: 0
   label: Counter
   description: 
   TurnCounter: 0
@@ -27582,6 +27615,14 @@ PrefabInstance:
     - target: {fileID: 8639996284316954876, guid: 28c62ca6334f2f84c8fa8e5f5943da50, type: 3}
       propertyPath: m_MeshFormatVersion
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8667462847117299338, guid: 28c62ca6334f2f84c8fa8e5f5943da50, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8667462847117299338, guid: 28c62ca6334f2f84c8fa8e5f5943da50, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28c62ca6334f2f84c8fa8e5f5943da50, type: 3}
@@ -36359,6 +36400,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5892541972077274543, guid: 38f333b75b520754795c656dc9af5320, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6119870651858527845, guid: 38f333b75b520754795c656dc9af5320, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6119870651858527845, guid: 38f333b75b520754795c656dc9af5320, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
@@ -46742,50 +46791,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98f8972765c969a4d8761576873d8c9e, type: 3}
---- !u!1 &1317676145 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1934263189637653615, guid: 98f8972765c969a4d8761576873d8c9e, type: 3}
-  m_PrefabInstance: {fileID: 1317676144}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1317676146
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1317676145}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd7adf0f024ec35458375200515dd2fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  label: Target Mark
-  description: 
-  TurnCounter: 0
-  Duration: 3
-  ApplyToSelf: 0
-  CurrentlyActive: 0
-  seekingTarget: 0
-  Target: {fileID: 0}
-  DefPenalty: 2
---- !u!114 &1317676147
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1317676145}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2334f6648504ea144947f0b65a7f52ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  label: Rejuvenating Flask
-  description: 
-  ApplyToSelf: 0
-  Target: {fileID: 0}
-  seekingTarget: 0
-  HealthPenalty: 2
 --- !u!1001 &1317954452
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55094,6 +55099,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5892541972077274543, guid: 38f333b75b520754795c656dc9af5320, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6119870651858527845, guid: 38f333b75b520754795c656dc9af5320, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6119870651858527845, guid: 38f333b75b520754795c656dc9af5320, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
@@ -64484,6 +64497,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60b3ba0317ebb40449c331068e83c2d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  customAbility: 0
   label: Double Tap
   description: 
   BloodLustCost: 5
@@ -64501,6 +64515,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a1bfeed417525f4d8d1b08f08300ff4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  customAbility: 0
   label: Light-Footed
   description: 
   TurnCounter: 0
@@ -70089,6 +70104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 101754866254bd2499322f124447087e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  customAbility: 0
   label: Focused Sights
   description: 
   UseTracker: 0
@@ -70107,6 +70123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87a269f23c3acfb4b80570739efdfa15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  customAbility: 0
   label: Deep Breath
   description: 
   TurnCounter: 0
@@ -70963,7 +70980,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-92802
+  m_Name: pb_Mesh-53708
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -77873,6 +77890,8 @@ MonoBehaviour:
   Party: []
   Reserve: []
   expRewards: 0
+  so_Units: []
+  chosenAbilities: 
   CurrentUnit: {fileID: 0}
   unitToAttack: {fileID: 0}
   isAttacking: 0

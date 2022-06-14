@@ -18,9 +18,6 @@ public class wPlayer : MonoBehaviour
     private ExperimentalUnit attachedUnit;
     public Ability AbilityZero;
     public Ability AbilityOne;
-
-    public Ability[] abilities;
-
     public CellGrid cellGrid;
     public GameObject wStats;
     public GameObject wAbilities;
@@ -69,6 +66,10 @@ public class wPlayer : MonoBehaviour
 
     public void ToggleAbilities()
     {
+        attachedUnit.gameObject.transform.GetComponent<TbsFramework.HOMMExample.SpellCastingAbility>().Display(cellGrid);
+
+
+
         if (wAbilities.activeSelf == false)
         {
 
@@ -88,31 +89,6 @@ public class wPlayer : MonoBehaviour
                 GameManager.gm.audioManager.PlaySound(eSound.click);
         }
     }
-
-    /*public void InitUI(eUnitType _UnitType, bool _isRang, ExperimentalUnit unit, CellGrid cellGridIn)
-    {
-        attachedUnit = unit;
-        cellGrid = cellGridIn;
-
-        gameObject.SetActive(_UnitType != eUnitType.None);
-
-        text.text = unit.Name;
-        GetComponent<sPlayerUnitStats>().ShowStats(cellGrid.GetCurrentSelectedUnit());
-        if (_UnitType == eUnitType.Ranger)
-        {
-            AbilityZero = unit.abilities[0];
-            AbilityOne = unit.abilities[1];
-        }
-
-        if (AbilityZero != null)
-        {
-            AbilityZeroName.text = AbilityZero.label;
-        }
-        if (AbilityOne != null)
-        {
-            AbilityOneName.text = AbilityOne.label;
-        }
-    }*/
 
 
     public void InitUI(eUnitType _UnitType,bool _isRang, ExperimentalUnit unit, CellGrid cellGridIn)
@@ -163,7 +139,7 @@ public class wPlayer : MonoBehaviour
             case eUnitType.Ranger:
                 text.text = "Ranger";
                 Ability.interactable = _isRang; 
-                gameObject.SetActive(true);
+                /*gameObject.SetActive(true);
                 GetComponent<sPlayerUnitStats>().ShowStats(cellGrid.GetCurrentSelectedUnit());
                 if (attachedUnit.GetComponent<TargetMark>() != null)
                 {
@@ -176,7 +152,7 @@ public class wPlayer : MonoBehaviour
                 else if (attachedUnit.GetComponent<HinderingShot>() != null)
                 {
                     AbilityOne = attachedUnit.GetComponent<HinderingShot>();
-                }
+                }*/
                 break;
             case eUnitType.ShieldBearer:
                 text.text = "ShieldBearer";

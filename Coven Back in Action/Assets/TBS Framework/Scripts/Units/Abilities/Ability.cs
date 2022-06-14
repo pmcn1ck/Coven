@@ -16,17 +16,11 @@ namespace TbsFramework.Units.Abilities
         public string description;
         //Reference to the unit that the ability is attached to
         public Unit UnitReference { get; internal set; }
-        public int levelUnlock;
 
 
         protected virtual void Awake()
         {
             UnitReference = GetComponent<Unit>();
-            this.enabled = levelUnlock <= UnitReference.level;
-            if (customAbility != eCustomAbility.none)
-            {
-                this.enabled = GameManager.gm.IsAbilityChosen(this);
-            }
         }
 
         public void Execute(CellGrid cellGrid, Action<CellGrid> preAction, Action<CellGrid> postAction)

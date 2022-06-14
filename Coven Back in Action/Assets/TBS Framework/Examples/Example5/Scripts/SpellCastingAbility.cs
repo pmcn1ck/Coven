@@ -85,6 +85,12 @@ namespace TbsFramework.HOMMExample
                 spell.OnTurnEnd(cellGrid);
             }
         }
+        public void RemoveUI()
+        {
+            var cellGrid = FindObjectOfType<CellGrid>();
+            cellGrid.CellGridState = new CellGridStateWaitingForInput(cellGrid);
+            CancelButton.SetActive(false);
+        }
 
         public void CancelCasting()
         {
