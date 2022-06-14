@@ -23,7 +23,7 @@ public class TargetMark : Ability
         description = "Pick any enemy on the field and lower their defense slightly for 3 turns";
         ExperimentalUnit unit = GetComponent<ExperimentalUnit>();
 
-        this.enabled = levelUnlock <= unit.level;
+        //this.enabled = levelUnlock <= unit.level;
     }
     public override IEnumerator Act(CellGrid cellGrid)
     {
@@ -35,7 +35,7 @@ public class TargetMark : Ability
 
     public override void OnUnitClicked(Unit unit, CellGrid cellGrid)
     {
-        Debug.Log("<color=yellow>OnUnitClicked in TargetMask</color>");
+        Debug.Log("<color=yellow>OnUnitClicked in TargetMark</color>");
         if (seekingTarget == true)
         {
             if (cellGrid.GetCurrentPlayerUnits().Contains(unit))
