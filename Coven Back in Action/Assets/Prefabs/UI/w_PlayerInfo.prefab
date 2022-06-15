@@ -1443,7 +1443,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.5753565, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2130,7 +2130,6 @@ MonoBehaviour:
   customAbility: 0
   label: 
   description: 
-  levelUnlock: 0
 --- !u!114 &8286828092022220673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2146,7 +2145,6 @@ MonoBehaviour:
   customAbility: 0
   label: 
   description: 
-  levelUnlock: 0
 --- !u!114 &6670387927400317114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2166,13 +2164,6 @@ MonoBehaviour:
   AbilityOneName: {fileID: 6316421135482516559}
   AbilityZero: {fileID: 0}
   AbilityOne: {fileID: 0}
-  playerImage: {fileID: 5128932061537277940}
-  Stamp: {fileID: 4637047695508683193}
-  iRanger: {fileID: -6553702042287926940, guid: bade48de0d5a22b41821e0b7f056e338, type: 3}
-  iSpotter: {fileID: 6482094000677941713, guid: bade48de0d5a22b41821e0b7f056e338, type: 3}
-  iShieldBearer: {fileID: -8179096408671432502, guid: bade48de0d5a22b41821e0b7f056e338, type: 3}
-  iShotGunner: {fileID: -6885033302592280319, guid: bade48de0d5a22b41821e0b7f056e338, type: 3}
-  abilities: []
   cellGrid: {fileID: 0}
   wStats: {fileID: 2344960400597249274}
   wAbilities: {fileID: 6528876805996579705}

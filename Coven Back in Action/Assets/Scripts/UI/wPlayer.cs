@@ -21,6 +21,16 @@ public class wPlayer : MonoBehaviour
     public CellGrid cellGrid;
     public GameObject wStats;
     public GameObject wAbilities;
+
+    public Image playerImage;
+    public Image Stamp;
+    public Sprite iRanger;
+    public Sprite iSpotter;
+    public Sprite iShieldBearer;
+    public Sprite iShotGunner;
+
+
+
     TbsFramework.Units.Unit curUnit;
 
 
@@ -102,6 +112,8 @@ public class wPlayer : MonoBehaviour
                 break;
             case eUnitType.Shotgunner:
                 text.text = "Shotgunner";
+                playerImage.sprite = iShotGunner;
+                Stamp.color = new Color32(255, 150, 0, 100);
                 Ability.interactable = _isRang;
                 gameObject.SetActive(true);
                 GetComponent<sPlayerUnitStats>().ShowStats(cellGrid.GetCurrentSelectedUnit());
@@ -120,6 +132,8 @@ public class wPlayer : MonoBehaviour
                 break;
             case eUnitType.Spotter:
                 text.text = "Spotter";
+                playerImage.sprite = iSpotter;
+                Stamp.color = new Color32(255, 0, 0, 100);
                 Ability.interactable = _isRang;
                 gameObject.SetActive(true);
                 GetComponent<sPlayerUnitStats>().ShowStats(cellGrid.GetCurrentSelectedUnit());
@@ -138,6 +152,8 @@ public class wPlayer : MonoBehaviour
                 break;
             case eUnitType.Ranger:
                 text.text = "Ranger";
+                playerImage.sprite = iRanger;
+                Stamp.color = new Color32(15, 180, 0, 100);
                 Ability.interactable = _isRang; 
                 /*gameObject.SetActive(true);
                 GetComponent<sPlayerUnitStats>().ShowStats(cellGrid.GetCurrentSelectedUnit());
@@ -156,6 +172,9 @@ public class wPlayer : MonoBehaviour
                 break;
             case eUnitType.ShieldBearer:
                 text.text = "ShieldBearer";
+                playerImage.sprite = iShieldBearer;
+                Stamp.color = new Color32(0, 30, 150, 100);
+
                 Ability.interactable = _isRang;
                 gameObject.SetActive(true);
                 GetComponent<sPlayerUnitStats>().ShowStats(cellGrid.GetCurrentSelectedUnit());
