@@ -24,6 +24,7 @@ public class Trait : Buff
     [TextArea(15,20)]
     public string description;
     public int Range = 1;
+    public int BloodLustRemove;
 
 
     public override void Apply(Unit unit)

@@ -3163,6 +3163,7 @@ MonoBehaviour:
   curState: 0
   experimentalUnit: {fileID: 0}
   HealthSlider: {fileID: 2248429922336088085}
+  HealthImage: {fileID: 0}
   DamageIndicator: {fileID: 8213947883403583434}
   HitPoints: 10
   AttackRange: 5
@@ -3187,10 +3188,14 @@ MonoBehaviour:
   MovementAnimationSpeed: 5
   actionPoints: 1
   PlayerNumber: 0
+  characterPortrait: {fileID: 6482094000677941713, guid: bade48de0d5a22b41821e0b7f056e338, type: 3}
   particlePlayer: {fileID: 0}
+  pSoundManager: {fileID: 0}
   unitType: 1
   LeadingColor: {r: 1, g: 1, b: 1, a: 1}
   model: {fileID: 2925737115262975445}
+  so_Ability: []
+  abilities: []
 --- !u!114 &3005197391744814578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3203,8 +3208,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00fa7140db80b3b498d5b8472c717f37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  customAbility: 0
   label: 
   description: 
+  levelUnlock: 0
 --- !u!114 &5871445956088828015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3217,8 +3224,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b212915272f70f40899729e7af922c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  customAbility: 0
   label: 
   description: 
+  levelUnlock: 0
 --- !u!136 &5911005275683173385
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3271,9 +3280,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9058e8881b70c3d4da927b99649519d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  customAbility: 0
   label: 
   description: 
-  trait: []
+  levelUnlock: 0
+  trait:
+  - {fileID: 11400000, guid: 67f4e90c99846fd46b73f86253bdb605, type: 2}
   Range: 1
   cellGridHolder: {fileID: 0}
 --- !u!114 &-7615028568949067067
@@ -3303,8 +3315,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 101754866254bd2499322f124447087e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  customAbility: 0
   label: Focused
   description: 
+  levelUnlock: 0
   UseTracker: 0
   BloodLustCost: 5
   target: {fileID: 0}
@@ -3321,8 +3335,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87a269f23c3acfb4b80570739efdfa15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  customAbility: 0
   label: Deep Breath
   description: 
+  levelUnlock: 0
   TurnCounter: 0
   Duration: 2
   ApplyToSelf: 1

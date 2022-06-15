@@ -95,7 +95,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.43137255}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.84313726}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -516,6 +516,12 @@ MonoBehaviour:
   AbilityOneName: {fileID: 0}
   AbilityZero: {fileID: 0}
   AbilityOne: {fileID: 0}
+  playerImage: {fileID: 0}
+  iRanger: {fileID: 0}
+  iSpotter: {fileID: 0}
+  iShieldBearer: {fileID: 0}
+  iShotGunner: {fileID: 0}
+  abilities: []
   cellGrid: {fileID: 0}
   wStats: {fileID: 0}
   wAbilities: {fileID: 0}

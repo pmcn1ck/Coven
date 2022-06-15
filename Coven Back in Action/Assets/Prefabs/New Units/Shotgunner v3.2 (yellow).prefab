@@ -3163,6 +3163,7 @@ MonoBehaviour:
   curState: 0
   experimentalUnit: {fileID: 0}
   HealthSlider: {fileID: 3604552845144002456}
+  HealthImage: {fileID: 0}
   DamageIndicator: {fileID: 6686781916677058631}
   HitPoints: 15
   AttackRange: 2
@@ -3187,10 +3188,14 @@ MonoBehaviour:
   MovementAnimationSpeed: 5
   actionPoints: 1
   PlayerNumber: 0
+  characterPortrait: {fileID: -6885033302592280319, guid: bade48de0d5a22b41821e0b7f056e338, type: 3}
   particlePlayer: {fileID: 0}
+  pSoundManager: {fileID: 0}
   unitType: 0
   LeadingColor: {r: 1, g: 1, b: 1, a: 1}
   model: {fileID: 4454148476552521426}
+  so_Ability: []
+  abilities: []
 --- !u!114 &1532836068345103213
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3203,8 +3208,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00fa7140db80b3b498d5b8472c717f37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  customAbility: 0
   label: 
   description: 
+  levelUnlock: 0
 --- !u!114 &7893316659092954864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3217,8 +3224,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b212915272f70f40899729e7af922c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  customAbility: 0
   label: 
   description: 
+  levelUnlock: 0
 --- !u!136 &7996487113395845782
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3271,8 +3280,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9058e8881b70c3d4da927b99649519d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  customAbility: 0
   label: 
   description: 
+  levelUnlock: 0
   trait: []
   Range: 1
   cellGridHolder: {fileID: 0}
@@ -3303,8 +3314,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60b3ba0317ebb40449c331068e83c2d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  customAbility: 0
   label: Double Tap
   description: 
+  levelUnlock: 0
   BloodLustCost: 5
   target: {fileID: 0}
   SeekingTarget: 0
@@ -3320,8 +3333,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a1bfeed417525f4d8d1b08f08300ff4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  customAbility: 0
   label: Light-Footed
   description: 
+  levelUnlock: 0
   TurnCounter: 0
   Duration: 3
   ApplyToSelf: 1

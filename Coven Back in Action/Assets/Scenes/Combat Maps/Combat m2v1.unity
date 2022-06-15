@@ -5023,7 +5023,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-10434
+  m_Name: pb_Mesh-81624
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -8541,7 +8541,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-8502
+  m_Name: pb_Mesh-79672
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -10403,7 +10403,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-14256
+  m_Name: pb_Mesh-85474
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -12811,7 +12811,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-18384
+  m_Name: pb_Mesh-84380
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -13357,7 +13357,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-17876
+  m_Name: pb_Mesh-83530
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -13891,7 +13891,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-17368
+  m_Name: pb_Mesh-80370
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -16453,7 +16453,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-11704
+  m_Name: pb_Mesh-82898
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -17187,7 +17187,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-16860
+  m_Name: pb_Mesh-81088
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -18696,6 +18696,8 @@ MonoBehaviour:
   Party: []
   Reserve: []
   expRewards: 0
+  so_Units: []
+  chosenAbilities: 
   CurrentUnit: {fileID: 0}
   unitToAttack: {fileID: 0}
   isAttacking: 0

@@ -194,6 +194,7 @@ namespace TbsFramework.Units
         /// </summary>
         public bool IsMoving { get; set; }
         [Header("Particles and Effects")]
+        public Sprite characterPortrait;
         public ParticlePlayer particlePlayer;
         public CharacterSoundManager pSoundManager;
         private static DijkstraPathfinding _pathfinder = new DijkstraPathfinding();
