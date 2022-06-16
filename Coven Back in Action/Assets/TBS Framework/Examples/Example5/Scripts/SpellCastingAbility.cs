@@ -49,8 +49,20 @@ namespace TbsFramework.HOMMExample
                 {
                     if (CurrentMana >= spell.ManaCost)
                     {
-                        CancelButton.SetActive(true);
-                        cellGrid.CellGridState = new CellGridStateAbilitySelected(cellGrid, UnitReference, new List<Ability>() { spell });
+                        if (spell.playerPicksTarget == true)
+                        {
+                            Debug.Log("Seeking a target in SpellCastingAbility");
+                            CancelButton.SetActive(true);
+                            cellGrid.CellGridState = new CellGridStateAbilitySelected(cellGrid, UnitReference, new List<Ability>() { spell });
+                            
+                        }
+                        else
+                        {
+                            Debug.Log("Activating an ability without selected target from SpellCastingAbility");
+                            spell.Activate(cellGrid);
+                            SpellBookPanel.SetActive(false);
+                        }
+
                     }
                 });
 

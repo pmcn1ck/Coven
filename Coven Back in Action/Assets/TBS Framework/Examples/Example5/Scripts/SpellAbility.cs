@@ -10,6 +10,7 @@ namespace TbsFramework.HOMMExample
         public Sprite Image;
         public string SpellName;
         public int ManaCost;
+        public bool playerPicksTarget = true;
 
         public GameObject CancelButton;
         public string Description;

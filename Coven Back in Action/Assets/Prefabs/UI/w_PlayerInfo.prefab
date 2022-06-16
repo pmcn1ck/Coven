@@ -2167,6 +2167,12 @@ MonoBehaviour:
   cellGrid: {fileID: 0}
   wStats: {fileID: 2344960400597249274}
   wAbilities: {fileID: 6528876805996579705}
+  playerImage: {fileID: 0}
+  Stamp: {fileID: 0}
+  iRanger: {fileID: 21300000, guid: 3aa9acb891db75b44a19b9c6058c3f3b, type: 3}
+  iSpotter: {fileID: 7357406021005835626, guid: 37d0285cdcb9fc94a9f3722604ecb6b3, type: 3}
+  iShieldBearer: {fileID: 5806347362019737187, guid: 37d0285cdcb9fc94a9f3722604ecb6b3, type: 3}
+  iShotGunner: {fileID: -5476975736710725942, guid: 37d0285cdcb9fc94a9f3722604ecb6b3, type: 3}
 --- !u!223 &7141363045788480317
 Canvas:
   m_ObjectHideFlags: 0

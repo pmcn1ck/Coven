@@ -76,28 +76,35 @@ public class wPlayer : MonoBehaviour
 
     public void ToggleAbilities()
     {
-        attachedUnit.gameObject.transform.GetComponent<TbsFramework.HOMMExample.SpellCastingAbility>().Display(cellGrid);
 
-
-
-        if (wAbilities.activeSelf == false)
+        if (attachedUnit.gameObject.transform.GetComponent<TbsFramework.HOMMExample.SpellCastingAbility>() == null)
         {
-
-            wAbilities.SetActive(true);
-            if (AbilityOne == null)
+            if (wAbilities.activeSelf == false)
             {
-                AbilityOneButton.SetActive(false);
+
+                wAbilities.SetActive(true);
+                if (AbilityOne == null)
+                {
+                    AbilityOneButton.SetActive(false);
+                }
+                if (GameManager.gm.audioManager != null)
+                    GameManager.gm.audioManager.PlaySound(eSound.click);
             }
-            if (GameManager.gm.audioManager != null)
-                GameManager.gm.audioManager.PlaySound(eSound.click);
+            else
+            {
+
+                wAbilities.SetActive(false);
+                if (GameManager.gm.audioManager != null)
+                    GameManager.gm.audioManager.PlaySound(eSound.click);
+            }
         }
         else
         {
-
-            wAbilities.SetActive(false);
-            if (GameManager.gm.audioManager != null)
-                GameManager.gm.audioManager.PlaySound(eSound.click);
+            attachedUnit.gameObject.transform.GetComponent<TbsFramework.HOMMExample.SpellCastingAbility>().Display(cellGrid);
         }
+
+
+
     }
 
 
@@ -176,7 +183,7 @@ public class wPlayer : MonoBehaviour
                 Stamp.color = new Color32(0, 30, 150, 100);
 
                 Ability.interactable = _isRang;
-                gameObject.SetActive(true);
+                /*gameObject.SetActive(true);
                 GetComponent<sPlayerUnitStats>().ShowStats(cellGrid.GetCurrentSelectedUnit());
                 if (attachedUnit.GetComponent<BulkUp>() != null)
                 {
@@ -189,7 +196,7 @@ public class wPlayer : MonoBehaviour
                 else if (attachedUnit.GetComponent<ShieldBash>() != null)
                 {
                     AbilityOne = attachedUnit.GetComponent<ShieldBash>();
-                }
+                }*/
                 break;
         }
         if (AbilityZero != null)

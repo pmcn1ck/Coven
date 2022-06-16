@@ -4,10 +4,11 @@ using UnityEngine;
 using TbsFramework.Grid;
 using TbsFramework.Units;
 using TbsFramework.Units.Abilities;
+using TbsFramework.HOMMExample;
 using UnityEngine.UI;
 using System.Linq;
 
-public class BulkUp : Ability
+public class BulkUp : SpellAbility
 {
     public int Range = 2;
     public int TurnCounter = 0;
@@ -22,14 +23,15 @@ public class BulkUp : Ability
     {
         label = "Bulk Up";
         description = "Raise your bloodlust to increase the defense of allies within 2 spaces";
+        playerPicksTarget = false;
     }
 
     public override IEnumerator Act(CellGrid cellGrid)
     {
         Debug.Log("Activating Bulk Up");
-        GetComponent<Unit>().BloodLust += BloodLustCost;
-        GetComponent<Unit>().BloodLustSlider.value += BloodLustCost;
-        PlayerNumber = GetComponent<Unit>().PlayerNumber;
+        GetComponentInParent<Unit>().BloodLust += BloodLustCost;
+        GetComponentInParent<Unit>().BloodLustSlider.value += BloodLustCost;
+        PlayerNumber = GetComponentInParent<Unit>().PlayerNumber;
         List<Unit> allyUnits = new List<Unit>();
         allyUnits.AddRange(cellGrid.GetCurrentPlayerUnits());
         var AffectedUnits = allyUnits.Where(u => u.Cell.GetDistance(UnitReference.Cell) <= Range);
@@ -82,5 +84,10 @@ public class BulkUp : Ability
             StartCoroutine(Act(cellGrid));
         }
 
+    }
+
+    public override string GetDetails()
+    {
+        return description;
     }
 }
