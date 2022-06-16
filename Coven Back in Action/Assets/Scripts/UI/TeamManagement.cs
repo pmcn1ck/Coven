@@ -21,6 +21,7 @@ public class TeamManagement : MonoBehaviour
     public Text traitTextName;
 
     public GameObject wButtonUnit;
+    public GameObject wTraitSelect;
 
     public void InitUI()
     {
@@ -38,6 +39,7 @@ public class TeamManagement : MonoBehaviour
 
     public void UnitSelect(ExperimentalUnit unit)
     {
+        traitRemoveOpen.onClick.RemoveAllListeners();
         traitRemoveOpen.onClick.AddListener(delegate { OpenTraitRemoval(unit.gameObject); });
         characterPortrait.sprite = unit.characterPortrait;
     }
@@ -49,8 +51,11 @@ public class TeamManagement : MonoBehaviour
         for (int i = 0; i < unit.GetComponent<ApplyTrait>().trait.Count; i++)
         {
             Trait curTrait = unit.GetComponent<ApplyTrait>().trait[i];
-            Instantiate(traitButton, traitList.transform);
-            traitButton.onClick.AddListener(delegate { SelectTrait(unit, curTrait); });
+            wTraitSelectButton scr = Instantiate(wTraitSelect, partyList).GetComponent<wTraitSelectButton>();
+            scr.InitUI(unit, curTrait, this);
+            Debug.Log("cur trait is: " + curTrait);
+            
+            //traitButton.onClick.AddListener(delegate { SelectTrait(unit, curTrait); });
             traitTextName.text = curTrait.Name;
             
         }
@@ -67,12 +72,14 @@ public class TeamManagement : MonoBehaviour
     {
         traitDescription.text = selectedTrait.description;
         bloodlustRemove.text = selectedTrait.BloodLustRemove.ToString();
+        Debug.Log("Trait selected: " + selectedTrait);
         removeTrait.onClick.RemoveAllListeners();
         removeTrait.onClick.AddListener(delegate { RemoveTrait(unit, selectedTrait); });
     }
 
     public void RemoveTrait(GameObject unit, Trait selectedTrait)
     {
+        Debug.Log("Trait Removed: " + selectedTrait);
         unit.GetComponent<ApplyTrait>().trait.Remove(selectedTrait);
     }
 
