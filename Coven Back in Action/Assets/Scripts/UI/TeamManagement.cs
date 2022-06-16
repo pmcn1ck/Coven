@@ -51,12 +51,12 @@ public class TeamManagement : MonoBehaviour
         for (int i = 0; i < unit.GetComponent<ApplyTrait>().trait.Count; i++)
         {
             Trait curTrait = unit.GetComponent<ApplyTrait>().trait[i];
-            wTraitSelectButton scr = Instantiate(wTraitSelect, partyList).GetComponent<wTraitSelectButton>();
+            wTraitSelectButton scr = Instantiate(wTraitSelect, traitList.transform).GetComponent<wTraitSelectButton>();
             scr.InitUI(unit, curTrait, this);
             Debug.Log("cur trait is: " + curTrait);
             
             //traitButton.onClick.AddListener(delegate { SelectTrait(unit, curTrait); });
-            traitTextName.text = curTrait.Name;
+            //traitTextName.text = curTrait.Name;
             
         }
         /*foreach (Trait item in unit.GetComponent<ApplyTrait>().trait)

@@ -12,7 +12,7 @@ public class wTraitSelectButton : MonoBehaviour
     public void InitUI(GameObject _unit, Trait _trait, TeamManagement _parent)
     {
         unit = _unit;
-        textButton.text = unit.GetComponent<ExperimentalUnit>().Name;
+        textButton.text = _trait.Name;
         parent = _parent;
         selectedTrait = _trait;
     }

@@ -16,6 +16,7 @@ MonoBehaviour:
   Factor: 1
   affectedStat: 0
   Activator: 3
-  Name: 
-  description: 
+  Name: Fresh Air
+  description: this is attack with not enemy near
   Range: 1
+  BloodLustRemove: 20

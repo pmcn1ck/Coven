@@ -16,3 +16,7 @@ MonoBehaviour:
   Factor: 1
   affectedStat: 1
   Activator: 0
+  Name: Turtle
+  description: defence with nearby ally
+  Range: 1
+  BloodLustRemove: 40

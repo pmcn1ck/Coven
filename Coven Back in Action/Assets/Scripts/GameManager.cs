@@ -62,6 +62,10 @@ public class GameManager : MonoBehaviour
     [Header("OverWorld")]
     public List<int> rooms;
 
+    [Space]
+    [Header("Repositories")]
+    public Trait[] trait;
+
     private void Awake()
     {
         if(gm == null)

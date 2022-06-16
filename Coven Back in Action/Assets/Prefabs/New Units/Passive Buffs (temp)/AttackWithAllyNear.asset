@@ -16,6 +16,7 @@ MonoBehaviour:
   Factor: 1
   affectedStat: 0
   Activator: 0
-  Name: 
-  description: 
+  Name: Close Bond
+  description: attack up with ally near
   Range: 1
+  BloodLustRemove: 10
