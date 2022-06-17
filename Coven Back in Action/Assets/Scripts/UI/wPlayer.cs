@@ -122,7 +122,7 @@ public class wPlayer : MonoBehaviour
                 playerImage.sprite = iShotGunner;
                 Stamp.color = new Color32(255, 150, 0, 100);
                 Ability.interactable = _isRang;
-                gameObject.SetActive(true);
+                /*gameObject.SetActive(true);
                 GetComponent<sPlayerUnitStats>().ShowStats(cellGrid.GetCurrentSelectedUnit());
                 if (attachedUnit.GetComponent<LightFooted>() != null)
                 {
@@ -135,14 +135,14 @@ public class wPlayer : MonoBehaviour
                 else if (attachedUnit.GetComponent<ScatterShot>() != null)
                 {
                     AbilityOne = attachedUnit.GetComponent<ScatterShot>();
-                }
+                }*/
                 break;
             case eUnitType.Spotter:
                 text.text = "Spotter";
                 playerImage.sprite = iSpotter;
                 Stamp.color = new Color32(255, 0, 0, 100);
                 Ability.interactable = _isRang;
-                gameObject.SetActive(true);
+                /*gameObject.SetActive(true);
                 GetComponent<sPlayerUnitStats>().ShowStats(cellGrid.GetCurrentSelectedUnit());
                 if (attachedUnit.GetComponent<DeepBreath>() != null)
                 {
@@ -155,7 +155,7 @@ public class wPlayer : MonoBehaviour
                 else if (attachedUnit.GetComponent<SupportingFire>() != null)
                 {
                     AbilityOne = attachedUnit.GetComponent<SupportingFire>();
-                }
+                }*/
                 break;
             case eUnitType.Ranger:
                 text.text = "Ranger";

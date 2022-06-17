@@ -4,10 +4,11 @@ using UnityEngine;
 using TbsFramework.Grid;
 using TbsFramework.Units;
 using TbsFramework.Units.Abilities;
+using TbsFramework.HOMMExample;
 using UnityEngine.UI;
 using System.Linq;
 
-public class LightFooted : Ability
+public class LightFooted : SpellAbility
 {
     public int TurnCounter = 0;
     public int Duration = 3;
@@ -21,14 +22,15 @@ public class LightFooted : Ability
     {
         label = "Light-Footed";
         description = "Raise your bloodlust to move further for 3 turns. While active, cannot use Hunker Down";
+        playerPicksTarget = false;
     }
     public override IEnumerator Act(CellGrid cellGrid)
     {
         Debug.Log("Activating Light-Footed");
-        GetComponent<Unit>().BloodLust += BloodCost;
-        GetComponent<Unit>().BloodLustSlider.value += BloodCost;
-        GetComponent<Unit>().MovementPoints += MoveGain;
-        GetComponent<Unit>().MovementAnimationSpeed += MoveGain;
+        GetComponentInParent<Unit>().BloodLust += BloodCost;
+        GetComponentInParent<Unit>().BloodLustSlider.value += BloodCost;
+        GetComponentInParent<Unit>().MovementPoints += MoveGain;
+        GetComponentInParent<Unit>().MovementAnimationSpeed += MoveGain;
 
         CurrentlyActive = true;
         TurnCounter = 0;
@@ -44,8 +46,8 @@ public class LightFooted : Ability
             if (TurnCounter >= Duration)
             {
                 Debug.Log("Light-Footed ending");
-                GetComponent<Unit>().MovementPoints -= MoveGain;
-                GetComponent<Unit>().MovementAnimationSpeed -= MoveGain;
+                GetComponentInParent<Unit>().MovementPoints -= MoveGain;
+                GetComponentInParent<Unit>().MovementAnimationSpeed -= MoveGain;
                 CurrentlyActive = false;
                 TurnCounter = 0;
             }
@@ -67,5 +69,10 @@ public class LightFooted : Ability
         {
             StartCoroutine(Act(cellGrid));
         }
+    }
+
+    public override string GetDetails()
+    {
+        return description;
     }
 }

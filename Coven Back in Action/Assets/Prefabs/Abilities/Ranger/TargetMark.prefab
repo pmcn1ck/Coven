@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &5550535291274602365
+--- !u!1 &7814392355678581283
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,48 +8,55 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7694559383100704062}
-  - component: {fileID: 4188240052953926866}
+  - component: {fileID: 7808645532528327458}
+  - component: {fileID: 1847991517719541123}
   m_Layer: 0
-  m_Name: HinderingShot
+  m_Name: TargetMark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7694559383100704062
+--- !u!4 &7808645532528327458
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5550535291274602365}
+  m_GameObject: {fileID: 7814392355678581283}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -5.625, y: 4, z: -6.98}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4188240052953926866
+--- !u!114 &1847991517719541123
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5550535291274602365}
+  m_GameObject: {fileID: 7814392355678581283}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88129d1b81d0cf54e87ad81be46b7369, type: 3}
+  m_Script: {fileID: 11500000, guid: 91d03e292e180564686d74c4ecd6848f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  customAbility: 0
   label: 
   description: 
-  BloodLustCost: 5
-  target: {fileID: 0}
-  SeekingTarget: 0
-  currentlyActive: 1
-  enemyMoveStore: 0
+  Image: {fileID: 21300000, guid: 7ea9aa3b08be6e14285c0dc9487bd630, type: 3}
+  SpellName: 
+  ManaCost: 0
+  playerPicksTarget: 1
+  CancelButton: {fileID: 0}
+  Description: 
+  Range: 0
   TurnCounter: 0
-  Duration: 2
-  movePenalty: 2
+  Duration: 3
+  ApplyToSelf: 0
+  CurrentlyActive: 0
+  seekingTarget: 0
+  Target: {fileID: 0}
+  DefPenalty: 2
