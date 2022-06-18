@@ -647,7 +647,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-2454
+  m_Name: pb_Mesh-10760
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3244,7 +3244,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1766
+  m_Name: pb_Mesh-9952
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7713,6 +7713,8 @@ MonoBehaviour:
   Party: []
   Reserve: []
   expRewards: 0
+  so_Units: []
+  chosenAbilities: 
   CurrentUnit: {fileID: 0}
   unitToAttack: {fileID: 0}
   isAttacking: 0
@@ -7724,6 +7726,7 @@ MonoBehaviour:
   musicVol: 1
   sfxVol: 0
   rooms: 
+  trait: []
 --- !u!4 &1797381796 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6735740976104867203, guid: 8c71cb2284ac8a24480f7916ee69171a, type: 3}
@@ -8814,7 +8817,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-3230
+  m_Name: pb_Mesh-11718
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9124,7 +9127,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-3824
+  m_Name: pb_Mesh-12448
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
