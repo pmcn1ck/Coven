@@ -4,8 +4,9 @@ using UnityEngine;
 using TbsFramework.Grid;
 using TbsFramework.Units;
 using TbsFramework.Units.Abilities;
+using TbsFramework.HOMMExample;
 
-public class Counter : Ability
+public class Counter : SpellAbility
 {
     public int TurnCounter = 0;
     public int Duration = 1;
@@ -16,12 +17,13 @@ public class Counter : Ability
     {
         label = "Counter";
         description = "Sacrifice some health to counterattack adjacent enemies when they hit you for a turn";
+        playerPicksTarget = false;
     }
     public override IEnumerator Act(CellGrid cellGrid)
     {
         Debug.Log("Activating Counter");
-        GetComponent<Unit>().HitPoints -= HealthPenalty;
-        GetComponent<Unit>().HealthSlider.value = GetComponent<Unit>().HitPoints;
+        GetComponentInParent<Unit>().HitPoints -= HealthPenalty;
+        GetComponentInParent<Unit>().HealthSlider.value = GetComponent<Unit>().HitPoints;
         CurrentlyActive = true;
         TurnCounter = 0;
 
@@ -32,10 +34,10 @@ public class Counter : Ability
     {
         if (CurrentlyActive == true && GetComponent<Unit>().Cell.GetDistance(unit.Cell) <= 1)
         {
-            int temp = GetComponent<Unit>().AttackFactor;
-            GetComponent<Unit>().AttackFactor = HealthPenalty;
-            GetComponent<Unit>().AttackHandler(unit);
-            GetComponent<Unit>().AttackFactor = temp;
+            int temp = GetComponentInParent<Unit>().AttackFactor;
+            GetComponentInParent<Unit>().AttackFactor = HealthPenalty;
+            GetComponentInParent<Unit>().AttackHandler(unit);
+            GetComponentInParent<Unit>().AttackFactor = temp;
             Debug.Log("Counter Triggered");
         }
     }
@@ -71,5 +73,10 @@ public class Counter : Ability
             StartCoroutine(Act(cellGrid));
         }
 
+    }
+
+    public override string GetDetails()
+    {
+        return description;
     }
 }
