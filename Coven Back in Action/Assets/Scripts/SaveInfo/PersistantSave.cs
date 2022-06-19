@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+public enum TraitLists { ShieldBearer1, ShieldBearer2, Shotgunner1, Shotgunner2, Ranger1, Ranger2, Spotter1, Spotter2}
+
 [System.Serializable]
 public class UnitSaves
 {
-    public string unitType;
-    public soUnit unit;
+    public TraitLists unitAssign;
     public List<Trait> trait;
     //public soAbility[] ability;
 }
@@ -14,6 +16,21 @@ public class UnitSaves
 public class PersistantSave : MonoBehaviour
 {
     public UnitSaves[] unit;
+    public static PersistantSave ps;
+
+
+    private void Awake()
+    {
+        if (ps == null)
+        {
+            DontDestroyOnLoad(this.gameObject);
+            ps = this;
+        }
+        else if (ps != this)
+        {
+            Destroy(gameObject);
+        }
+    }
 
     private void Update()
     {

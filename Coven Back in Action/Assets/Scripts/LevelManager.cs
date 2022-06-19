@@ -27,49 +27,75 @@ public class LevelManager : MonoBehaviour
         foreach (var item in gm.Party)
         {
             var unit = item.GetComponent<ExperimentalUnit>();
+            var traitManage = item.GetComponent<ApplyTrait>();
+
             if (unit.unitType == eUnitType.ShieldBearer)
             {
-                AddUnit(locationNum, item);
+                AddUnit(locationNum, item, traitManage);
                 locationNum++;
             }
         }
         foreach (var item in gm.Party)
         {
             var unit = item.GetComponent<ExperimentalUnit>();
+            var traitManage = item.GetComponent<ApplyTrait>();
             if (unit.unitType == eUnitType.Shotgunner)
             {
-                AddUnit(locationNum, item);
+                AddUnit(locationNum, item, traitManage);
                 locationNum++;
             }
         }
         foreach (var item in gm.Party)
         {
             var unit = item.GetComponent<ExperimentalUnit>();
+            var traitManage = item.GetComponent<ApplyTrait>();
             if (unit.unitType == eUnitType.Ranger)
             {
-                AddUnit(locationNum, item);
+                AddUnit(locationNum, item, traitManage);
                 locationNum++;
             }
         }
         foreach (var item in gm.Party)
         {
             var unit = item.GetComponent<ExperimentalUnit>();
+            var traitManage = item.GetComponent<ApplyTrait>();
             if (unit.unitType == eUnitType.Spotter)
             {
-                AddUnit(locationNum, item);
+                AddUnit(locationNum, item, traitManage);
                 locationNum++;
             }
         }
     }
 
-    void AddUnit(int _locationNum, GameObject _unit)
+    void AddUnit(int _locationNum, GameObject _unit, ApplyTrait traitManage)
     {
+        //_unit.GetComponent<ExperimentalUnit>().UnMark();
         Debug.Log("Spawning Unit");
         GameObject SpawnedUnit = Instantiate(_unit);
         ExperimentalUnit sUnit = SpawnedUnit.GetComponent<ExperimentalUnit>();
         sUnit.Cell = spawnLocations[_locationNum];
         sUnit.Cell.CurrentUnits.Add(sUnit);
+        // Trait Managing code
+        traitManage.trait.Clear();
+        if (PersistantSave.ps != null)
+        {
+            for (int i = 0; i < PersistantSave.ps.unit.Length; i++)
+            {
+                if (PersistantSave.ps.unit[i].unitAssign == traitManage.listAssign)
+                {
 
+                    var selectedList = PersistantSave.ps.unit[i];
+                    if (selectedList.trait != null)
+                    {
+                        foreach (var trait in selectedList.trait)
+                        {
+                            traitManage.trait.Add(trait);
+                        }
+                    }
+                }
+            }
+        }
+        //end of trait managing code
         // Added by GG to handle abilities
         if (sUnit.unitType == eUnitType.Ranger)
         {
@@ -86,6 +112,8 @@ public class LevelManager : MonoBehaviour
         //this line breaks things. might come back to haunt us for not getting it working.
         cellGrid.AddUnit(SpawnedUnit.transform);
         cellGrid.AddPlayableUnit(SpawnedUnit.transform);
+
+
     }
 
     void EvaluateAbilities (ExperimentalUnit _sUnit)

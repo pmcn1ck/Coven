@@ -6738,21 +6738,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unit:
-  - unitType: Ranger
-    unit: {fileID: 11400000, guid: 023524e59b11e53499522fb2c6976724, type: 2}
+  - unitAssign: 0
     trait:
     - {fileID: 11400000, guid: 67f4e90c99846fd46b73f86253bdb605, type: 2}
     - {fileID: 11400000, guid: 16d252d080277524bae65b3fd2d1ef73, type: 2}
     - {fileID: 11400000, guid: 8eacf26a194e6314d8a4a7fa3e826b5a, type: 2}
-  - unitType: ShieldBearer
-    unit: {fileID: 0}
-    trait: []
-  - unitType: Spotter
-    unit: {fileID: 0}
-    trait: []
-  - unitType: ShotGunner
-    unit: {fileID: 0}
-    trait: []
+  - unitAssign: 0
+    trait:
+    - {fileID: 11400000, guid: 67f4e90c99846fd46b73f86253bdb605, type: 2}
+  - unitAssign: 2
+    trait:
+    - {fileID: 11400000, guid: 16d252d080277524bae65b3fd2d1ef73, type: 2}
+  - unitAssign: 4
+    trait:
+    - {fileID: 11400000, guid: 8eacf26a194e6314d8a4a7fa3e826b5a, type: 2}
+  - unitAssign: 6
+    trait:
+    - {fileID: 11400000, guid: bd234b1316eb5c946b0774ded01c779c, type: 2}
 --- !u!1 &1476333887
 GameObject:
   m_ObjectHideFlags: 0

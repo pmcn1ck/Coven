@@ -15,6 +15,7 @@ public class ApplyTrait : Ability
     Maybe put Range int into Trait Script so all the info can just be plugged into the list.
     */
 
+    public TraitLists listAssign;
     public List<Trait> trait = new List<Trait>();
     public int Range = 1;
     public CellGrid cellGridHolder;

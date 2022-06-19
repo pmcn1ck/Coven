@@ -46,8 +46,25 @@ public class TeamManagement : MonoBehaviour
 
     public void OpenTraitRemoval(GameObject unit)
     {
+
+
         traitRemovalManager.SetActive(true);
         Debug.Log("Unit: " + unit);
+        for (int i = 0; i < PersistantSave.ps.unit.Length; i++)
+        {
+            if(unit.GetComponent<ApplyTrait>().listAssign == PersistantSave.ps.unit[i].unitAssign)
+            {
+                var persistentList = PersistantSave.ps.unit[i];
+                for (int b = 0; b < persistentList.trait.Count; b++)
+                {
+                    Trait curTrait = persistentList.trait[b];
+                    wTraitSelectButton scr = Instantiate(wTraitSelect, traitList.transform).GetComponent<wTraitSelectButton>();
+                    scr.InitUI(unit, curTrait, this);
+                }
+            }
+        }
+        //current code, commented out for testing
+        /*
         for (int i = 0; i < unit.GetComponent<ApplyTrait>().trait.Count; i++)
         {
             Trait curTrait = unit.GetComponent<ApplyTrait>().trait[i];
@@ -59,6 +76,8 @@ public class TeamManagement : MonoBehaviour
             //traitTextName.text = curTrait.Name;
             
         }
+        */
+        //old code depreciated
         /*foreach (Trait item in unit.GetComponent<ApplyTrait>().trait)
         {
             ApplyTrait curTrait = unit.GetComponent<ApplyTrait>().trait[item];
@@ -80,7 +99,16 @@ public class TeamManagement : MonoBehaviour
     public void RemoveTrait(GameObject unit, Trait selectedTrait)
     {
         Debug.Log("Trait Removed: " + selectedTrait);
-        unit.GetComponent<ApplyTrait>().trait.Remove(selectedTrait);
+        
+        for (int i = 0; i < PersistantSave.ps.unit.Length; i++)
+        {
+            if(unit.GetComponent<ApplyTrait>().listAssign == PersistantSave.ps.unit[i].unitAssign)
+            {
+                var selectedList = PersistantSave.ps.unit[i];
+                selectedList.trait.Remove(selectedTrait);
+            }
+        }
+        
     }
 
     public void CloseUI()
@@ -91,6 +119,7 @@ public class TeamManagement : MonoBehaviour
         }
         */
         partyManager.SetActive(false);
+        
     }
 
 }
