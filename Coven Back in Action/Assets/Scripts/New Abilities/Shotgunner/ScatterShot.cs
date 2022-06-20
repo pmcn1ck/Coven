@@ -4,8 +4,9 @@ using UnityEngine;
 using TbsFramework.Grid;
 using TbsFramework.Units;
 using TbsFramework.Units.Abilities;
+using TbsFramework.HOMMExample;
 
-public class ScatterShot : Ability
+public class ScatterShot : SpellAbility
 {
     List<Unit> UnitsInRange = new List<Unit>();
     public float BloodCost = 15f;
@@ -14,13 +15,14 @@ public class ScatterShot : Ability
     {
         label = "Scatter Shot";
         description = "Raise your bloodlust significantly to deliver a light attack to up to 3 random units in your range";
+        playerPicksTarget = false;
     }
 
     public override IEnumerator Act(CellGrid cellGrid)
     {
         Debug.Log("Activating Scatter Shot");
         foreach (Unit u in cellGrid.GetEnemyUnits(cellGrid.Players[GetComponent<Unit>().PlayerNumber])){
-            if (u.Cell.GetDistance(UnitReference.Cell) <= GetComponent<Unit>().AttackRange)
+            if (u.Cell.GetDistance(GetComponentInParent<Unit>().Cell) <= GetComponentInParent<Unit>().AttackRange)
             {
                 UnitsInRange.Add(u);
             }
@@ -31,8 +33,8 @@ public class ScatterShot : Ability
         }
         else
         {
-            GetComponent<Unit>().BloodLust += BloodCost;
-            GetComponent<Unit>().BloodLustSlider.value += BloodCost;
+            GetComponentInParent<Unit>().BloodLust += BloodCost;
+            GetComponentInParent<Unit>().BloodLustSlider.value += BloodCost;
             int targetNum;
             if (UnitsInRange.Count >= 3)
             {
@@ -50,15 +52,15 @@ public class ScatterShot : Ability
                 GetComponent<Unit>().AttackHandler(target);
                 UnitsInRange.Remove(target);
             }
-            GetComponent<Unit>().AttackFactor = temp;
-            GetComponent<Unit>().ActionPoints--;
+            GetComponentInParent<Unit>().AttackFactor = temp;
+            GetComponentInParent<Unit>().ActionPoints--;
         }
         yield return 0;
     }
 
     public override void Activate(CellGrid cellGrid)
     {
-        if (GetComponent<Unit>().ActionPoints < 1)
+        if (GetComponentInParent<Unit>().ActionPoints < 1)
         {
             Debug.Log("Not Enough Action Points");
         }
@@ -67,5 +69,10 @@ public class ScatterShot : Ability
             StartCoroutine(Act(cellGrid));
         }
 
+    }
+
+    public override string GetDetails()
+    {
+        return description;
     }
 }
