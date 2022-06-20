@@ -253,7 +253,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 9144906403584584281}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8400304050693959685}
+        m_TargetAssemblyTypeName: wGamEnd, Assembly-CSharp
+        m_MethodName: OnClickChangeUnit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3123856999280643466
 GameObject:
   m_ObjectHideFlags: 0
@@ -1051,9 +1063,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8c843c2f37ff834c840cb0231fc61dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeRanger: {fileID: 0}
+  w_UpgradeRanger: {fileID: 0}
   upgradeShieldBearer: {fileID: 0}
   upgradeSpotter: {fileID: 0}
   upgradeShotgunner: {fileID: 0}
   upgradeGrp: {fileID: 0}
   bUnitClicked: {fileID: 0}
+  levelSlider: {fileID: 0}
+  victroy: {fileID: 0}
+  w_CangeUint: {fileID: 3672114414618020530, guid: d40d3015b21e4e54baba18d5526db46b, type: 3}
+  tChangeUnit: {fileID: 2767933310964807051, guid: 5e565075f1d3be141a2763ff082284e8, type: 3}
+  tExp: {fileID: 0}
