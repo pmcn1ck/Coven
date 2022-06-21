@@ -26,6 +26,11 @@ public class TeamManagement : MonoBehaviour
     public void InitUI()
     {
         partyManager.SetActive(true);
+        traitRemoveOpen.interactable = false;
+        for (int i = 0; i < partyList.transform.childCount; i++)
+        {
+            Object.Destroy(partyList.transform.GetChild(i).gameObject);
+        }
         foreach (GameObject item in GameManager.gm.Party)
         {
             wButtonUnit scr = Instantiate(wButtonUnit, partyList).GetComponent<wButtonUnit>();
@@ -41,6 +46,7 @@ public class TeamManagement : MonoBehaviour
     {
         traitRemoveOpen.onClick.RemoveAllListeners();
         traitRemoveOpen.onClick.AddListener(delegate { OpenTraitRemoval(unit.gameObject); });
+        traitRemoveOpen.interactable = true;
         characterPortrait.sprite = unit.characterPortrait;
     }
 
@@ -49,7 +55,12 @@ public class TeamManagement : MonoBehaviour
 
 
         traitRemovalManager.SetActive(true);
+        removeTrait.interactable = false;
         Debug.Log("Unit: " + unit);
+        for (int i = 0; i < traitList.transform.childCount; i++)
+        {
+            Object.Destroy(traitList.transform.GetChild(i).gameObject);
+        }
         for (int i = 0; i < PersistantSave.ps.unit.Length; i++)
         {
             if(unit.GetComponent<ApplyTrait>().listAssign == PersistantSave.ps.unit[i].unitAssign)
@@ -94,6 +105,7 @@ public class TeamManagement : MonoBehaviour
         Debug.Log("Trait selected: " + selectedTrait);
         removeTrait.onClick.RemoveAllListeners();
         removeTrait.onClick.AddListener(delegate { RemoveTrait(unit, selectedTrait); });
+        removeTrait.interactable = true;
     }
 
     public void RemoveTrait(GameObject unit, Trait selectedTrait)
@@ -106,6 +118,7 @@ public class TeamManagement : MonoBehaviour
             {
                 var selectedList = PersistantSave.ps.unit[i];
                 selectedList.trait.Remove(selectedTrait);
+                OpenTraitRemoval(unit);
             }
         }
         
