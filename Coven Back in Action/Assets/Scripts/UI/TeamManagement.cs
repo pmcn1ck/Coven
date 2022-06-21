@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class TeamManagement : MonoBehaviour
 {
@@ -22,6 +23,20 @@ public class TeamManagement : MonoBehaviour
 
     public GameObject wButtonUnit;
     public GameObject wTraitSelect;
+
+
+    private void Update()
+    {
+        // Check if the left mouse button was clicked
+        if (Input.GetMouseButtonDown(0))
+        {
+            // Check if the mouse was clicked over a UI element
+            if (EventSystem.current.IsPointerOverGameObject())
+            {
+                return;
+            }
+        }
+    }
 
     public void InitUI()
     {
@@ -74,28 +89,6 @@ public class TeamManagement : MonoBehaviour
                 }
             }
         }
-        //current code, commented out for testing
-        /*
-        for (int i = 0; i < unit.GetComponent<ApplyTrait>().trait.Count; i++)
-        {
-            Trait curTrait = unit.GetComponent<ApplyTrait>().trait[i];
-            wTraitSelectButton scr = Instantiate(wTraitSelect, traitList.transform).GetComponent<wTraitSelectButton>();
-            scr.InitUI(unit, curTrait, this);
-            Debug.Log("cur trait is: " + curTrait);
-            
-            //traitButton.onClick.AddListener(delegate { SelectTrait(unit, curTrait); });
-            //traitTextName.text = curTrait.Name;
-            
-        }
-        */
-        //old code depreciated
-        /*foreach (Trait item in unit.GetComponent<ApplyTrait>().trait)
-        {
-            ApplyTrait curTrait = unit.GetComponent<ApplyTrait>().trait[item];
-            Instantiate(traitButton, traitList.transform);
-            traitButton.text = unitTraits.
-        }
-        */
     }
 
     public void SelectTrait(GameObject unit, Trait selectedTrait)
@@ -118,6 +111,7 @@ public class TeamManagement : MonoBehaviour
             {
                 var selectedList = PersistantSave.ps.unit[i];
                 selectedList.trait.Remove(selectedTrait);
+                unit.GetComponent<ExperimentalUnit>().BloodLust -= selectedTrait.BloodLustRemove;
                 OpenTraitRemoval(unit);
             }
         }
@@ -126,13 +120,15 @@ public class TeamManagement : MonoBehaviour
 
     public void CloseUI()
     {
-        /*foreach (Button item in partyList)
+        if (traitRemovalManager.activeSelf)
         {
-
+            traitRemovalManager.SetActive(false);
         }
-        */
         partyManager.SetActive(false);
         
     }
-
+    public void CloseTraitScreen()
+    {
+        traitRemovalManager.SetActive(false);
+    }
 }
