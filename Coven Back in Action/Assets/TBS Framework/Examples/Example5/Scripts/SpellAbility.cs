@@ -20,6 +20,7 @@ namespace TbsFramework.HOMMExample
         public override IEnumerator Act(CellGrid cellGrid)
         {
             UnitReference.GetComponent<SpellCastingAbility>().CurrentMana -= ManaCost;
+            GetComponentInParent<SpellCastingAbility>()?.CancelCasting();
             yield return 0;
         }
 

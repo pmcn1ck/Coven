@@ -10,8 +10,6 @@ namespace TbsFramework.Units.Abilities
 {
     public abstract class Ability : MonoBehaviour
     {
-        public enum eCustomAbility {none, targetMark, rejuvenatingFlask }
-        public eCustomAbility customAbility;
         public string label;
         public string description;
         //Reference to the unit that the ability is attached to

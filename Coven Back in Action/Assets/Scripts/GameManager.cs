@@ -41,7 +41,6 @@ public class GameManager : MonoBehaviour
     public GameObject[] Reserve; //reserve units for player
     public int expRewards; //experience rewarded after combat complete
     public soUnit[] so_Units;
-    public Ability.eCustomAbility[] chosenAbilities; 
     public GameObject CurrentUnit;
     public Unit unitToAttack;
 
@@ -84,20 +83,6 @@ public class GameManager : MonoBehaviour
             sUnit.TotalHitPoints = sUnit.HitPoints;
         }
     }
-
-    public bool IsAbilityChosen(Ability _ability)
-    {
-        bool isChosen = false;
-        foreach (var item in chosenAbilities)
-        {
-            if (_ability.customAbility == item)
-            {
-                return true;
-            }
-        }
-        return false;
-    }
-
 
 
 
