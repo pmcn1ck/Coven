@@ -2453,6 +2453,7 @@ MonoBehaviour:
   Image: {fileID: 21300000, guid: 26a6135da0d6f3e44aa3c6c28075cf82, type: 3}
   SpellName: 
   ManaCost: 0
+  playerPicksTarget: 1
   CancelButton: {fileID: 7551210582887793301}
   Description: 
   Range: 1
@@ -11763,15 +11764,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2484691584457914477}
-  - component: {fileID: 957099273149568531}
-  - component: {fileID: 4537815057408329296}
   - component: {fileID: 1088075794934636837}
-  - component: {fileID: 468346654035931365}
-  - component: {fileID: 8307090185681030467}
-  - component: {fileID: 1774091712946660698}
-  - component: {fileID: 8566790061581201476}
-  - component: {fileID: 324594412350079524}
-  - component: {fileID: 6083285896416024796}
   - component: {fileID: 478701872388526414}
   m_Layer: 0
   m_Name: Ranger v3.2 (green)
@@ -11801,36 +11794,6 @@ Transform:
   m_Father: {fileID: 3672114414618020542}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &957099273149568531
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5847390870665259083}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00fa7140db80b3b498d5b8472c717f37, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  customAbility: 0
-  label: 
-  description: 
---- !u!114 &4537815057408329296
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5847390870665259083}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b212915272f70f40899729e7af922c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  customAbility: 0
-  label: 
-  description: 
 --- !u!136 &1088075794934636837
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -11845,106 +11808,6 @@ CapsuleCollider:
   m_Height: 2.75
   m_Direction: 1
   m_Center: {x: 0, y: 1.25, z: 0}
---- !u!114 &468346654035931365
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5847390870665259083}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf3f5d03c90f993479632da8c6a92af2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  customAbility: 0
-  label: 
-  description: 
-  Buff: {fileID: 11400000, guid: 9b8f8a1a7dabd7946a2dd358e755e996, type: 2}
-  Range: 2
-  ApplyToSelf: 0
---- !u!114 &8307090185681030467
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5847390870665259083}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44fb4bf9ea051ad46bb9bd47dc4c6928, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerInfo: {fileID: 0}
-  tplayerInfor: {fileID: 0}
---- !u!114 &1774091712946660698
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5847390870665259083}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 981e5bfd4447a6a4680c17f0b7e0c281, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &8566790061581201476
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5847390870665259083}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9058e8881b70c3d4da927b99649519d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  customAbility: 0
-  label: 
-  description: 
-  trait: []
-  Range: 1
-  cellGridHolder: {fileID: 0}
---- !u!114 &324594412350079524
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5847390870665259083}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb814fc8d355b7249b3ec7c27f63cee5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  message: 
-  defense: 0
-  attack: 0
---- !u!114 &6083285896416024796
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5847390870665259083}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7821cb545dd4fb48bc8af25a5c834e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  customAbility: 0
-  label: 
-  description: 
-  SpellBookPanel: {fileID: 5859806726101643601}
-  SpellPanel: {fileID: 3992391482420496053}
-  CancelButton: {fileID: 7551210582887793301}
-  Spells:
-  - {fileID: 6770354464186121544}
-  SpellPanels: []
-  MaxMana: 0
-  ManaRecoveryRate: 0
 --- !u!114 &478701872388526414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13384,7 +13247,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6083285896416024796}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: TbsFramework.HOMMExample.SpellCastingAbility, Assembly-CSharp
         m_MethodName: CancelCasting
         m_Mode: 1
