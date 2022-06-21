@@ -12,9 +12,11 @@ public class ExperimentalUnit : Unit
     public GameObject model;
     public soAbility[] so_Ability;
     public Ability[] abilities;
+    public Material indicator;
 
     public void Start()
     {
+        indicator = model.GetComponent<Renderer>().sharedMaterial;
         if (unitType != eUnitType.None)
         {
             MarkAsFriendly();
@@ -46,38 +48,38 @@ public class ExperimentalUnit : Unit
 
     public override void MarkAsFriendly()
     {
-        model.GetComponent<Renderer>().sharedMaterial.color = Color.green;
-        model.GetComponent<Renderer>().sharedMaterial.EnableKeyword("_EMISSION");
-        model.GetComponent<Renderer>().sharedMaterial.SetColor("_EmissionColor", Color.green);
+        indicator.color = Color.green;
+        indicator.EnableKeyword("_EMISSION");
+        indicator.SetColor("_EmissionColor", Color.green);
     }
 
     public override void MarkAsReachableEnemy()
     {
-        model.GetComponent<Renderer>().sharedMaterial.color = Color.red;
-        model.GetComponent<Renderer>().sharedMaterial.EnableKeyword("_EMISSION");
-        model.GetComponent<Renderer>().sharedMaterial.SetColor("_EmissionColor", Color.red);
+        indicator.color = Color.red;
+        indicator.EnableKeyword("_EMISSION");
+        indicator.SetColor("_EmissionColor", Color.red);
     }
 
     public override void MarkAsSelected()
     {
-        model.GetComponent<Renderer>().sharedMaterial.color = Color.yellow;
-        model.GetComponent<Renderer>().sharedMaterial.EnableKeyword("_EMISSION");
-        model.GetComponent<Renderer>().sharedMaterial.SetColor("_EmissionColor", Color.yellow);
+        indicator.color = Color.yellow;
+        indicator.EnableKeyword("_EMISSION");
+        indicator.SetColor("_EmissionColor", Color.yellow);
     }
 
 
     public override void MarkAsFinished()
     {
-        model.GetComponent<Renderer>().sharedMaterial.color = Color.gray;
-        model.GetComponent<Renderer>().sharedMaterial.EnableKeyword("_EMISSION");
-        model.GetComponent<Renderer>().sharedMaterial.SetColor("_EmissionColor", Color.grey);
+        indicator.color = Color.gray;
+        indicator.EnableKeyword("_EMISSION");
+        indicator.SetColor("_EmissionColor", Color.grey);
     }
 
     public override void UnMark()
     {
-        model.GetComponent<Renderer>().sharedMaterial.color = LeadingColor;
-        model.GetComponent<Renderer>().sharedMaterial.EnableKeyword("_EMISSION");
-        model.GetComponent<Renderer>().sharedMaterial.SetColor("_EmissionColor", LeadingColor);
+        indicator.color = LeadingColor;
+        indicator.EnableKeyword("_EMISSION");
+        indicator.SetColor("_EmissionColor", LeadingColor);
     }
 
 }

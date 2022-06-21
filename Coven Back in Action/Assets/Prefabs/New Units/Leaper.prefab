@@ -2967,7 +2967,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: cb72f02efdc099840935c0d111843c0c, type: 2}
+  - {fileID: 2100000, guid: e2ad90a3f088f9e49a89a6d6c9f21347, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3184,10 +3184,11 @@ MonoBehaviour:
   particlePlayer: {fileID: 0}
   pSoundManager: {fileID: 0}
   unitType: 4
-  LeadingColor: {r: 0, g: 0, b: 0, a: 0}
+  LeadingColor: {r: 1, g: 1, b: 1, a: 0}
   model: {fileID: 3518477564797270898}
   so_Ability: []
   abilities: []
+  indicator: {fileID: 2100000, guid: e2ad90a3f088f9e49a89a6d6c9f21347, type: 2}
 --- !u!114 &5551219936812178427
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3462,7 +3463,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4a1ea990c17d5a542b4bac570bb0939d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4a1ea990c17d5a542b4bac570bb0939d, type: 3}
       propertyPath: m_LocalPosition.z
