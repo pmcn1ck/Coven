@@ -3650,7 +3650,7 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8980392, a: 1}
-  m_Intensity: 5
+  m_Intensity: 2
   m_Range: 5
   m_SpotAngle: 56.735367
   m_InnerSpotAngle: 21.80208
@@ -3802,6 +3802,7 @@ MonoBehaviour:
   model: {fileID: 4454148476552521426}
   so_Ability: []
   abilities: []
+  indicator: {fileID: 2100000, guid: 32eeae08d043c5e4a92117fd1c49e899, type: 2}
 --- !u!114 &1532836068345103213
 MonoBehaviour:
   m_ObjectHideFlags: 0
