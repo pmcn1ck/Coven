@@ -442,13 +442,7 @@ namespace TbsFramework.Units
 
             if (HealthSlider != null)
             {
-               // HealthSlider.value = 20/HitPoints;
-            }
-
-            if(HealthImage != null)
-            {
-                HealthImage.fillAmount = HitPoints;
-                Debug.Log(" health image " + HitPoints);
+                HealthSlider.value = HitPoints;
             }
 
             if (particlePlayer.takeDamage != null)

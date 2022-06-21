@@ -263,8 +263,7 @@ namespace TbsFramework.HOMMExample
 
         public override string GetDetails()
         {
-            string str = "Target Mark Executed";
-            return str;
+            return description;
         }
     }
 }
