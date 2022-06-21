@@ -62,12 +62,12 @@ namespace TbsFramework.HOMMExample
                             spell.Activate(cellGrid);
                             SpellBookPanel.SetActive(false);
                         }
-
                     }
                 });
 
                 SpellPanels.Add(spellPanelInstance);
             }
+            RemoveUI();
         }
 
         public override void CleanUp(CellGrid cellGrid)
@@ -109,6 +109,7 @@ namespace TbsFramework.HOMMExample
             var cellGrid = FindObjectOfType<CellGrid>();
             cellGrid.CellGridState = new CellGridStateWaitingForInput(cellGrid);
             CancelButton.SetActive(false);
+            SpellBookPanel.SetActive(false);
         }
     }
 }

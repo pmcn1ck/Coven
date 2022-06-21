@@ -66,6 +66,8 @@ namespace TbsFramework.HOMMExample
             {
                 UnitReference.MarkAsAttacking(tempUnit);
             }
+            GetComponentInParent<Unit>().HitPoints -= DefPenalty;
+            GetComponentInParent<Unit>().HealthSlider.value -= DefPenalty;
 
             //GetComponentInParent<SpellCastingAbility>().CancelCasting(); // Must be in every spell, removes UI
 

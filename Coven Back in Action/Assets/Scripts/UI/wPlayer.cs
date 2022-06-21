@@ -100,7 +100,17 @@ public class wPlayer : MonoBehaviour
         }
         else
         {
-            attachedUnit.gameObject.transform.GetComponent<TbsFramework.HOMMExample.SpellCastingAbility>().Display(cellGrid);
+            if (!attachedUnit.gameObject.transform.GetComponent<TbsFramework.HOMMExample.SpellCastingAbility>().SpellBookPanel.activeSelf)
+            {
+                attachedUnit.gameObject.transform.GetComponent<TbsFramework.HOMMExample.SpellCastingAbility>().Display(cellGrid);
+            }
+            else
+            {
+                //attachedUnit.gameObject.transform.GetComponent<TbsFramework.HOMMExample.SpellCastingAbility>().CancelCasting();
+                attachedUnit.gameObject.transform.GetComponent<TbsFramework.HOMMExample.SpellCastingAbility>().CleanUp(cellGrid);
+                Debug.Log("Is it getting this far?");
+            }
+
         }
 
 

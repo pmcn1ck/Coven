@@ -3283,7 +3283,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00fa7140db80b3b498d5b8472c717f37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  customAbility: 0
   label: 
   description: 
 --- !u!114 &8433122088852916852
@@ -3298,7 +3297,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b212915272f70f40899729e7af922c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  customAbility: 0
   label: 
   description: 
 --- !u!136 &4965330948765625601
@@ -3353,7 +3351,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9058e8881b70c3d4da927b99649519d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  customAbility: 0
   label: 
   description: 
   listAssign: 4
@@ -3388,14 +3385,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7821cb545dd4fb48bc8af25a5c834e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  customAbility: 0
   label: 
   description: 
   SpellBookPanel: {fileID: 1919604575318424949}
   SpellPanel: {fileID: 8977411277086395025}
   CancelButton: {fileID: 2538538285930155697}
   Spells:
-  - {fileID: 953887911444934842}
+  - {fileID: 8490661808993062942}
   SpellPanels: []
   MaxMana: 0
   ManaRecoveryRate: 0
@@ -4648,7 +4644,7 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6882619741543900462}
     m_Modifications:
-    - target: {fileID: 1847991517719541123, guid: 3695fb3c2c8f7df4190cf7375f3aa219, type: 3}
+    - target: {fileID: 7011371867888719143, guid: 3695fb3c2c8f7df4190cf7375f3aa219, type: 3}
       propertyPath: CancelButton
       value: 
       objectReference: {fileID: 2538538285930155697}
@@ -4707,15 +4703,15 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7808645532528327458, guid: 3695fb3c2c8f7df4190cf7375f3aa219, type: 3}
   m_PrefabInstance: {fileID: 1484365431890068793}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &953887911444934842 stripped
+--- !u!114 &8490661808993062942 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1847991517719541123, guid: 3695fb3c2c8f7df4190cf7375f3aa219, type: 3}
+  m_CorrespondingSourceObject: {fileID: 7011371867888719143, guid: 3695fb3c2c8f7df4190cf7375f3aa219, type: 3}
   m_PrefabInstance: {fileID: 1484365431890068793}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91d03e292e180564686d74c4ecd6848f, type: 3}
+  m_Script: {fileID: 11500000, guid: c75932d67566ba84fae3cd92c6ef4519, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1565966134524548060
