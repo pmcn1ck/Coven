@@ -1070,7 +1070,7 @@ MonoBehaviour:
   upgradeGrp: {fileID: 0}
   bUnitClicked: {fileID: 0}
   levelSlider: {fileID: 0}
-  victroy: {fileID: 0}
+  victroy: {fileID: 3108018915164687355, guid: f120aa7ca2c41964ab7fc5da79627cfa, type: 3}
   w_CangeUint: {fileID: 3672114414618020530, guid: d40d3015b21e4e54baba18d5526db46b, type: 3}
   tChangeUnit: {fileID: 2767933310964807051, guid: 5e565075f1d3be141a2763ff082284e8, type: 3}
   tExp: {fileID: 0}
