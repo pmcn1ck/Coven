@@ -672,6 +672,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1833385789}
   - component: {fileID: 1833385788}
+  - component: {fileID: 1833385790}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -709,6 +710,7 @@ MonoBehaviour:
   Party: []
   Reserve: []
   expRewards: 0
+  so_Units: []
   CurrentUnit: {fileID: 0}
   unitToAttack: {fileID: 0}
   isAttacking: 0
@@ -720,6 +722,7 @@ MonoBehaviour:
   musicVol: 0
   sfxVol: 0
   rooms: 00000000
+  trait: []
 --- !u!4 &1833385789
 Transform:
   m_ObjectHideFlags: 0
@@ -735,3 +738,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1833385790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1833385787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 137d40b95c40d954abe690be3c6b0ddf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unit:
+  - unitAssign: 0
+    trait:
+    - {fileID: 11400000, guid: 67f4e90c99846fd46b73f86253bdb605, type: 2}
+  - unitAssign: 2
+    trait:
+    - {fileID: 11400000, guid: 16d252d080277524bae65b3fd2d1ef73, type: 2}
+    - {fileID: 11400000, guid: 8eacf26a194e6314d8a4a7fa3e826b5a, type: 2}
+  - unitAssign: 4
+    trait:
+    - {fileID: 11400000, guid: bd234b1316eb5c946b0774ded01c779c, type: 2}
+    - {fileID: 11400000, guid: 16d252d080277524bae65b3fd2d1ef73, type: 2}
+  - unitAssign: 6
+    trait:
+    - {fileID: 11400000, guid: 16d252d080277524bae65b3fd2d1ef73, type: 2}
