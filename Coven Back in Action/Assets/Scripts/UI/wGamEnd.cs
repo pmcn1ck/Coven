@@ -18,9 +18,6 @@ public class wGamEnd : MonoBehaviour
     public GameObject bUnitClicked;
     public Slider levelSlider;
     public GameObject victroy;
-    public GameObject w_CangeUint;
-    public Transform tChangeUnit;
-
 
     public Text tExp;
     CellGrid CellGrid;
@@ -33,7 +30,7 @@ public class wGamEnd : MonoBehaviour
         CellGrid = FindObjectOfType<CellGrid>();
         List<Unit> playableUnits = CellGrid.GetCurrentPlayerUnits();
         //tExp.text = playableUnits[1].experience.ToString();
-       // levelSlider.value = (float)playableUnits[1].experience /100f;
+        levelSlider.value = (float)playableUnits[1].experience /100f;
         StartCoroutine(VictroyUi());
     }
 
@@ -79,16 +76,6 @@ public class wGamEnd : MonoBehaviour
     {
    
         GameManager.gm.LoadScene(eScene.InGame);
-    }
-
-    public void OnClickChangeUnit()
-    {
-        this.gameObject.SetActive(false);
-        Debug.Log("this is change is working");
-        Instantiate(w_CangeUint, tChangeUnit);
-        GameManager.gm.SetCam();
-
-
     }
 
     
