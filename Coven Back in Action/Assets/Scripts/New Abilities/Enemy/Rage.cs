@@ -22,7 +22,8 @@ public class Rage : Ability
         Debug.Log("RRRRAAAAAAAARRRRGHHHBLEH (An enemy is raging)");
         GetComponent<ParticlePlayer>().CallExtraParticle(0);
         GetComponent<Unit>().HitPoints -= AtkGain;
-        GetComponent<Unit>().HealthSlider.value = GetComponent<Unit>().HitPoints;
+       // GetComponent<Unit>().HealthSlider.value = GetComponent<Unit>().HitPoints;
+        GetComponent<Unit>().HealthImage.fillAmount = GetComponent<Unit>().HitPoints;
         GetComponent<Unit>().AttackFactor += AtkGain;
         GetComponent<Unit>().ActionPoints--;
 

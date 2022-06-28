@@ -113,6 +113,8 @@ namespace TbsFramework.Gui
                 foreach(var item in CellGrid.GetEnemyUnits(p))
                 {
                     item.DefendHandler(u, 10000);
+                    unit.levelUp = true;
+                    unit.level++;
                 }
             }
             if (Input.GetKeyDown(KeyCode.L))
