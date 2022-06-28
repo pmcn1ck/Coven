@@ -100,8 +100,9 @@ namespace TbsFramework.HOMMExample
         public void RemoveUI()
         {
             var cellGrid = FindObjectOfType<CellGrid>();
-            cellGrid.CellGridState = new CellGridStateWaitingForInput(cellGrid);
+            //cellGrid.CellGridState = new CellGridStateWaitingForInput(cellGrid);
             CancelButton.SetActive(false);
+            //SpellBookPanel.SetActive(false);
         }
 
         public void CancelCasting()

@@ -3186,6 +3186,7 @@ GameObject:
   - component: {fileID: 4400759244548144224}
   - component: {fileID: 5724297221707271680}
   - component: {fileID: 2278211533201691896}
+  - component: {fileID: 4769554822673240532}
   m_Layer: 0
   m_Name: Ranger v3.2 (green)
   m_TagString: Untagged
@@ -3396,6 +3397,22 @@ MonoBehaviour:
   SpellPanels: []
   MaxMana: 0
   ManaRecoveryRate: 0
+--- !u!114 &4769554822673240532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934263189637653615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbb1b839c68029244bd6df860dc8d536, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attack: {fileID: 0}
+  takeDamage: {fileID: 0}
+  heal: {fileID: 0}
+  extraParticles: []
 --- !u!1 &2217303235202740479
 GameObject:
   m_ObjectHideFlags: 0
@@ -4792,14 +4809,14 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: c3f6ade12e8ddd44db47f3f9c2d3627a, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d91c8d0950e3c8448f41d93ad98d8ae, type: 3}
---- !u!4 &1311062726379697207 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8d91c8d0950e3c8448f41d93ad98d8ae, type: 3}
-  m_PrefabInstance: {fileID: 1565966134524548060}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1835784432086003341 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8d91c8d0950e3c8448f41d93ad98d8ae, type: 3}
+  m_PrefabInstance: {fileID: 1565966134524548060}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1311062726379697207 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8d91c8d0950e3c8448f41d93ad98d8ae, type: 3}
   m_PrefabInstance: {fileID: 1565966134524548060}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &5357775683772913715
@@ -5013,9 +5030,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!224 &3476968678765890209 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 5263579101661597268, guid: 5d77762f4b8822245a34c9e2f8a36f2a, type: 3}
+--- !u!1 &2304585212336490789 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7399653688288660944, guid: 5d77762f4b8822245a34c9e2f8a36f2a, type: 3}
   m_PrefabInstance: {fileID: 8740169495780623605}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &8156653364601124602 stripped
@@ -5029,8 +5046,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &2304585212336490789 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7399653688288660944, guid: 5d77762f4b8822245a34c9e2f8a36f2a, type: 3}
+--- !u!224 &3476968678765890209 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 5263579101661597268, guid: 5d77762f4b8822245a34c9e2f8a36f2a, type: 3}
   m_PrefabInstance: {fileID: 8740169495780623605}
   m_PrefabAsset: {fileID: 0}
