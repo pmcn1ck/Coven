@@ -8,9 +8,11 @@ public class PlayerController : MonoBehaviour
     public Camera cam;
     public NavMeshAgent agent;
     public Animator animator;
+    public bool isInCombat;
 
     private void Start()
     {
+        isInCombat = false;
         cam = Camera.main;
     }
     void Update()

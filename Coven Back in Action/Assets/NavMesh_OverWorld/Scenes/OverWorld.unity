@@ -5718,6 +5718,7 @@ GameObject:
   - component: {fileID: 963194226}
   - component: {fileID: 963194229}
   - component: {fileID: 963194230}
+  - component: {fileID: 963194228}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -5776,6 +5777,21 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &963194228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1bd7a76d321d6745973b04a3b6b94de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  camController: {fileID: 963194229}
+  cam: {fileID: 0}
 --- !u!114 &963194229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6694,7 +6710,6 @@ MonoBehaviour:
   Reserve: []
   expRewards: 0
   so_Units: []
-  chosenAbilities: 
   CurrentUnit: {fileID: 0}
   unitToAttack: {fileID: 0}
   isAttacking: 0
@@ -7138,6 +7153,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 5879426422053455806, guid: 2ccfb2decca768f428c0de5ded0b6394, type: 3}
   PlayerSpawn: {fileID: 586574402}
+  camZoom: {fileID: 963194228}
   RoomDatabase:
   - {fileID: 1746978591}
   - {fileID: 1094262183}
@@ -7920,6 +7936,7 @@ MonoBehaviour:
   pEvent: {fileID: 0}
   pPath: {fileID: 1698496798}
   complete: 1
+  isCombat: 0
   tEventName: {fileID: 0}
   tDescription: {fileID: 0}
   tContinueButton: {fileID: 0}

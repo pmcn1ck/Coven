@@ -8,6 +8,7 @@ public class OverWorldLoad : MonoBehaviour
 {
     public GameObject Player;
     public Transform PlayerSpawn;
+    public CamZoomFocus camZoom;
     public List<sRoom> RoomDatabase;
     public int curRoomID;
     public sRoom curRoom;
@@ -26,7 +27,8 @@ public class OverWorldLoad : MonoBehaviour
         curRoom = RoomDatabase[curRoomID];
         PlayerSpawn = curRoom.transform;
         Debug.Log("spawn now");
-        Instantiate(Player, new Vector3 (curRoom.transform.position.x, curRoom.transform.position.y, curRoom.transform.position.z), Quaternion.identity);
+        GameObject newGO = Instantiate(Player, new Vector3 (curRoom.transform.position.x, curRoom.transform.position.y, curRoom.transform.position.z), Quaternion.identity);
+        camZoom.player = newGO.GetComponent<PlayerController>();
     }
 
 
