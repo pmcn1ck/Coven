@@ -50,7 +50,7 @@ namespace TbsFramework.HOMMExample
             {
                 foreach (Unit unit in new List<Unit>(cell.CurrentUnits))
                 {
-                    unit.LowerDefenseHandler(unit, DefPenalty);
+                    unit.LowerDefenseHandler(DefPenalty);
                     Debug.Log("Lowering Defense of " + unit.Name);
                     Target = unit;
                     CurrentlyActive = true;
@@ -184,7 +184,7 @@ namespace TbsFramework.HOMMExample
                 Debug.Log("Target Mark Cooldown Ended");
                 CurrentlyActive = false;
                 TurnCounter = 0;
-                Target.LowerDefenseHandler(Target, -DefPenalty);
+                Target.LowerDefenseHandler(-DefPenalty);
             }
         }
 

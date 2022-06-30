@@ -36,7 +36,16 @@ public class wAbilitiesUpgrade : MonoBehaviour
 
     public void OnClickAbilitythree()
     {
+        abilitytwo.SetActive(false);
+        abilityThree.SetActive(true);
+        abiilityFour.SetActive(false);
 
+    }
+
+    public void OnClickAbilityFour()
+    {
+        abilityThree.SetActive(false);
+        abiilityFour.SetActive(true);
 
     }
 

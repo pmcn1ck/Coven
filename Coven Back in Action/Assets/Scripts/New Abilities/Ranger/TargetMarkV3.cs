@@ -13,16 +13,17 @@ using TbsFramework.HOMMExample;
         public int nJumps;
         public int Damage;
         private List<Unit> inRange;
-    public int DefPenalty;
-    public bool CurrentlyActive;
-    public Unit target;
-    public int counter = 0;
-    public int duration = 3;
+        public int DefPenalty = 2;
+        public bool CurrentlyActive;
+        public Unit target;
+        public int counter = 0;
+        public int duration = 3;
 
     public void Start()
     {
         label = "Target Mark";
         description = "Pick any enemy on the field and lower their defense slightly for 3 turns";
+        CancelButton = GetComponentInParent<SpellCastingAbility>().CancelButton;
     }
 
     public Unit SelectedTarget { get; set; }
@@ -50,16 +51,23 @@ using TbsFramework.HOMMExample;
                 }
 
                 Unit tempUnit = null;
-                for (int i = 0; i < inRange.Count; i++)
+                if (CurrentlyActive == false)
                 {
-                    Unit unitInRange = inRange[i];
-                    target = unitInRange;
-                    target.LowerDefenseHandler(target, DefPenalty);
-                counter = 0;
-                CurrentlyActive = true;
-
-                    tempUnit = unitInRange;
+                for (int i = 0; i < inRange.Count; i++)
+                    {
+                        Unit unitInRange = inRange[i];
+                        target = unitInRange;
+                        target.LowerDefenseHandler(DefPenalty);
+                        counter = 0;
+                        CurrentlyActive = true;
+                        tempUnit = unitInRange;
+                    }
                 }
+                else
+                {
+                    Debug.Log("Already have a target");
+                }
+
 
                 UnitReference.MarkAsAttacking(tempUnit);
 
@@ -142,7 +150,7 @@ using TbsFramework.HOMMExample;
             counter++;
             if (counter >= duration)
             {
-                target.LowerDefenseHandler(target, -DefPenalty);
+                target.LowerDefenseHandler(-DefPenalty);
                 CurrentlyActive = false;
             }
         }

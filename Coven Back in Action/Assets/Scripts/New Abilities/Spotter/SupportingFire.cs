@@ -4,8 +4,9 @@ using UnityEngine;
 using TbsFramework.Grid;
 using TbsFramework.Units;
 using TbsFramework.Units.Abilities;
+using TbsFramework.HOMMExample;
 
-public class SupportingFire : Ability
+public class SupportingFire : SpellAbility
 {
     public int TurnCounter = 0;
     public int Duration = 1;
@@ -16,17 +17,19 @@ public class SupportingFire : Ability
     {
         label = "Supporting Fire";
         description = "Raise your bloodlust to attack enemies whenever your allies do until next turn! (Once per enemy)";
+        playerPicksTarget = false;
+        CancelButton = GetComponentInParent<SpellCastingAbility>().CancelButton;
     }
     public override IEnumerator Act(CellGrid cellGrid)
     {
         Debug.Log("Activating Supporting Fire");
-        GetComponent<Unit>().BloodLust += BloodPenalty;
-        GetComponent<Unit>().BloodLustSlider.value += BloodPenalty;
+        GetComponentInParent<Unit>().BloodLust += BloodPenalty;
+        GetComponentInParent<Unit>().BloodLustSlider.value += BloodPenalty;
         CurrentlyActive = true;
         TurnCounter = 0;
-        foreach (Unit u in cellGrid.GetEnemyUnits(cellGrid.Players[GetComponent<Unit>().PlayerNumber]))
+        foreach (Unit u in cellGrid.GetEnemyUnits(cellGrid.Players[GetComponentInParent<Unit>().PlayerNumber]))
         {
-            if (u.Cell.GetDistance(UnitReference.Cell) <= GetComponent<Unit>().AttackRange)
+            if (u.Cell.GetDistance(UnitReference.Cell) <= GetComponentInParent<Unit>().AttackRange)
             {
                 u.SupportFireTarget = true;
             }
@@ -39,10 +42,10 @@ public class SupportingFire : Ability
     {
         if (CurrentlyActive == true)
         {
-            int temp = GetComponent<Unit>().AttackFactor;
-            GetComponent<Unit>().AttackFactor = GetComponent<Unit>().AttackFactor /2;
-            GetComponent<Unit>().AttackHandler(unit);
-            GetComponent<Unit>().AttackFactor = temp;
+            int temp = GetComponentInParent<Unit>().AttackFactor;
+            GetComponentInParent<Unit>().AttackFactor = GetComponent<Unit>().AttackFactor /2;
+            GetComponentInParent<Unit>().AttackHandler(unit);
+            GetComponentInParent<Unit>().AttackFactor = temp;
             Debug.Log("Supporting Fire Triggered");
             unit.SupportFireTarget = false;
         }
@@ -87,5 +90,10 @@ public class SupportingFire : Ability
             StartCoroutine(Act(cellGrid));
         }
 
+    }
+
+    public override string GetDetails()
+    {
+        return description;
     }
 }

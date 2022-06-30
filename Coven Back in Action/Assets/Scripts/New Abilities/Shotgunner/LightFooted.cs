@@ -23,6 +23,7 @@ public class LightFooted : SpellAbility
         label = "Light-Footed";
         description = "Raise your bloodlust to move further for 3 turns. While active, cannot use Hunker Down";
         playerPicksTarget = false;
+        CancelButton = GetComponentInParent<SpellCastingAbility>().CancelButton;
     }
     public override IEnumerator Act(CellGrid cellGrid)
     {

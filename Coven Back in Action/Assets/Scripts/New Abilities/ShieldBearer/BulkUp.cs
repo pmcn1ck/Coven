@@ -24,6 +24,7 @@ public class BulkUp : SpellAbility
         label = "Bulk Up";
         description = "Raise your bloodlust to increase the defense of allies within 2 spaces";
         playerPicksTarget = false;
+        CancelButton = GetComponentInParent<SpellCastingAbility>().CancelButton;
     }
 
     public override IEnumerator Act(CellGrid cellGrid)

@@ -499,9 +499,9 @@ namespace TbsFramework.Units
             }
         }
 
-        public void LowerDefenseHandler(Unit defender, int lowerDefense)
+        public void LowerDefenseHandler(int lowerDefense)
         {
-            defender.DefenceFactor -= lowerDefense;
+            DefenceFactor -= lowerDefense;
         }
 
         IEnumerator DeathWait()
