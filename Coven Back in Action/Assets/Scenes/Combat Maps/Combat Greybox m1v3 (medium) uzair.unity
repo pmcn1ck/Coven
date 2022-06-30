@@ -6353,6 +6353,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3029557407480336809, guid: 38f333b75b520754795c656dc9af5320, type: 3}
+      propertyPath: mouseType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029557407480336809, guid: 38f333b75b520754795c656dc9af5320, type: 3}
       propertyPath: PlayerNumber
       value: 1
       objectReference: {fileID: 0}
@@ -8823,12 +8827,28 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1406156691}
     m_Modifications:
+    - target: {fileID: 2551239238868661129, guid: 38f333b75b520754795c656dc9af5320, type: 3}
+      propertyPath: hotSpot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2551239238868661129, guid: 38f333b75b520754795c656dc9af5320, type: 3}
+      propertyPath: cursorMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2551239238868661129, guid: 38f333b75b520754795c656dc9af5320, type: 3}
+      propertyPath: cursorTexture
+      value: 
+      objectReference: {fileID: 2800000, guid: ea2a3520597a7324bb2d62a75a8ce327, type: 3}
     - target: {fileID: 3029557407480336809, guid: 38f333b75b520754795c656dc9af5320, type: 3}
       propertyPath: cell
       value: 
       objectReference: {fileID: 1943418382}
     - target: {fileID: 3029557407480336809, guid: 38f333b75b520754795c656dc9af5320, type: 3}
       propertyPath: HitPoints
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029557407480336809, guid: 38f333b75b520754795c656dc9af5320, type: 3}
+      propertyPath: mouseType
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3029557407480336809, guid: 38f333b75b520754795c656dc9af5320, type: 3}
@@ -11707,6 +11727,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3029557407480336809, guid: 38f333b75b520754795c656dc9af5320, type: 3}
+      propertyPath: mouseType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029557407480336809, guid: 38f333b75b520754795c656dc9af5320, type: 3}
       propertyPath: PlayerNumber
       value: 1
       objectReference: {fileID: 0}
@@ -11813,6 +11837,10 @@ PrefabInstance:
       objectReference: {fileID: 1130637129}
     - target: {fileID: 3029557407480336809, guid: 38f333b75b520754795c656dc9af5320, type: 3}
       propertyPath: HitPoints
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029557407480336809, guid: 38f333b75b520754795c656dc9af5320, type: 3}
+      propertyPath: mouseType
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3029557407480336809, guid: 38f333b75b520754795c656dc9af5320, type: 3}
@@ -16569,7 +16597,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-6494
+  m_Name: pb_Mesh-16358
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -23196,7 +23224,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-2824
+  m_Name: pb_Mesh-12688
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -26919,7 +26947,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-3602
+  m_Name: pb_Mesh-13466
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -35574,6 +35602,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3029557407480336809, guid: 38f333b75b520754795c656dc9af5320, type: 3}
       propertyPath: HitPoints
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029557407480336809, guid: 38f333b75b520754795c656dc9af5320, type: 3}
+      propertyPath: mouseType
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3029557407480336809, guid: 38f333b75b520754795c656dc9af5320, type: 3}
@@ -51754,7 +51786,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-9828
+  m_Name: pb_Mesh-19692
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -54177,6 +54209,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3029557407480336809, guid: 38f333b75b520754795c656dc9af5320, type: 3}
       propertyPath: HitPoints
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029557407480336809, guid: 38f333b75b520754795c656dc9af5320, type: 3}
+      propertyPath: mouseType
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3029557407480336809, guid: 38f333b75b520754795c656dc9af5320, type: 3}
@@ -65568,7 +65604,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-4108
+  m_Name: pb_Mesh-13972
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -72019,7 +72055,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-7508
+  m_Name: pb_Mesh-17372
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -76022,6 +76058,11 @@ MonoBehaviour:
   c_Options: {fileID: 0}
   c_grabRotation: {fileID: 0}
   c_player: {fileID: 0}
+  cursorTexture: {fileID: 2800000, guid: 331def9510a2c74459321e3e4a5b6ff5, type: 3}
+  cursorTextureFirendly: {fileID: 2800000, guid: c9e0d275c9e360b4e95d7c987a50ecba, type: 3}
+  cursorMode: 1
+  hotSpot: {x: 0, y: 0}
+  Unit: {fileID: 0}
   eCurScene: 0
   unitTypes:
   - {fileID: 1934263189637653615, guid: 98f8972765c969a4d8761576873d8c9e, type: 3}
@@ -78131,7 +78172,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-2052
+  m_Name: pb_Mesh-11916
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2

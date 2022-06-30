@@ -30,6 +30,14 @@ public class GameManager : MonoBehaviour
     public cPlayer c_player;
 
     [Space]
+    [Header("Mouse Over")]
+    public Texture2D cursorTexture;
+    public Texture2D cursorTextureFirendly;
+    public CursorMode cursorMode = CursorMode.Auto;
+    public Vector2 hotSpot = Vector2.zero;
+    public ExperimentalUnit Unit;
+
+    [Space]
     [Header("Scene Manager")]
     int currentScene;
     public eScene eCurScene;
@@ -82,6 +90,8 @@ public class GameManager : MonoBehaviour
             var sUnit = item.GetComponent<Unit>();
             sUnit.TotalHitPoints = sUnit.HitPoints;
         }
+        Unit = FindObjectOfType<ExperimentalUnit>();
+        
     }
 
 
@@ -140,6 +150,11 @@ public class GameManager : MonoBehaviour
 
     }
 
+    void MouseOver()
+    {
+      
+    }
+
 
     public void LoadScene(eScene _scene)
     {
@@ -176,6 +191,8 @@ public class GameManager : MonoBehaviour
         musicMixer.audioMixer.SetFloat("musicVol", Mathf.Log10(_newValue) * 20);
         musicVol = _newValue;
     }
+
+    
 
 
 }

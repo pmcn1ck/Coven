@@ -5,6 +5,7 @@ using TbsFramework.Units.Abilities;
 using UnityEngine;
 using UnityEngine.UI;
 public enum eUnitType { Shotgunner, Spotter, Ranger, ShieldBearer,None }
+public enum eMouseType { Firendly, none}
 public class ExperimentalUnit : Unit
 {
     public eUnitType unitType;
@@ -13,6 +14,7 @@ public class ExperimentalUnit : Unit
     public soAbility[] so_Ability;
     public Ability[] abilities;
     public Material indicator;
+    public eMouseType mouseType;
 
     public void Start()
     {
