@@ -30,14 +30,6 @@ public class GameManager : MonoBehaviour
     public cPlayer c_player;
 
     [Space]
-    [Header("Mouse Over")]
-    public Texture2D cursorTexture;
-    public Texture2D cursorTextureFirendly;
-    public CursorMode cursorMode = CursorMode.Auto;
-    public Vector2 hotSpot = Vector2.zero;
-    public ExperimentalUnit Unit;
-
-    [Space]
     [Header("Scene Manager")]
     int currentScene;
     public eScene eCurScene;
@@ -73,6 +65,11 @@ public class GameManager : MonoBehaviour
     [Header("Repositories")]
     public Trait[] trait;
 
+    [Space]
+    [Header("Cameras")]
+    public GameObject[] cameras;
+    public bool isPlayerCamActive;
+
     private void Awake()
     {
         if(gm == null)
@@ -90,16 +87,9 @@ public class GameManager : MonoBehaviour
             var sUnit = item.GetComponent<Unit>();
             sUnit.TotalHitPoints = sUnit.HitPoints;
         }
-        Unit = FindObjectOfType<ExperimentalUnit>();
         
     }
 
-
-
-    private void Start()
-    {
-        
-    }
 
     void CreatePlayers()
     {
@@ -150,11 +140,6 @@ public class GameManager : MonoBehaviour
 
     }
 
-    void MouseOver()
-    {
-      
-    }
-
 
     public void LoadScene(eScene _scene)
     {
@@ -192,7 +177,13 @@ public class GameManager : MonoBehaviour
         musicVol = _newValue;
     }
 
-    
+    void SetCam()
+    {
+        cameras[0].SetActive(!isPlayerCamActive);
+        cameras[1].SetActive(isPlayerCamActive);
+
+    }
+
 
 
 }
