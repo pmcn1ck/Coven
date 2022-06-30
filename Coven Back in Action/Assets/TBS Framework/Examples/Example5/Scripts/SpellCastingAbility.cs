@@ -14,6 +14,7 @@ namespace TbsFramework.HOMMExample
         public GameObject CancelButton;
         public List<SpellAbility> Spells;
         public List<GameObject> SpellPanels;
+        public bool ShouldBeActive = false;
 
         public int MaxMana;
         public int CurrentMana { get; set; }
@@ -32,6 +33,8 @@ namespace TbsFramework.HOMMExample
 
         public override void Display(CellGrid cellGrid)
         {
+            if (ShouldBeActive == true)
+            {
             SpellBookPanel.SetActive(true);
             SpellBookPanel.transform.Find("TotalMana").GetComponent<Text>().text = string.Format("{0} Mana", CurrentMana);
 
@@ -68,6 +71,8 @@ namespace TbsFramework.HOMMExample
                 SpellPanels.Add(spellPanelInstance);
             }
             RemoveUI();
+            }
+
         }
 
         public override void CleanUp(CellGrid cellGrid)
@@ -79,6 +84,7 @@ namespace TbsFramework.HOMMExample
 
             SpellBookPanel.SetActive(false);
             SpellPanels = new List<GameObject>();
+            ShouldBeActive = false;
         }
 
         public override void OnTurnStart(CellGrid cellGrid)
@@ -103,6 +109,7 @@ namespace TbsFramework.HOMMExample
             //cellGrid.CellGridState = new CellGridStateWaitingForInput(cellGrid);
             CancelButton.SetActive(false);
             //SpellBookPanel.SetActive(false);
+            ShouldBeActive = false;
         }
 
         public void CancelCasting()
@@ -111,6 +118,7 @@ namespace TbsFramework.HOMMExample
             cellGrid.CellGridState = new CellGridStateWaitingForInput(cellGrid);
             CancelButton.SetActive(false);
             SpellBookPanel.SetActive(false);
+            ShouldBeActive = false;
         }
     }
 }

@@ -53,7 +53,7 @@ MonoBehaviour:
   Description: 
   nJumps: 0
   Damage: 0
-  DefPenalty: 0
+  DefPenalty: 2
   CurrentlyActive: 0
   target: {fileID: 0}
   counter: 0

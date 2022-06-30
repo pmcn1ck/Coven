@@ -16,6 +16,7 @@ public class ScatterShot : SpellAbility
         label = "Scatter Shot";
         description = "Raise your bloodlust significantly to deliver a light attack to up to 3 random units in your range";
         playerPicksTarget = false;
+        CancelButton = GetComponentInParent<SpellCastingAbility>().CancelButton;
     }
 
     public override IEnumerator Act(CellGrid cellGrid)

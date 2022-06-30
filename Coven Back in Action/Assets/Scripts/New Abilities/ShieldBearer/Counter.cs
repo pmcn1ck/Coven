@@ -18,6 +18,7 @@ public class Counter : SpellAbility
         label = "Counter";
         description = "Sacrifice some health to counterattack adjacent enemies when they hit you for a turn";
         playerPicksTarget = false;
+        CancelButton = GetComponentInParent<SpellCastingAbility>().CancelButton;
     }
     public override IEnumerator Act(CellGrid cellGrid)
     {

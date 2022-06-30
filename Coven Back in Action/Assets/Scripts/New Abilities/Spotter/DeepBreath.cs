@@ -21,6 +21,7 @@ public class DeepBreath : SpellAbility
         label = "Deep Breath";
         description = "Spend an action point to increase your attack power for the next turn";
         playerPicksTarget = false;
+        CancelButton = GetComponentInParent<SpellCastingAbility>().CancelButton;
     }
     public override IEnumerator Act(CellGrid cellGrid)
     {

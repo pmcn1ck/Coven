@@ -102,6 +102,7 @@ public class wPlayer : MonoBehaviour
         {
             if (!attachedUnit.gameObject.transform.GetComponent<TbsFramework.HOMMExample.SpellCastingAbility>().SpellBookPanel.activeSelf)
             {
+                attachedUnit.gameObject.transform.GetComponent<TbsFramework.HOMMExample.SpellCastingAbility>().ShouldBeActive = true;
                 attachedUnit.gameObject.transform.GetComponent<TbsFramework.HOMMExample.SpellCastingAbility>().Display(cellGrid);
             }
             else
