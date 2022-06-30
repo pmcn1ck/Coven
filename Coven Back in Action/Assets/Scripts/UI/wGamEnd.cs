@@ -56,17 +56,17 @@ public class wGamEnd : MonoBehaviour
     public void OnClickUpgradeShieldBearer()
     {
         upgradeShieldBearer.SetActive(true);
-        bUnitClicked.SetActive(false);
+       // bUnitClicked.SetActive(false);
     }
     public void OnClickUpgradeSpotter()
     {
         upgradeSpotter.SetActive(true);
-        bUnitClicked.SetActive(false);
+       // bUnitClicked.SetActive(false);
     }
     public void OnClickUpgradeShotgunner()
     {
         upgradeShotgunner.SetActive(true);
-        bUnitClicked.SetActive(false);
+        //bUnitClicked.SetActive(false);
     }
 
 
@@ -86,8 +86,7 @@ public class wGamEnd : MonoBehaviour
         this.gameObject.SetActive(false);
         Debug.Log("this is change is working");
         Instantiate(w_CangeUint, tChangeUnit);
-        //GameManager.gm.SetCam();
-
+       // GameManager.gm.SetCam();
 
     }
 

@@ -176,4 +176,6 @@ public class GameManager : MonoBehaviour
         musicMixer.audioMixer.SetFloat("musicVol", Mathf.Log10(_newValue) * 20);
         musicVol = _newValue;
     }
+
+
 }
