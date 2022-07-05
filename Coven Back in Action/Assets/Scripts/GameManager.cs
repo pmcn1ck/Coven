@@ -177,7 +177,7 @@ public class GameManager : MonoBehaviour
         musicVol = _newValue;
     }
 
-    void SetCam()
+    public void SetCam()
     {
         cameras[0].SetActive(!isPlayerCamActive);
         cameras[1].SetActive(isPlayerCamActive);

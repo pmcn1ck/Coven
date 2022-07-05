@@ -15,10 +15,17 @@ public class cPlayer : MonoBehaviour
     bool isRang;
     wPlayer widget;
     public GameObject wStats;
- 
 
 
-       
+    private void Awake()
+    {
+         
+    }
+    private void Start()
+    {
+       // gameEnd = FindObjectOfType<wGamEnd>();
+    }
+
     private void Update()
     {
         /*if (Input.GetButtonDown("Fire1"))
@@ -40,7 +47,7 @@ public class cPlayer : MonoBehaviour
                 widget = null;
             }
         }*/
-        ShowWidget();
+        ShowWidget();  
     }
 
     public void ShowWidget()
@@ -78,6 +85,7 @@ public class cPlayer : MonoBehaviour
         ExperimentalUnit curExpUnit = curUnit.gameObject.GetComponent<ExperimentalUnit>();
         widget.InitUI(curExpUnit.unitType, isRang, curExpUnit, cellGrid);
     }
+
 
     /*void SpawnPlayerInfo()
     {

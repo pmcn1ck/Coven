@@ -84,9 +84,8 @@ public class wGamEnd : MonoBehaviour
     public void OnClickChangeUnit()
     {
         this.gameObject.SetActive(false);
-        Debug.Log("this is change is working");
-       // Instantiate(w_CangeUint, tChangeUnit);
-       // GameManager.gm.SetCam();
+        Instantiate(w_CangeUint, tChangeUnit);
+        GameManager.gm.SetCam();
 
     }
 
