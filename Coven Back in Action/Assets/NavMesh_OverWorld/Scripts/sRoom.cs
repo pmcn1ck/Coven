@@ -62,9 +62,12 @@ public class sRoom : MonoBehaviour
                 }
                 Debug.Log("Yup that's the player");
                 pEvent.SetActive(true);
-                tEventName.text = room.eventName;
-                tDescription.text = room.description;
-                tContinueButton.text = "Continue";
+                if (tEventName != null)
+                {
+                    tEventName.text = room.eventName;
+                    tDescription.text = room.description;
+                    tContinueButton.text = "Continue";
+                }
                 bContinue.onClick.AddListener(delegate { ContinueButton(); });
             }
         }

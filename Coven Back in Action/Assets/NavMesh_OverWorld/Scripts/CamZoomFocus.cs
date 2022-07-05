@@ -24,13 +24,15 @@ public class CamZoomFocus : MonoBehaviour
         {
             cam.fieldOfView = 30;
             camController.enabled = false;
-            gameObject.transform.SetParent(player.gameObject.transform);
+            //player.GetComponent<PlayerController>().enabled = false;
+            gameObject.transform.LookAt(player.transform.position);
+            
         }
         else
         {
             cam.fieldOfView = 60;
             camController.enabled = true;
-            gameObject.transform.parent = null;
+            //player.GetComponent<PlayerController>().enabled = true;
             gameObject.transform.position = camController.startingPos;
         }
     }
