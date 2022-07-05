@@ -7472,6 +7472,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8927622828441749794, guid: 88be8827924a17a458c3a6fef15846eb, type: 3}
+      propertyPath: warning
+      value: 
+      objectReference: {fileID: 8300000, guid: 7b9940fcb49876e4aacad7bd43e10425, type: 3}
+    - target: {fileID: 8927622828441749794, guid: 88be8827924a17a458c3a6fef15846eb, type: 3}
       propertyPath: complete
       value: 0
       objectReference: {fileID: 0}
@@ -8056,6 +8060,8 @@ MonoBehaviour:
   pPath: {fileID: 1698496798}
   complete: 1
   isCombat: 0
+  warning: {fileID: 0}
+  audiosource: {fileID: 0}
   tEventName: {fileID: 0}
   tDescription: {fileID: 0}
   tContinueButton: {fileID: 0}

@@ -14,6 +14,8 @@ public class sRoom : MonoBehaviour
     public GameObject pPath;
     public bool complete;
     public bool isCombat;
+    public AudioClip warning;
+    public AudioSource audiosource;
 
     [Header("EventWindowComponents")]
     public Text tEventName;
@@ -24,6 +26,7 @@ public class sRoom : MonoBehaviour
 
     IEnumerator Start()
     {
+        audiosource = GameManager.gm.audioManager.GetComponent<AudioSource>();
         if (room != null && room.combatArena == true)
         {
             isCombat = true;
@@ -31,6 +34,7 @@ public class sRoom : MonoBehaviour
         yield return new WaitForSeconds(.5f);
         if (complete)
         {
+            
             ActivateMeshLinks();
 
         }
@@ -59,6 +63,7 @@ public class sRoom : MonoBehaviour
                 if (isCombat)
                 {
                     other.GetComponent<PlayerController>().isInCombat = true;
+                    audiosource.PlayOneShot(warning);
                 }
                 Debug.Log("Yup that's the player");
                 pEvent.SetActive(true);
