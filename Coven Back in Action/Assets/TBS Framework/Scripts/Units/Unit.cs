@@ -119,6 +119,7 @@ namespace TbsFramework.Units
         public ExperimentalUnit experimentalUnit;
 
         public Slider HealthSlider;
+        public Slider UI_HealthSlider;
         public Image HealthImage;
         public GameObject DamageIndicator;
         public int HitPoints;
@@ -425,6 +426,8 @@ namespace TbsFramework.Units
             ActionPoints -= actionCost;
         }
 
+
+
         /// <summary>
         /// Handler method for defending against an attack.
         /// </summary>
@@ -444,6 +447,12 @@ namespace TbsFramework.Units
             {
                 HealthSlider.value = HitPoints;
             }
+            
+            if (UI_HealthSlider != null)
+            {
+                UI_HealthSlider.value = HitPoints;
+            }
+
 
             if (particlePlayer.takeDamage != null)
             {

@@ -22,6 +22,7 @@ namespace TbsFramework.Gui
         public Unit unit;
         public bool isGameWon;
 
+
         void Awake()
         {
             unit = FindObjectOfType<Unit>();
@@ -129,8 +130,11 @@ namespace TbsFramework.Gui
                          item.DefendHandler(u, 10000);
                      }
                  }*/
+                
                 Instantiate(gameEndLoss, tGameEnd);
+                
             }
+
         }
 
         public void EndTurn()

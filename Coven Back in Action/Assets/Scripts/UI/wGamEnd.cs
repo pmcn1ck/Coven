@@ -16,7 +16,7 @@ public class wGamEnd : MonoBehaviour
     public GameObject upgradeShotgunner;
     public GameObject upgradeGrp;
     public GameObject bUnitClicked;
-    public Slider levelSlider;
+    public Slider healthSlider;
     public GameObject victroy;
     public GameObject w_CangeUint;
     public Transform tChangeUnit;
@@ -24,6 +24,7 @@ public class wGamEnd : MonoBehaviour
 
     public Text tExp;
     CellGrid CellGrid;
+    Unit unit;
 
     private void Start()
     {
@@ -32,10 +33,17 @@ public class wGamEnd : MonoBehaviour
         //levelSlider.value = GameManager.gm.Party[0].GetComponent<Unit>().experience / 100;
         CellGrid = FindObjectOfType<CellGrid>();
         List<Unit> playableUnits = CellGrid.GetCurrentPlayerUnits();
+        unit = FindObjectOfType<Unit>();
         //tExp.text = playableUnits[1].experience.ToString();
        // levelSlider.value = (float)playableUnits[1].experience /100f;
         StartCoroutine(VictroyUi());
     }
+
+    private void Update()
+    {
+        healthSlider.value = unit.HitPoints;
+    }
+
 
     IEnumerator VictroyUi()
     {
