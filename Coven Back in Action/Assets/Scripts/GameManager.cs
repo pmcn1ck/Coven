@@ -170,13 +170,21 @@ public class GameManager : MonoBehaviour
         c_grabRotation = Instantiate(pCanvasRotation).GetComponent<GrabRotation>();
         Debug.Log("Spawning ConvasRotation");
     }
-
+    public void ChangeMasterVolume(float _newValue)
+    {
+        musicMixer.audioMixer.SetFloat("masterVol", Mathf.Log10(_newValue) * 20);
+        masterVol = _newValue;
+    }
     public void ChangeMusicVolume(float _newValue)
     {
         musicMixer.audioMixer.SetFloat("musicVol", Mathf.Log10(_newValue) * 20);
         musicVol = _newValue;
     }
-
+    public void ChangeSoundVolume(float _newValue)
+    {
+        musicMixer.audioMixer.SetFloat("sfxVol", Mathf.Log10(_newValue) * 20);
+        sfxVol = _newValue;
+    }
     public void SetCam()
     {
         cameras[0].SetActive(!isPlayerCamActive);

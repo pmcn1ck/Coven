@@ -4,8 +4,14 @@ using UnityEngine;
 using UnityEngine.UI;
 public class cOption : MonoBehaviour
 {
-
+    public Slider masterVol;
     public Slider musicSlider;
+    public Slider sfxVol;
+
+    private void Start()
+    {
+        InitUI();
+    }
 
     void OnStart()
     {
@@ -16,7 +22,14 @@ public class cOption : MonoBehaviour
     {
         musicSlider.value = GameManager.gm.musicVol;
     }
-
+    public void OnMasterVolChanged()
+    {
+        GameManager.gm.ChangeMasterVolume(masterVol.value);
+    }
+    public void OnSfxVolChanged()
+    {
+        GameManager.gm.ChangeSoundVolume(sfxVol.value);
+    }
 
     public void OnMusicVolChanged()
     {
