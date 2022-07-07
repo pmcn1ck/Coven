@@ -5448,7 +5448,6 @@ MonoBehaviour:
   Reserve: []
   expRewards: 0
   so_Units: []
-  chosenAbilities: 
   CurrentUnit: {fileID: 0}
   unitToAttack: {fileID: 0}
   isAttacking: 0
@@ -5461,6 +5460,8 @@ MonoBehaviour:
   sfxVol: 0
   rooms: 00000000
   trait: []
+  cameras: []
+  isPlayerCamActive: 0
 --- !u!4 &142712177
 Transform:
   m_ObjectHideFlags: 0
@@ -69842,6 +69843,10 @@ PrefabInstance:
     - target: {fileID: 2767933310964807055, guid: 5e565075f1d3be141a2763ff082284e8, type: 3}
       propertyPath: m_Name
       value: CanvasHUD
+      objectReference: {fileID: 0}
+    - target: {fileID: 2767933310964807055, guid: 5e565075f1d3be141a2763ff082284e8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2767933310964807093, guid: 5e565075f1d3be141a2763ff082284e8, type: 3}
       propertyPath: cam
