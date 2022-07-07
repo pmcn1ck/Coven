@@ -292,7 +292,6 @@ GameObject:
   m_Component:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
-  - component: {fileID: 963194226}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -300,14 +299,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &963194226
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
 --- !u!20 &963194227
 Camera:
   m_ObjectHideFlags: 0
@@ -536,7 +527,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1710444735}
   - component: {fileID: 1710444733}
-  - component: {fileID: 1710444734}
   m_Layer: 0
   m_Name: AudioMusic
   m_TagString: Untagged
@@ -640,14 +630,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!81 &1710444734
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1710444732}
-  m_Enabled: 1
 --- !u!4 &1710444735
 Transform:
   m_ObjectHideFlags: 0
@@ -723,6 +705,8 @@ MonoBehaviour:
   sfxVol: 0
   rooms: 00000000
   trait: []
+  cameras: []
+  isPlayerCamActive: 0
 --- !u!4 &1833385789
 Transform:
   m_ObjectHideFlags: 0
