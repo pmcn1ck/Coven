@@ -27,8 +27,13 @@ public class cMainMenu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Return))
         {
-            GameManager.gm.LoadScene(eScene.fe);
+            PressStart();
         }
+    }
+
+    public void PressStart()
+    {
+        GameManager.gm.LoadScene(eScene.fe);
     }
 
 }
