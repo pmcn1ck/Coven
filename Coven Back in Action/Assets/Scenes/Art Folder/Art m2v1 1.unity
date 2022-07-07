@@ -17498,6 +17498,8 @@ MonoBehaviour:
   sfxVol: 0
   rooms: 00000000010000000200000003000000
   trait: []
+  cameras: []
+  isPlayerCamActive: 0
 --- !u!1001 &4476331037622704352
 PrefabInstance:
   m_ObjectHideFlags: 0
