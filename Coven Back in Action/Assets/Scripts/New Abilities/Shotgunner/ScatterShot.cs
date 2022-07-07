@@ -22,7 +22,7 @@ public class ScatterShot : SpellAbility
     public override IEnumerator Act(CellGrid cellGrid)
     {
         Debug.Log("Activating Scatter Shot");
-        foreach (Unit u in cellGrid.GetEnemyUnits(cellGrid.Players[GetComponent<Unit>().PlayerNumber])){
+        foreach (Unit u in cellGrid.GetEnemyUnits(cellGrid.Players[GetComponentInParent<Unit>().PlayerNumber])){
             if (u.Cell.GetDistance(GetComponentInParent<Unit>().Cell) <= GetComponentInParent<Unit>().AttackRange)
             {
                 UnitsInRange.Add(u);
