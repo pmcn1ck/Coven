@@ -45,12 +45,12 @@ public class ScatterShot : SpellAbility
             {
                 targetNum = UnitsInRange.Count;
             }
-            int temp = GetComponent<Unit>().AttackFactor;
-            GetComponent<Unit>().AttackFactor = temp / 2;
+            int temp = GetComponentInParent<Unit>().AttackFactor;
+            GetComponentInParent<Unit>().AttackFactor = temp / 2;
             for (int i = 0; i < targetNum; i++)
             {
                 Unit target = UnitsInRange[Random.Range(0, UnitsInRange.Count)];
-                GetComponent<Unit>().AttackHandler(target);
+                GetComponentInParent<Unit>().AttackHandler(target);
                 UnitsInRange.Remove(target);
             }
             GetComponentInParent<Unit>().AttackFactor = temp;
