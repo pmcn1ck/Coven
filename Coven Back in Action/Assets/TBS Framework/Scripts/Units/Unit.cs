@@ -500,9 +500,9 @@ namespace TbsFramework.Units
                 CellGrid cellGrid = CG.GetComponent<CellGrid>();
                 foreach (Unit u in cellGrid.GetEnemyUnits(cellGrid.Players[GetComponent<Unit>().PlayerNumber]))
                 {
-                    if (u.GetComponent<SupportingFire>() != null)
+                    if (u.GetComponentInChildren<SupportingFire>() != null)
                     {
-                        u.GetComponent<SupportingFire>().AttackResponse(this);
+                        u.GetComponentInChildren<SupportingFire>().AttackResponse(this);
                     }
                 }
             }

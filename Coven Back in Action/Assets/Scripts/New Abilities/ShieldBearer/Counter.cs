@@ -24,7 +24,7 @@ public class Counter : SpellAbility
     {
         Debug.Log("Activating Counter");
         GetComponentInParent<Unit>().HitPoints -= HealthPenalty;
-        GetComponentInParent<Unit>().HealthSlider.value = GetComponent<Unit>().HitPoints;
+        GetComponentInParent<Unit>().HealthSlider.value = GetComponentInParent<Unit>().HitPoints;
         CurrentlyActive = true;
         TurnCounter = 0;
 

@@ -31,6 +31,7 @@ public class SupportingFire : SpellAbility
         {
             if (u.Cell.GetDistance(UnitReference.Cell) <= GetComponentInParent<Unit>().AttackRange)
             {
+                Debug.Log(u.name + "Is now a support fire target");
                 u.SupportFireTarget = true;
             }
         }
@@ -43,7 +44,7 @@ public class SupportingFire : SpellAbility
         if (CurrentlyActive == true)
         {
             int temp = GetComponentInParent<Unit>().AttackFactor;
-            GetComponentInParent<Unit>().AttackFactor = GetComponent<Unit>().AttackFactor /2;
+            GetComponentInParent<Unit>().AttackFactor = GetComponentInParent<Unit>().AttackFactor /2;
             GetComponentInParent<Unit>().AttackHandler(unit);
             GetComponentInParent<Unit>().AttackFactor = temp;
             Debug.Log("Supporting Fire Triggered");
