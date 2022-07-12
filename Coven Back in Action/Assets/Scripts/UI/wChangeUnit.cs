@@ -8,6 +8,9 @@ public class wChangeUnit : MonoBehaviour
     public GameObject spotter;
     public GameObject shotgunner;
     public GameObject shieldBearer;
+    public GameObject endGame;
+    public bool isBack;
+    
 
     void Start()
     {
@@ -48,7 +51,14 @@ public class wChangeUnit : MonoBehaviour
         ranger.SetActive(false);
         shieldBearer.SetActive(true);
         
+    }
 
+    public void OnClickBack()
+    {
+        Destroy(gameObject);
+        endGame.gameObject.SetActive(true);
+        isBack = true;
 
+        
     }
 }
