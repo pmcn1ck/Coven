@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.AI;
+using TbsFramework.Units;
 
 public class sRoom : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class sRoom : MonoBehaviour
     public List<OffMeshLink> roomConnectors;
     public GameObject pEvent;
     public GameObject pPath;
+    public List<GameObject> enemyObjects;
     public bool complete;
     public bool isCombat;
     public AudioClip warning;
@@ -30,6 +32,35 @@ public class sRoom : MonoBehaviour
         if (room != null && room.combatArena == true)
         {
             isCombat = true;
+        }
+        if (complete)
+        {
+            if (room != null)
+            {
+                if (room.combatArena)
+                {
+                    for (int i = 0; i < enemyObjects.Count; i++)
+                    {
+                        Debug.Log("Destroying Enemies");
+                        Destroy(enemyObjects[i].gameObject);
+                    }
+                }
+            }
+        }
+        yield return new WaitForSeconds(.01f);
+        if (complete)
+        {
+            if (room != null)
+            {
+                if (room.combatArena)
+                {
+                    for (int i = 0; i < enemyObjects.Count; i++)
+                    {
+                        Debug.Log("Destroying Enemies");
+                        Destroy(enemyObjects[i].gameObject);
+                    }
+                }
+            }
         }
         yield return new WaitForSeconds(.5f);
         if (complete)
