@@ -51,20 +51,17 @@ public class RejuvenatingFlaskV2 : SpellAbility
 
             if (GetComponentInParent<Unit>().ActionPoints >= 1)
             {
-                for (int i = 0; i < inRange.Count; i++)
+                target = SelectedTarget;
+                target.HitPoints += Healing;
+                if (target.HitPoints > target.TotalHitPoints)
                 {
-                    Unit unitInRange = inRange[i];
-                    target = unitInRange;
-                    target.HitPoints += Healing;
-                    if (target.HitPoints > target.TotalHitPoints)
-                    {
-                        target.HitPoints = target.TotalHitPoints;
-                    }
-                    target.HealthSlider.value = target.HitPoints;
-                    GetComponentInParent<Unit>().ActionPoints--;
-                    GetComponentInParent<Unit>().HitPoints -= HealthPenalty;
-                    GetComponentInParent<Unit>().HealthSlider.value = GetComponentInParent<Unit>().HitPoints;
+                    target.HitPoints = target.TotalHitPoints;
                 }
+                target.HealthSlider.value = target.HitPoints;
+                GetComponentInParent<Unit>().ActionPoints--;
+                GetComponentInParent<Unit>().HitPoints -= HealthPenalty;
+                GetComponentInParent<Unit>().HealthSlider.value = GetComponentInParent<Unit>().HitPoints;
+
             }
 
 
@@ -117,6 +114,7 @@ public class RejuvenatingFlaskV2 : SpellAbility
     {
         if (unit.PlayerNumber != UnitReference.PlayerNumber)
         {
+            Debug.Log("Cannot Heal an Enemy");
             return;
         }
 
