@@ -23,6 +23,7 @@ public class SupportingFire : SpellAbility
     public override IEnumerator Act(CellGrid cellGrid)
     {
         Debug.Log("Activating Supporting Fire");
+        GetComponentInParent<ParticlePlayer>().CallExtraParticle(0);
         GetComponentInParent<Unit>().BloodLust += BloodPenalty;
         GetComponentInParent<Unit>().BloodLustSlider.value += BloodPenalty;
         CurrentlyActive = true;

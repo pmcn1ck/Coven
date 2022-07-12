@@ -44,6 +44,7 @@ public class BulkUp : SpellAbility
                 continue;
             }
             unit.DefenceFactor += 2;
+            unit.GetComponent<ParticlePlayer>().CallExtraParticle(1);
         }
         CurrentlyActive = true;
         TurnCounter = 0;

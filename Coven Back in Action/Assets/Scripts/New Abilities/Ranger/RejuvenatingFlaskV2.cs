@@ -61,6 +61,7 @@ public class RejuvenatingFlaskV2 : SpellAbility
                 GetComponentInParent<Unit>().ActionPoints--;
                 GetComponentInParent<Unit>().HitPoints -= HealthPenalty;
                 GetComponentInParent<Unit>().HealthSlider.value = GetComponentInParent<Unit>().HitPoints;
+                GetComponentInParent<ParticlePlayer>().CallHeal();
 
             }
 

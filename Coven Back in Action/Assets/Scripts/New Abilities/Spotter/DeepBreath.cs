@@ -26,6 +26,7 @@ public class DeepBreath : SpellAbility
     public override IEnumerator Act(CellGrid cellGrid)
     {
         Debug.Log("Taking a Deep Breath");
+        GetComponentInParent<ParticlePlayer>().CallExtraParticle(0);
         GetComponentInParent<Unit>().HitPoints -= Duration;
         GetComponentInParent<Unit>().AttackFactor += AtkGain;
         GetComponentInParent<Unit>().ActionPoints--;
