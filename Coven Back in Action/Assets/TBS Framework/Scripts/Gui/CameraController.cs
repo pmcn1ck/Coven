@@ -102,7 +102,11 @@ namespace TbsFramework.Gui
             {
                 foreach (Unit unit in cellGrid.GetCurrentPlayerUnits())
                 {
-                    Debug.DrawRay(this.transform.position, (unit.transform.position - this.transform.position), Color.magenta);
+                    if (unit != null)
+                    {
+                        Debug.DrawRay(this.transform.position, (unit.transform.position - this.transform.position), Color.magenta);
+                    }
+
 
                     hits.AddRange(Physics.RaycastAll(this.transform.position, (unit.transform.position - this.transform.position), Vector3.Distance(this.transform.position, unit.transform.position), layerMask));
                     foreach (RaycastHit hit in hits)
