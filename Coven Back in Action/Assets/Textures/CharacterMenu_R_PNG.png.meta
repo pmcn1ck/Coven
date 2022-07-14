@@ -13,13 +13,13 @@ TextureImporter:
     second: Spotter
   - first:
       213: 7401499815418391416
-    second: Ranger
-  - first:
-      213: -5476975736710725942
     second: Shotgunner
   - first:
+      213: -5476975736710725942
+    second: Range
+  - first:
       213: 5806347362019737187
-    second: ShieldBearer
+    second: Shotgunner
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -184,7 +184,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ranger
+      name: ShieldBearer
       rect:
         serializedVersion: 2
         x: 498
@@ -205,7 +205,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shotgunner
+      name: Range
       rect:
         serializedVersion: 2
         x: 256
@@ -226,7 +226,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShieldBearer
+      name: Shotgunner
       rect:
         serializedVersion: 2
         x: 0

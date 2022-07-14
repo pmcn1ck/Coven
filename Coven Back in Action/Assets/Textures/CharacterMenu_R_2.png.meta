@@ -7,13 +7,13 @@ TextureImporter:
     second: Stamp
   - first:
       213: -8179096408671432502
-    second: ShieldBearer
+    second: ShotGunner
   - first:
       213: -6885033302592280319
-    second: Shotgunner
+    second: ShieldBearer
   - first:
       213: -6553702042287926940
-    second: Ranger
+    second: ShieldBearer
   - first:
       213: 6482094000677941713
     second: Spotter
@@ -160,7 +160,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShieldBearer
+      name: ShotGunner
       rect:
         serializedVersion: 2
         x: 0
@@ -181,7 +181,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shotgunner
+      name: Ranger
       rect:
         serializedVersion: 2
         x: 258
@@ -202,7 +202,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ranger
+      name: ShieldBearer
       rect:
         serializedVersion: 2
         x: 500

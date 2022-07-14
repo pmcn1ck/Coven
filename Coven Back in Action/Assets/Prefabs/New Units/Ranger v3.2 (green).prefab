@@ -3265,7 +3265,7 @@ MonoBehaviour:
   MovementAnimationSpeed: 5
   actionPoints: 1
   PlayerNumber: 0
-  characterPortrait: {fileID: -6553702042287926940, guid: bade48de0d5a22b41821e0b7f056e338, type: 3}
+  characterPortrait: {fileID: 7966404359248230292, guid: bade48de0d5a22b41821e0b7f056e338, type: 3}
   particlePlayer: {fileID: 0}
   pSoundManager: {fileID: 0}
   unitType: 2
