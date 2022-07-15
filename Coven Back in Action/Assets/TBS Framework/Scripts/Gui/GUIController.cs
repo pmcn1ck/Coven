@@ -17,10 +17,12 @@ namespace TbsFramework.Gui
         public Image iTurnBanner;
         public Text tTurnBanner;
         public GameObject gameEndLoss;
+        public GameObject defeat;
         public GameObject gameEndWin;
         public Transform tGameEnd;
         public Unit unit;
         public bool isGameWon;
+        public bool isGameLoss;
 
 
         void Awake()
@@ -31,6 +33,15 @@ namespace TbsFramework.Gui
             CellGrid.GameEnded += OnGameEnded;
             CellGrid.TurnEnded += OnTurnEnded;
             CellGrid.GameStarted += OnGameStarted;
+        }
+
+        IEnumerator DefeatUi()
+        {
+            defeat.SetActive(true);
+            yield return new WaitForSeconds(2);
+            defeat.SetActive(false);
+            Instantiate(gameEndLoss, tGameEnd);
+
         }
 
         private void OnGameStarted(object sender, EventArgs e)
@@ -80,7 +91,9 @@ namespace TbsFramework.Gui
             }
             else
             {
-                Instantiate(gameEndLoss, tGameEnd);
+                StartCoroutine(DefeatUi());
+                //Instantiate(gameEndLoss, tGameEnd);
+                isGameLoss = true;
                 GameManager.gm.rooms.RemoveAt(GameManager.gm.rooms.Count - 1);
 
             } 
@@ -130,8 +143,9 @@ namespace TbsFramework.Gui
                          item.DefendHandler(u, 10000);
                      }
                  }*/
-                
-                Instantiate(gameEndLoss, tGameEnd);
+                StartCoroutine(DefeatUi());
+                isGameLoss = true;
+                //Instantiate(gameEndLoss, tGameEnd);
                 
             }
 

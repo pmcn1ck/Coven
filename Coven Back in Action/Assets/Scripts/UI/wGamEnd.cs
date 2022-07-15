@@ -6,6 +6,7 @@ using System.Linq;
 using UnityEngine.UI;
 using TbsFramework.Units;
 using TbsFramework.Grid;
+using TbsFramework.Gui;
 
 public enum eUnitSlider {ranger, shieldBearer, spotter, shotGunner }
 public class wGamEnd : MonoBehaviour
@@ -37,7 +38,6 @@ public class wGamEnd : MonoBehaviour
         CellGrid = FindObjectOfType<CellGrid>();
         //List<Unit> playableUnits = CellGrid.GetCurrentPlayerUnits();
         //unit = FindObjectOfType<Unit>();
-
         //tExp.text = playableUnits[1].experience.ToString();
         // levelSlider.value = (float)playableUnits[1].experience /100f;
         ShowHealthBars(eUnitSlider.ranger, eUnitType.Ranger);
