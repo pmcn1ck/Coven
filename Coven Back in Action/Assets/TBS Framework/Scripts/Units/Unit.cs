@@ -118,11 +118,12 @@ namespace TbsFramework.Units
         public eState curState;
         public ExperimentalUnit experimentalUnit;
 
-        public Slider HealthSlider;
-        public Slider UI_HealthSlider;
+        public Slider HealthSlider; // In game hit points
+        public Slider UI_HealthSlider;  // Victory/Defeat hit points
         public Image HealthImage;
         public GameObject DamageIndicator;
-        public int HitPoints;
+        public int MaxHitPoints; // Starting Hit Points
+        public int HitPoints; // Current Hit Points
         public int AttackRange;
         public int AttackFactor;
         public int DefenceFactor;
@@ -221,6 +222,7 @@ namespace TbsFramework.Units
             //TotalHitPoints = HitPoints;
             TotalMovementPoints = MovementPoints;
             TotalActionPoints = ActionPoints;
+            HealthSlider.maxValue = MaxHitPoints;
         }
 
         public virtual void OnMouseDown()

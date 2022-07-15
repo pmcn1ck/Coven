@@ -7,6 +7,7 @@ using UnityEngine.UI;
 using TbsFramework.Units;
 using TbsFramework.Grid;
 
+public enum eUnitSlider {ranger, shieldBearer, spotter, shotGunner }
 public class wGamEnd : MonoBehaviour
 {
     public GameObject w_UpgradeRanger;
@@ -16,8 +17,7 @@ public class wGamEnd : MonoBehaviour
     public GameObject upgradeShotgunner;
     public GameObject upgradeGrp;
     public GameObject bUnitClicked;
-    public Slider healthSlider;
-    public Slider healthSlider_shield;
+    public Slider[] healthSlider;
     public GameObject victroy;
     public GameObject w_CangeUint;
     public Transform tChangeUnit;
@@ -35,22 +35,31 @@ public class wGamEnd : MonoBehaviour
         //Debug.Log(" experience " + GameManager.gm.Party[0].GetComponent<ExperimentalUnit>().experience);
         //levelSlider.value = GameManager.gm.Party[0].GetComponent<Unit>().experience / 100;
         CellGrid = FindObjectOfType<CellGrid>();
-        List<Unit> playableUnits = CellGrid.GetCurrentPlayerUnits();
-        unit = FindObjectOfType<Unit>();
-        
+        //List<Unit> playableUnits = CellGrid.GetCurrentPlayerUnits();
+        //unit = FindObjectOfType<Unit>();
+
         //tExp.text = playableUnits[1].experience.ToString();
         // levelSlider.value = (float)playableUnits[1].experience /100f;
+        ShowHealthBars(eUnitSlider.ranger, eUnitType.Ranger);
+        ShowHealthBars(eUnitSlider.shieldBearer, eUnitType.ShieldBearer);
+        ShowHealthBars(eUnitSlider.spotter, eUnitType.Spotter);
+        ShowHealthBars(eUnitSlider.shotGunner, eUnitType.Shotgunner);
         StartCoroutine(VictroyUi());
-      
     }
 
-    private void Update()
+    void ShowHealthBars(eUnitSlider _unitSlider, eUnitType _unitType)
     {
-        healthSlider.value = unit.HitPoints;
-       // healthSlider_shield.value = unit.HitPoints;
-
+        if (!CellGrid.GetPlayableUnitReference(_unitType)) // Unit died
+        {
+            healthSlider[(int)_unitSlider].maxValue = 100;
+            healthSlider[(int)_unitSlider].value = 0;
+        }
+        else // Unit survived
+        {
+            healthSlider[(int)_unitSlider].maxValue = CellGrid.GetPlayableUnitReference(_unitType).MaxHitPoints;
+            healthSlider[(int)_unitSlider].value = CellGrid.GetPlayableUnitReference(_unitType).HitPoints;
+        }     
     }
-
 
     IEnumerator VictroyUi()
     {

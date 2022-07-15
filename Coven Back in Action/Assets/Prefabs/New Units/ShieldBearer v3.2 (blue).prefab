@@ -4182,6 +4182,7 @@ MonoBehaviour:
   UI_HealthSlider: {fileID: 5945809302205900368}
   HealthImage: {fileID: 0}
   DamageIndicator: {fileID: 6771457813104296719}
+  MaxHitPoints: 20
   HitPoints: 20
   AttackRange: 1
   AttackFactor: 6
