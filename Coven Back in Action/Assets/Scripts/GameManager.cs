@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour
 
     [Space]
     [Header("Scene Manager")]
-    int currentScene;
+    public int currentScene;
     public eScene eCurScene;
 
     [Space]

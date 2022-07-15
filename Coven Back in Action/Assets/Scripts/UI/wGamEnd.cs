@@ -19,6 +19,7 @@ public class wGamEnd : MonoBehaviour
     public GameObject upgradeGrp;
     public GameObject bUnitClicked;
     public Slider[] healthSlider;
+    public Slider[] bloodLustSlider;
     public GameObject victroy;
     public GameObject w_CangeUint;
     public Transform tChangeUnit;
@@ -40,11 +41,43 @@ public class wGamEnd : MonoBehaviour
         //unit = FindObjectOfType<Unit>();
         //tExp.text = playableUnits[1].experience.ToString();
         // levelSlider.value = (float)playableUnits[1].experience /100f;
+        ShowHealthBarsUi();
+        ShowBloodLustUi();
+        
+        StartCoroutine(VictroyUi());
+    }
+
+    void ShowHealthBarsUi()
+    {
         ShowHealthBars(eUnitSlider.ranger, eUnitType.Ranger);
         ShowHealthBars(eUnitSlider.shieldBearer, eUnitType.ShieldBearer);
         ShowHealthBars(eUnitSlider.spotter, eUnitType.Spotter);
         ShowHealthBars(eUnitSlider.shotGunner, eUnitType.Shotgunner);
-        StartCoroutine(VictroyUi());
+
+    }
+
+    void ShowBloodLustUi()
+    {
+        ShowBloodLustBars(eUnitSlider.ranger, eUnitType.Ranger);
+        ShowBloodLustBars(eUnitSlider.shieldBearer, eUnitType.ShieldBearer);
+        ShowBloodLustBars(eUnitSlider.spotter, eUnitType.Spotter);
+        ShowBloodLustBars(eUnitSlider.shotGunner, eUnitType.Shotgunner);
+
+    }
+
+    void ShowBloodLustBars(eUnitSlider _slider, eUnitType _Type)
+    {
+        if (!CellGrid.GetPlayableUnitReference(_Type))
+        {
+            bloodLustSlider[(int)_slider].maxValue = 100;
+            bloodLustSlider[(int)_slider].value = 0;
+        }
+        else
+        {
+            bloodLustSlider[(int)_slider].maxValue = CellGrid.PlayableUnitReference(_Type).bloodLustMax;
+            bloodLustSlider[(int)_slider].value = CellGrid.PlayableUnitReference(_Type).bloodLustMin;
+        }
+
     }
 
     void ShowHealthBars(eUnitSlider _unitSlider, eUnitType _unitType)
@@ -53,11 +86,13 @@ public class wGamEnd : MonoBehaviour
         {
             healthSlider[(int)_unitSlider].maxValue = 100;
             healthSlider[(int)_unitSlider].value = 0;
+            
         }
         else // Unit survived
         {
             healthSlider[(int)_unitSlider].maxValue = CellGrid.GetPlayableUnitReference(_unitType).MaxHitPoints;
             healthSlider[(int)_unitSlider].value = CellGrid.GetPlayableUnitReference(_unitType).HitPoints;
+            
         }     
     }
 

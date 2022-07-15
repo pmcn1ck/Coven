@@ -244,6 +244,17 @@ namespace TbsFramework.Grid
             }
             return null;
         }
+        public ExperimentalUnit PlayableUnitReference(eUnitType _unitType)
+        {
+            foreach (Unit u in PlayableUnits)
+            {
+                if (u && u.GetComponent<ExperimentalUnit>().unitType == _unitType)
+                {
+                    return u.GetComponent<ExperimentalUnit>();
+                }
+            }
+            return null;
+        }
 
         /// <summary>
         /// Method is called once, at the beggining of the game.

@@ -135,7 +135,9 @@ namespace TbsFramework.Units
         [Header("Blood Lust")]
         public double BloodLust;
         public double BloodGainMin;
+        public int bloodLustMin;
         public double BloodGainMax;
+        public int bloodLustMax;
         public double BloodMultiplier;
         public Slider BloodLustSlider;
         public GameObject bullet;
@@ -223,6 +225,9 @@ namespace TbsFramework.Units
             TotalMovementPoints = MovementPoints;
             TotalActionPoints = ActionPoints;
             HealthSlider.maxValue = MaxHitPoints;
+            bloodLustMax = (int)BloodGainMax;
+            bloodLustMin = (int)BloodGainMin;
+
         }
 
         public virtual void OnMouseDown()
