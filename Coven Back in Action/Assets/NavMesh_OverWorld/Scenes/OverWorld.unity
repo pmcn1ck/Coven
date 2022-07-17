@@ -7623,7 +7623,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-89194
+  m_Name: pb_Mesh-1336
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9717,6 +9717,7 @@ MonoBehaviour:
   c_Options: {fileID: 0}
   c_grabRotation: {fileID: 0}
   c_player: {fileID: 0}
+  currentScene: 0
   eCurScene: 0
   unitTypes:
   - {fileID: 1934263189637653615, guid: 98f8972765c969a4d8761576873d8c9e, type: 3}
@@ -22945,7 +22946,7 @@ MonoBehaviour:
   TotalHitPoints: 0
   cell: {fileID: 0}
   curState: 0
-  experimentalUnit: {fileID: 4240187924889122405}
+  experimentalUnit: {fileID: 666100922}
   HealthSlider: {fileID: 4705485708226099462}
   UI_HealthSlider: {fileID: 0}
   HealthImage: {fileID: 0}
@@ -22962,7 +22963,9 @@ MonoBehaviour:
   levelUp: 0
   BloodLust: 0
   BloodGainMin: 10
+  bloodLustMin: 0
   BloodGainMax: 20
+  bloodLustMax: 0
   BloodMultiplier: 0
   BloodLustSlider: {fileID: 0}
   bullet: {fileID: 6421613917025041278, guid: 697ea058c7a09694aa2fc100cedaabf9, type: 3}

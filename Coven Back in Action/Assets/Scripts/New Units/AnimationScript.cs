@@ -23,7 +23,7 @@ public class AnimationScript : MonoBehaviour
 
     public void runDeathAnim()
     {
-        m_Animator.SetTrigger("isDead");
+        m_Animator.SetBool("isDead", true);
     }
 
     public void toggleMoveAnim()
@@ -31,6 +31,22 @@ public class AnimationScript : MonoBehaviour
         m_Animator.SetBool("moveAnim", !m_Animator.GetBool("moveAnim"));
     }
 
+    public void runAttackAnimTwo()
+    {
+        m_Animator.SetTrigger("isAttacking2");
+    }
 
+    public void runCastAnim()
+    {
+        m_Animator.SetTrigger("isCasting");
+    }
+    public void toggleIdleTwo()
+    {
+        if(m_Animator.GetBool("idle2") == false)
+        {
+            m_Animator.SetTrigger("idle2Start");
+        }
+        m_Animator.SetBool("idle2", !m_Animator.GetBool("idle2"));
+    }
 
 }
