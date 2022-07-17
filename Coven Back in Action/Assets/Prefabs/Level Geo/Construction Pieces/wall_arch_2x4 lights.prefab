@@ -321,6 +321,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 65747dbd6c2a6024a9961049553154ad, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7b2eb39a0c74aaa4f8151ded519fe970, type: 2}
     - target: {fileID: 919132149155446097, guid: 65747dbd6c2a6024a9961049553154ad, type: 3}
       propertyPath: m_Name
       value: WallCandles
