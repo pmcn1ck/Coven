@@ -19,6 +19,7 @@ namespace TbsFramework.Gui
         public GameObject gameEndLoss;
         public GameObject defeat;
         public GameObject gameEndWin;
+        public GameObject canvasHud;
         public Transform tGameEnd;
         public Unit unit;
         public bool isGameWon;

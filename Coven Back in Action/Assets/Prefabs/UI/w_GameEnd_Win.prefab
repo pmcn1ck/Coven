@@ -6644,6 +6644,7 @@ MonoBehaviour:
   upgradeShotgunner: {fileID: 0}
   upgradeGrp: {fileID: 0}
   bUnitClicked: {fileID: 7984622386948512712}
+  canvas: {fileID: 2767933310964807055, guid: 5e565075f1d3be141a2763ff082284e8, type: 3}
   healthSlider:
   - {fileID: 4111345487969980443}
   - {fileID: 4330566155305914410}
@@ -6655,10 +6656,10 @@ MonoBehaviour:
   - {fileID: 3368645146760433283}
   - {fileID: 7274083264412305013}
   victroy: {fileID: 548515143241632981}
-  w_CangeUint: {fileID: 0}
+  w_CangeUint: {fileID: 3672114414618020530, guid: d40d3015b21e4e54baba18d5526db46b, type: 3}
   tChangeUnit: {fileID: 0}
+  isChangeUnit: 0
   tExp: {fileID: 0}
-  changeUnit: {fileID: 5883351559322926953, guid: d40d3015b21e4e54baba18d5526db46b, type: 3}
 --- !u!1 &6543381156699555781
 GameObject:
   m_ObjectHideFlags: 0

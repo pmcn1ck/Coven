@@ -21,13 +21,14 @@ public class GameManager : MonoBehaviour
     public GameObject pCanvasStart;
     public GameObject pCanvasRotation;
     public GameObject pCanvasRanger;
+    public GameObject pCavasHud;
 
     [Space]
     [Header("Spawn Canvas Script")]
     public cMainMenu c_MainMenu; // This is the spawned main meny script
     public cOption c_Options;
     public GrabRotation c_grabRotation;
-    public cPlayer c_player;
+    public cPlayer c_player; 
 
     [Space]
     [Header("Scene Manager")]
@@ -123,6 +124,7 @@ public class GameManager : MonoBehaviour
                 break;
             case eScene.fe:
                 SpawnMainMenu();
+                
                 break;
             case eScene.InGame:
                 audioManager.StopMusic();
@@ -145,8 +147,6 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene((int)_scene);
     }
-
-      
 
     public void SpawnMainMenu()
     {

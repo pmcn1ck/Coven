@@ -24182,7 +24182,9 @@ MonoBehaviour:
   spotter: {fileID: 4111969978087084231}
   shotgunner: {fileID: 4548264904029791070}
   shieldBearer: {fileID: 5441667019892886146}
+  change: {fileID: 3672114414618020530}
   endGame: {fileID: 6543111572189202227, guid: 7384410996ed0f143b082e83c5d106a6, type: 3}
+  isBack: 0
 --- !u!1 &3706261006307742109
 GameObject:
   m_ObjectHideFlags: 0

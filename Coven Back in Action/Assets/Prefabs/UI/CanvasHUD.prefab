@@ -599,6 +599,7 @@ MonoBehaviour:
   gameEndLoss: {fileID: 6543111572189202227, guid: 7384410996ed0f143b082e83c5d106a6, type: 3}
   defeat: {fileID: 3108018916464377296}
   gameEndWin: {fileID: 6543111572189202227, guid: c6ef4d4c6a2b27043869c25a75991d6e, type: 3}
+  canvasHud: {fileID: 0}
   tGameEnd: {fileID: 2767933310964807051}
   unit: {fileID: 0}
   isGameWon: 0
@@ -899,6 +900,18 @@ PrefabInstance:
     - target: {fileID: 3108018915164687352, guid: ca5e7858c149f8d45a54f04529643089, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3108018915164687353, guid: ca5e7858c149f8d45a54f04529643089, type: 3}
+      propertyPath: m_Color.b
+      value: 0.5282069
+      objectReference: {fileID: 0}
+    - target: {fileID: 3108018915164687353, guid: ca5e7858c149f8d45a54f04529643089, type: 3}
+      propertyPath: m_Color.g
+      value: 0.501246
+      objectReference: {fileID: 0}
+    - target: {fileID: 3108018915164687353, guid: ca5e7858c149f8d45a54f04529643089, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9056604
       objectReference: {fileID: 0}
     - target: {fileID: 3108018915164687355, guid: ca5e7858c149f8d45a54f04529643089, type: 3}
       propertyPath: m_Name

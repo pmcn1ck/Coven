@@ -679,6 +679,7 @@ MonoBehaviour:
   pCanvasStart: {fileID: 6616269152930076019, guid: 9b83f9cd98898664ba715d81d9262f45, type: 3}
   pCanvasRotation: {fileID: 0}
   pCanvasRanger: {fileID: 0}
+  pCavasHud: {fileID: 2767933310964807055, guid: 5e565075f1d3be141a2763ff082284e8, type: 3}
   c_MainMenu: {fileID: 0}
   c_Options: {fileID: 0}
   c_grabRotation: {fileID: 0}

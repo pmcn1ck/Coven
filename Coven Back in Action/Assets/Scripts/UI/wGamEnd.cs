@@ -18,18 +18,19 @@ public class wGamEnd : MonoBehaviour
     public GameObject upgradeShotgunner;
     public GameObject upgradeGrp;
     public GameObject bUnitClicked;
+    public GameObject canvas;
     public Slider[] healthSlider;
     public Slider[] bloodLustSlider;
     public GameObject victroy;
     public GameObject w_CangeUint;
     public Transform tChangeUnit;
-    
+    public bool isChangeUnit;
 
 
     public Text tExp;
     CellGrid CellGrid;
     Unit unit;
-   public wChangeUnit changeUnit;
+    
 
     private void Start()
     {
@@ -46,6 +47,7 @@ public class wGamEnd : MonoBehaviour
         
         StartCoroutine(VictroyUi());
     }
+
 
     void ShowHealthBarsUi()
     {
@@ -141,10 +143,8 @@ public class wGamEnd : MonoBehaviour
 
     public void OnClickChangeUnit()
     {
-        gameObject.SetActive(false);
         Instantiate(w_CangeUint, tChangeUnit);
-        GameManager.gm.SetCam();
-
+        isChangeUnit = true;
     }
 
 

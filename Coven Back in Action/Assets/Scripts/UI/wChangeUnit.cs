@@ -8,6 +8,7 @@ public class wChangeUnit : MonoBehaviour
     public GameObject spotter;
     public GameObject shotgunner;
     public GameObject shieldBearer;
+    public GameObject canvas;
     public GameObject endGame;
     public bool isBack;
     
@@ -56,8 +57,7 @@ public class wChangeUnit : MonoBehaviour
     public void OnClickBack()
     {
         Destroy(gameObject);
-        endGame.gameObject.SetActive(true);
-        isBack = true;
+        
 
         
     }
