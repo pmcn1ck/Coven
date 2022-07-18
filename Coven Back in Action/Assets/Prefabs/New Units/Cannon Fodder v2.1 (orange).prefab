@@ -3554,6 +3554,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4338307056657580062, guid: b576f0dc69c240743a0995f197741307, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c5a0a1f64dba77a479934714fe83eb64, type: 2}
+    - target: {fileID: -4076303258972023147, guid: b576f0dc69c240743a0995f197741307, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9abd59855ee2cc74fa2cd5e01ba1e7b1, type: 2}
     - target: {fileID: 919132149155446097, guid: b576f0dc69c240743a0995f197741307, type: 3}
       propertyPath: m_Name
       value: Care_anim_master_006

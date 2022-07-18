@@ -5044,10 +5044,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4722038204082039363, guid: 0329fdc4d5d49c64fa5d7878427d890c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c42d5ad38d7bcb84c923b842172b7592, type: 2}
+    - target: {fileID: -4237104298645221305, guid: 0329fdc4d5d49c64fa5d7878427d890c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 618ea124a71a1844eb003b0211bdde16, type: 2}
+    - target: {fileID: -367182840309847010, guid: 0329fdc4d5d49c64fa5d7878427d890c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c28537c07d8634a4090654a91815ae27, type: 2}
+    - target: {fileID: -217245528799748685, guid: 0329fdc4d5d49c64fa5d7878427d890c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5d1fc040792cb534a90144d68a27b467, type: 2}
     - target: {fileID: 919132149155446097, guid: 0329fdc4d5d49c64fa5d7878427d890c, type: 3}
       propertyPath: m_Name
       value: ShieldB_anim_master_006
       objectReference: {fileID: 0}
+    - target: {fileID: 1961429073326325636, guid: 0329fdc4d5d49c64fa5d7878427d890c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c3f6ade12e8ddd44db47f3f9c2d3627a, type: 2}
     - target: {fileID: 5866666021909216657, guid: 0329fdc4d5d49c64fa5d7878427d890c, type: 3}
       propertyPath: m_Controller
       value: 
