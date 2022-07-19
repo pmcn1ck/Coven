@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 3800c22152ad6d64cb7700e013cafcc4, type: 2}
+  - {fileID: 2100000, guid: 9efb62c3152125440b9ae66bedf0d58e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -114,7 +114,11 @@ MonoBehaviour:
   roomConnectors: []
   pEvent: {fileID: 2339532162505222105, guid: 4242c0915a7068e4a8996694ddabe45f, type: 3}
   pPath: {fileID: 0}
+  enemyObjects: []
   complete: 0
+  isCombat: 0
+  warning: {fileID: 0}
+  audiosource: {fileID: 0}
   tEventName: {fileID: 0}
   tDescription: {fileID: 0}
   tContinueButton: {fileID: 0}
