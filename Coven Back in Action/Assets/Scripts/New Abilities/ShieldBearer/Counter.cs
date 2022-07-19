@@ -28,6 +28,7 @@ public class Counter : SpellAbility
         GetComponentInParent<ParticlePlayer>().CallExtraParticle(1);
         CurrentlyActive = true;
         TurnCounter = 0;
+        gameObject.GetComponentInParent<Unit>().animScript.runCastAnim();
 
         yield return 0;
     }
@@ -40,6 +41,7 @@ public class Counter : SpellAbility
             GetComponentInParent<Unit>().AttackFactor = HealthPenalty;
             GetComponentInParent<Unit>().AttackHandler(unit);
             GetComponentInParent<Unit>().AttackFactor = temp;
+            gameObject.GetComponentInParent<Unit>().animScript.runAttackAnimTwo();
             Debug.Log("Counter Triggered");
         }
     }

@@ -53,6 +53,7 @@ using TbsFramework.HOMMExample;
                 Unit tempUnit = null;
                 if (CurrentlyActive == false)
                 {
+                gameObject.GetComponentInParent<Unit>().animScript.runCastAnim();
                 for (int i = 0; i < inRange.Count; i++)
                     {
                         Unit unitInRange = inRange[i];

@@ -28,8 +28,10 @@ public class RejuvenatingFlaskV2 : SpellAbility
 
     public override IEnumerator Act(CellGrid cellGrid)
     {
+        
         if (CanPerform(cellGrid))
         {
+            gameObject.GetComponentInParent<Unit>().animScript.runCastAnim();
             if (inRange == null)
             {
                 inRange = new List<Unit>() { SelectedTarget };

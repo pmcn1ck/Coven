@@ -26,6 +26,7 @@ public class SupportingFire : SpellAbility
         GetComponentInParent<ParticlePlayer>().CallExtraParticle(0);
         GetComponentInParent<Unit>().BloodLust += BloodPenalty;
         GetComponentInParent<Unit>().BloodLustSlider.value += BloodPenalty;
+        gameObject.GetComponentInParent<Unit>().animScript.toggleIdleTwo();
         CurrentlyActive = true;
         TurnCounter = 0;
         foreach (Unit u in cellGrid.GetEnemyUnits(cellGrid.Players[GetComponentInParent<Unit>().PlayerNumber]))
@@ -48,6 +49,7 @@ public class SupportingFire : SpellAbility
             GetComponentInParent<Unit>().AttackFactor = GetComponentInParent<Unit>().AttackFactor /2;
             GetComponentInParent<Unit>().AttackHandler(unit);
             GetComponentInParent<Unit>().AttackFactor = temp;
+            gameObject.GetComponentInParent<Unit>().animScript.runAttackAnim();
             Debug.Log("Supporting Fire Triggered");
             unit.SupportFireTarget = false;
         }
@@ -61,6 +63,7 @@ public class SupportingFire : SpellAbility
             if (TurnCounter >= Duration)
             {
                 Deactivate();
+                gameObject.GetComponentInParent<Unit>().animScript.toggleIdleTwo();
                 foreach (Unit u in cellGrid.GetEnemyUnits(cellGrid.Players[GetComponent<Unit>().PlayerNumber]))
                 {
                     if (u.SupportFireTarget == true)
