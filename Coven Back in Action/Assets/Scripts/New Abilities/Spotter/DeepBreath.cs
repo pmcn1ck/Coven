@@ -30,6 +30,7 @@ public class DeepBreath : SpellAbility
         GetComponentInParent<Unit>().HitPoints -= Duration;
         GetComponentInParent<Unit>().AttackFactor += AtkGain;
         GetComponentInParent<Unit>().ActionPoints--;
+        gameObject.GetComponentInParent<Unit>().animScript.runCastAnim();
 
         CurrentlyActive = true;
         TurnCounter = 0;

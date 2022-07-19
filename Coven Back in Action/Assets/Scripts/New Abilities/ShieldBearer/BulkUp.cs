@@ -36,6 +36,7 @@ public class BulkUp : SpellAbility
         List<Unit> allyUnits = new List<Unit>();
         allyUnits.AddRange(cellGrid.GetCurrentPlayerUnits());
         var AffectedUnits = allyUnits.Where(u => u.Cell.GetDistance(UnitReference.Cell) <= Range);
+        gameObject.GetComponentInParent<Unit>().animScript.runCastAnim();
 
         foreach (var unit in AffectedUnits)
         {
