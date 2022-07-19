@@ -529,7 +529,10 @@ namespace TbsFramework.Units
         IEnumerator DamageAudioWait()
         {
             yield return new WaitForSeconds(0.2f);
-            pSoundManager.CallDamageAudio();
+            if (pSoundManager != null)
+            {
+                pSoundManager.CallDamageAudio();
+            }
         }
         IEnumerator DamageWait()
         {
