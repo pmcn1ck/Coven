@@ -997,6 +997,10 @@ PrefabInstance:
       value: Cell Floor Tile
       objectReference: {fileID: 0}
     - target: {fileID: 9087162794785803433, guid: 8c71cb2284ac8a24480f7916ee69171a, type: 3}
+      propertyPath: IsTaken
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087162794785803433, guid: 8c71cb2284ac8a24480f7916ee69171a, type: 3}
       propertyPath: _offsetCoord.x
       value: 9
       objectReference: {fileID: 0}
@@ -2554,6 +2558,10 @@ PrefabInstance:
       value: Cell Floor Tile
       objectReference: {fileID: 0}
     - target: {fileID: 9087162794785803433, guid: 8c71cb2284ac8a24480f7916ee69171a, type: 3}
+      propertyPath: IsTaken
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087162794785803433, guid: 8c71cb2284ac8a24480f7916ee69171a, type: 3}
       propertyPath: _offsetCoord.x
       value: 7
       objectReference: {fileID: 0}
@@ -3716,6 +3724,10 @@ PrefabInstance:
     - target: {fileID: 8972375582478934963, guid: 8c71cb2284ac8a24480f7916ee69171a, type: 3}
       propertyPath: m_Name
       value: Cell Floor Tile
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087162794785803433, guid: 8c71cb2284ac8a24480f7916ee69171a, type: 3}
+      propertyPath: IsTaken
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9087162794785803433, guid: 8c71cb2284ac8a24480f7916ee69171a, type: 3}
       propertyPath: _offsetCoord.x
@@ -5593,6 +5605,7 @@ MonoBehaviour:
   pCanvasStart: {fileID: 6616269152930076019, guid: 9b83f9cd98898664ba715d81d9262f45, type: 3}
   pCanvasRotation: {fileID: 0}
   pCanvasRanger: {fileID: 0}
+  pCavasHud: {fileID: 0}
   c_MainMenu: {fileID: 0}
   c_Options: {fileID: 0}
   c_grabRotation: {fileID: 0}
@@ -9582,6 +9595,10 @@ PrefabInstance:
       value: Cell Floor Tile
       objectReference: {fileID: 0}
     - target: {fileID: 9087162794785803433, guid: 8c71cb2284ac8a24480f7916ee69171a, type: 3}
+      propertyPath: IsTaken
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087162794785803433, guid: 8c71cb2284ac8a24480f7916ee69171a, type: 3}
       propertyPath: _offsetCoord.x
       value: 2
       objectReference: {fileID: 0}
@@ -10696,6 +10713,10 @@ PrefabInstance:
     - target: {fileID: 8972375582478934963, guid: 8c71cb2284ac8a24480f7916ee69171a, type: 3}
       propertyPath: m_Name
       value: Cell Floor Tile
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087162794785803433, guid: 8c71cb2284ac8a24480f7916ee69171a, type: 3}
+      propertyPath: IsTaken
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9087162794785803433, guid: 8c71cb2284ac8a24480f7916ee69171a, type: 3}
       propertyPath: _offsetCoord.x
@@ -12042,6 +12063,10 @@ PrefabInstance:
     - target: {fileID: 8972375582478934963, guid: 8c71cb2284ac8a24480f7916ee69171a, type: 3}
       propertyPath: m_Name
       value: Cell Floor Tile
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087162794785803433, guid: 8c71cb2284ac8a24480f7916ee69171a, type: 3}
+      propertyPath: IsTaken
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9087162794785803433, guid: 8c71cb2284ac8a24480f7916ee69171a, type: 3}
       propertyPath: _offsetCoord.x
@@ -13990,6 +14015,10 @@ PrefabInstance:
       value: Cell Floor Tile
       objectReference: {fileID: 0}
     - target: {fileID: 9087162794785803433, guid: 8c71cb2284ac8a24480f7916ee69171a, type: 3}
+      propertyPath: IsTaken
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087162794785803433, guid: 8c71cb2284ac8a24480f7916ee69171a, type: 3}
       propertyPath: _offsetCoord.x
       value: 5
       objectReference: {fileID: 0}
@@ -14416,6 +14445,10 @@ PrefabInstance:
     - target: {fileID: 8972375582478934963, guid: 8c71cb2284ac8a24480f7916ee69171a, type: 3}
       propertyPath: m_Name
       value: Cell Floor Tile
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087162794785803433, guid: 8c71cb2284ac8a24480f7916ee69171a, type: 3}
+      propertyPath: IsTaken
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9087162794785803433, guid: 8c71cb2284ac8a24480f7916ee69171a, type: 3}
       propertyPath: _offsetCoord.x
@@ -19498,6 +19531,7 @@ MonoBehaviour:
   gameEndLoss: {fileID: 6543111572189202227, guid: 7384410996ed0f143b082e83c5d106a6, type: 3}
   defeat: {fileID: 0}
   gameEndWin: {fileID: 6543111572189202227, guid: c6ef4d4c6a2b27043869c25a75991d6e, type: 3}
+  canvasHud: {fileID: 0}
   tGameEnd: {fileID: 688776878}
   unit: {fileID: 0}
   isGameWon: 0
@@ -23582,6 +23616,10 @@ PrefabInstance:
       value: Cell Floor Tile
       objectReference: {fileID: 0}
     - target: {fileID: 9087162794785803433, guid: 8c71cb2284ac8a24480f7916ee69171a, type: 3}
+      propertyPath: IsTaken
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087162794785803433, guid: 8c71cb2284ac8a24480f7916ee69171a, type: 3}
       propertyPath: _offsetCoord.x
       value: 5
       objectReference: {fileID: 0}
@@ -26187,6 +26225,10 @@ PrefabInstance:
     - target: {fileID: 8972375582478934963, guid: 8c71cb2284ac8a24480f7916ee69171a, type: 3}
       propertyPath: m_Name
       value: Cell Floor Tile
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087162794785803433, guid: 8c71cb2284ac8a24480f7916ee69171a, type: 3}
+      propertyPath: IsTaken
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9087162794785803433, guid: 8c71cb2284ac8a24480f7916ee69171a, type: 3}
       propertyPath: _offsetCoord.x
@@ -32909,6 +32951,10 @@ PrefabInstance:
       value: Cell Floor Tile
       objectReference: {fileID: 0}
     - target: {fileID: 9087162794785803433, guid: 8c71cb2284ac8a24480f7916ee69171a, type: 3}
+      propertyPath: IsTaken
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087162794785803433, guid: 8c71cb2284ac8a24480f7916ee69171a, type: 3}
       propertyPath: _offsetCoord.x
       value: 2
       objectReference: {fileID: 0}
@@ -38919,6 +38965,10 @@ PrefabInstance:
       value: Cell Floor Tile
       objectReference: {fileID: 0}
     - target: {fileID: 9087162794785803433, guid: 8c71cb2284ac8a24480f7916ee69171a, type: 3}
+      propertyPath: IsTaken
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087162794785803433, guid: 8c71cb2284ac8a24480f7916ee69171a, type: 3}
       propertyPath: _offsetCoord.x
       value: 7
       objectReference: {fileID: 0}
@@ -44828,6 +44878,10 @@ PrefabInstance:
       value: Cell Floor Tile
       objectReference: {fileID: 0}
     - target: {fileID: 9087162794785803433, guid: 8c71cb2284ac8a24480f7916ee69171a, type: 3}
+      propertyPath: IsTaken
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087162794785803433, guid: 8c71cb2284ac8a24480f7916ee69171a, type: 3}
       propertyPath: _offsetCoord.x
       value: 2
       objectReference: {fileID: 0}
@@ -45678,6 +45732,10 @@ PrefabInstance:
     - target: {fileID: 8972375582478934963, guid: 8c71cb2284ac8a24480f7916ee69171a, type: 3}
       propertyPath: m_Name
       value: Cell Floor Tile
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087162794785803433, guid: 8c71cb2284ac8a24480f7916ee69171a, type: 3}
+      propertyPath: IsTaken
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9087162794785803433, guid: 8c71cb2284ac8a24480f7916ee69171a, type: 3}
       propertyPath: _offsetCoord.x
@@ -47441,6 +47499,10 @@ PrefabInstance:
     - target: {fileID: 8972375582478934963, guid: 8c71cb2284ac8a24480f7916ee69171a, type: 3}
       propertyPath: m_Name
       value: Cell Floor Tile
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087162794785803433, guid: 8c71cb2284ac8a24480f7916ee69171a, type: 3}
+      propertyPath: IsTaken
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9087162794785803433, guid: 8c71cb2284ac8a24480f7916ee69171a, type: 3}
       propertyPath: _offsetCoord.x
@@ -51549,6 +51611,10 @@ PrefabInstance:
       value: Cell Floor Tile
       objectReference: {fileID: 0}
     - target: {fileID: 9087162794785803433, guid: 8c71cb2284ac8a24480f7916ee69171a, type: 3}
+      propertyPath: IsTaken
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087162794785803433, guid: 8c71cb2284ac8a24480f7916ee69171a, type: 3}
       propertyPath: _offsetCoord.x
       value: 2
       objectReference: {fileID: 0}
@@ -52330,6 +52396,10 @@ PrefabInstance:
     - target: {fileID: 8972375582478934963, guid: 8c71cb2284ac8a24480f7916ee69171a, type: 3}
       propertyPath: m_Name
       value: Cell Floor Tile
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087162794785803433, guid: 8c71cb2284ac8a24480f7916ee69171a, type: 3}
+      propertyPath: IsTaken
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9087162794785803433, guid: 8c71cb2284ac8a24480f7916ee69171a, type: 3}
       propertyPath: _offsetCoord.x
@@ -53734,6 +53804,10 @@ PrefabInstance:
     - target: {fileID: 8972375582478934963, guid: 8c71cb2284ac8a24480f7916ee69171a, type: 3}
       propertyPath: m_Name
       value: Cell Floor Tile
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087162794785803433, guid: 8c71cb2284ac8a24480f7916ee69171a, type: 3}
+      propertyPath: IsTaken
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9087162794785803433, guid: 8c71cb2284ac8a24480f7916ee69171a, type: 3}
       propertyPath: _offsetCoord.x
@@ -58921,6 +58995,10 @@ PrefabInstance:
       value: Cell Floor Tile
       objectReference: {fileID: 0}
     - target: {fileID: 9087162794785803433, guid: 8c71cb2284ac8a24480f7916ee69171a, type: 3}
+      propertyPath: IsTaken
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087162794785803433, guid: 8c71cb2284ac8a24480f7916ee69171a, type: 3}
       propertyPath: _offsetCoord.x
       value: 2
       objectReference: {fileID: 0}
@@ -63611,6 +63689,10 @@ PrefabInstance:
     - target: {fileID: 8972375582478934963, guid: 8c71cb2284ac8a24480f7916ee69171a, type: 3}
       propertyPath: m_Name
       value: Cell Floor Tile
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087162794785803433, guid: 8c71cb2284ac8a24480f7916ee69171a, type: 3}
+      propertyPath: IsTaken
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9087162794785803433, guid: 8c71cb2284ac8a24480f7916ee69171a, type: 3}
       propertyPath: _offsetCoord.x
