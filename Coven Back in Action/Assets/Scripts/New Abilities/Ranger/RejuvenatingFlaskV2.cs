@@ -32,10 +32,13 @@ public class RejuvenatingFlaskV2 : SpellAbility
         if (CanPerform(cellGrid))
         {
             gameObject.GetComponentInParent<Unit>().animScript.runCastAnim();
+            
             if (inRange == null)
             {
                 inRange = new List<Unit>() { SelectedTarget };
                 var currentUnit = SelectedTarget;
+                var thisUnit = GetComponentInParent<Unit>();
+                thisUnit.gameObject.transform.LookAt(currentUnit.transform.position);
                 /*for (var i = 0; i < nJumps; i++)
                 {
                     currentUnit = cellGrid.GetEnemyUnits(cellGrid.CurrentPlayer)

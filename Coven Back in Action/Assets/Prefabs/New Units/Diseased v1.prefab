@@ -3177,7 +3177,7 @@ MonoBehaviour:
   UI_HealthSlider: {fileID: 0}
   HealthImage: {fileID: 0}
   DamageIndicator: {fileID: 7912986586603535442}
-  MaxHitPoints: 0
+  MaxHitPoints: 12
   HitPoints: 12
   AttackRange: 3
   AttackFactor: 5
@@ -3301,7 +3301,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   label: 
   description: 
-  gloop: {fileID: 21300000, guid: 26a6135da0d6f3e44aa3c6c28075cf82, type: 3}
+  gloop: {fileID: 21300000, guid: 2fc2df0f3921b0a4a93349325cd7cca1, type: 3}
 --- !u!114 &7937583619480354579
 MonoBehaviour:
   m_ObjectHideFlags: 0
