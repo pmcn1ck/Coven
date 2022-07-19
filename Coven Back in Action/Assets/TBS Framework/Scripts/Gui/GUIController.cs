@@ -183,7 +183,6 @@ namespace TbsFramework.Gui
                     gameEnd = Instantiate(gameEndLoss, tGameEnd).GetComponent<wGamEnd>();
                     isSpawnEndGame = true;
                     gameEnd.isChangeUnit = true;
-
                 }
                 
 

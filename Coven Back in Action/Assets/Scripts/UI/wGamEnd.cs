@@ -43,7 +43,7 @@ public class wGamEnd : MonoBehaviour
         //tExp.text = playableUnits[1].experience.ToString();
         // levelSlider.value = (float)playableUnits[1].experience /100f;
         ShowHealthBarsUi();
-        ShowBloodLustUi();
+        //ShowBloodLustUi();
         
         StartCoroutine(VictroyUi());
     }
