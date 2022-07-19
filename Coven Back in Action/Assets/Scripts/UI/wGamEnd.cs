@@ -11,12 +11,12 @@ using TbsFramework.Gui;
 public enum eUnitSlider {ranger, shieldBearer, spotter, shotGunner }
 public class wGamEnd : MonoBehaviour
 {
-    public GameObject w_UpgradeRanger;
+   // public GameObject w_UpgradeRanger;
    // public Transform tUpgradeRanger;
-    public GameObject upgradeShieldBearer;
-    public GameObject upgradeSpotter;
-    public GameObject upgradeShotgunner;
-    public GameObject upgradeGrp;
+    //public GameObject upgradeShieldBearer;
+   // public GameObject upgradeSpotter;
+   // public GameObject upgradeShotgunner;
+   // public GameObject upgradeGrp;
     public GameObject bUnitClicked;
     public GameObject canvas;
     public Slider[] healthSlider;
@@ -107,7 +107,7 @@ public class wGamEnd : MonoBehaviour
 
     public void OnClickUpgradeRanger()
     {
-        w_UpgradeRanger.SetActive(true);
+       // w_UpgradeRanger.SetActive(true);
     //    levelSlider.value = unit.experience;
 
     }
@@ -115,17 +115,17 @@ public class wGamEnd : MonoBehaviour
 
     public void OnClickUpgradeShieldBearer()
     {
-        upgradeShieldBearer.SetActive(true);
+        //upgradeShieldBearer.SetActive(true);
        // bUnitClicked.SetActive(false);
     }
     public void OnClickUpgradeSpotter()
     {
-        upgradeSpotter.SetActive(true);
+       // upgradeSpotter.SetActive(true);
        // bUnitClicked.SetActive(false);
     }
     public void OnClickUpgradeShotgunner()
     {
-        upgradeShotgunner.SetActive(true);
+       // upgradeShotgunner.SetActive(true);
         //bUnitClicked.SetActive(false);
     }
 
@@ -143,9 +143,15 @@ public class wGamEnd : MonoBehaviour
 
     public void OnClickChangeUnit()
     {
-        Instantiate(w_CangeUint, tChangeUnit);
+        //Instantiate(w_CangeUint, tChangeUnit);
+        Debug.Log("this code is working");
         isChangeUnit = true;
+        Destroy(gameObject);
+
     }
+
+
+
 
 
 }
