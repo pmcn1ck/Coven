@@ -6597,7 +6597,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2404665295358261577
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6638,11 +6638,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8c843c2f37ff834c840cb0231fc61dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  w_UpgradeRanger: {fileID: 429150230364543067}
-  upgradeShieldBearer: {fileID: 8653371342733616654}
-  upgradeSpotter: {fileID: 0}
-  upgradeShotgunner: {fileID: 0}
-  upgradeGrp: {fileID: 0}
   bUnitClicked: {fileID: 7984622386948512712}
   canvas: {fileID: 2767933310964807055, guid: 5e565075f1d3be141a2763ff082284e8, type: 3}
   healthSlider:
@@ -9452,11 +9447,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8ec2229066377743b9f10e56dfc023a, type: 3}
---- !u!1 &8653371342733616654 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9156367468081154792, guid: b8ec2229066377743b9f10e56dfc023a, type: 3}
-  m_PrefabInstance: {fileID: 506374379119389926}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1296969176167079787 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1655286479847748493, guid: b8ec2229066377743b9f10e56dfc023a, type: 3}
@@ -9965,11 +9955,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a59744dc5842d81419caa972040883cb, type: 3}
---- !u!1 &429150230364543067 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9156367468081154792, guid: a59744dc5842d81419caa972040883cb, type: 3}
-  m_PrefabInstance: {fileID: 8855579278172770995}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &7790545829052850494 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1655286479847748493, guid: a59744dc5842d81419caa972040883cb, type: 3}

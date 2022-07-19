@@ -19,11 +19,20 @@ namespace TbsFramework.Gui
         public GameObject gameEndLoss;
         public GameObject defeat;
         public GameObject gameEndWin;
+        public GameObject gameEndLossUI;
         public GameObject canvasHud;
+        public GameObject w_CangeUint;
+        public Transform tChangeUnit;
         public Transform tGameEnd;
         public Unit unit;
         public bool isGameWon;
         public bool isGameLoss;
+
+        bool isSpawnChangeUnit;
+        bool isSpawnEndGame;
+        wGamEnd gameEnd;
+        wChangeUnit changeUnit;
+        
 
 
         void Awake()
@@ -41,7 +50,7 @@ namespace TbsFramework.Gui
             defeat.SetActive(true);
             yield return new WaitForSeconds(2);
             defeat.SetActive(false);
-            Instantiate(gameEndLoss, tGameEnd);
+            gameEnd= Instantiate(gameEndLoss, tGameEnd).GetComponent<wGamEnd>();
 
         }
 
@@ -86,7 +95,7 @@ namespace TbsFramework.Gui
 
             if (isWinningGame)
             {
-                Instantiate(gameEndWin, tGameEnd);
+                gameEnd=Instantiate(gameEndWin, tGameEnd). GetComponent<wGamEnd>();
                 Debug.Log("player as won the game");
                 unit = FindObjectOfType<Unit>();
             }
@@ -101,7 +110,18 @@ namespace TbsFramework.Gui
 
         }
 
-      
+        public void SpawnChangeUnit()
+        {
+            if(isSpawnChangeUnit == false)
+            {
+                changeUnit = Instantiate(w_CangeUint, tChangeUnit).GetComponent<wChangeUnit>();
+                isSpawnChangeUnit = true;
+                
+            }
+            
+        }
+
+
 
         private void OnLevelLoading(object sender, EventArgs e)
         {
@@ -148,6 +168,24 @@ namespace TbsFramework.Gui
                 isGameLoss = true;
                 //Instantiate(gameEndLoss, tGameEnd);
                 
+            }
+           
+            if(gameEnd.isChangeUnit == true)
+            {
+                SpawnChangeUnit();
+                //gameEndLossUI.SetActive(false);
+            }
+
+            if(changeUnit.isBack == true)
+            {
+                if(isSpawnEndGame  == false)
+                {
+                    gameEnd = Instantiate(gameEndLoss, tGameEnd).GetComponent<wGamEnd>();
+                    isSpawnEndGame = true;
+                    gameEnd.isChangeUnit = true;
+                }
+                
+
             }
 
         }

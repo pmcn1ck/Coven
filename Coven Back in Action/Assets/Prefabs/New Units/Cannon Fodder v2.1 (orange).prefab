@@ -3174,10 +3174,10 @@ MonoBehaviour:
   curState: 0
   experimentalUnit: {fileID: 0}
   HealthSlider: {fileID: 7920169511288386933}
-  UI_HealthSlider: {fileID: 0}
+  UI_HealthSlider: {fileID: 7920169511288386933}
   HealthImage: {fileID: 0}
   DamageIndicator: {fileID: 4717438177837585597}
-  MaxHitPoints: 0
+  MaxHitPoints: 10
   HitPoints: 10
   AttackRange: 1
   AttackFactor: 6
