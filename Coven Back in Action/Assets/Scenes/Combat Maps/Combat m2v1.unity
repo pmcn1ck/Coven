@@ -1385,6 +1385,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1850047151}
     m_Modifications:
+    - target: {fileID: 17965752908603845, guid: 28c62ca6334f2f84c8fa8e5f5943da50, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 2382403559920372382, guid: 28c62ca6334f2f84c8fa8e5f5943da50, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -1924,6 +1928,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1410229744}
+    - target: {fileID: 3213588430280870186, guid: 38f333b75b520754795c656dc9af5320, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 4916812937965866547, guid: 38f333b75b520754795c656dc9af5320, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -2631,7 +2639,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-97392
+  m_Name: pb_Mesh-31866
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3504,6 +3512,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1929100058}
+    - target: {fileID: 3213588430280870186, guid: 38f333b75b520754795c656dc9af5320, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 4916812937965866547, guid: 38f333b75b520754795c656dc9af5320, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -3604,7 +3616,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-99416
+  m_Name: pb_Mesh-33890
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4569,6 +4581,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 327840465}
+    - target: {fileID: 7496601101799881304, guid: b827320caa837ea4885f7fc9103d1d97, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b827320caa837ea4885f7fc9103d1d97, type: 3}
 --- !u!1001 &620487734
@@ -6377,7 +6393,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-94218
+  m_Name: pb_Mesh-28686
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -8232,7 +8248,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-102506
+  m_Name: pb_Mesh-36980
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9126,6 +9142,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1850047151}
     m_Modifications:
+    - target: {fileID: 17965752908603845, guid: 28c62ca6334f2f84c8fa8e5f5943da50, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 2382403559920372382, guid: 28c62ca6334f2f84c8fa8e5f5943da50, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -10232,6 +10252,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 461700968}
+    - target: {fileID: 3213588430280870186, guid: 38f333b75b520754795c656dc9af5320, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 4916812937965866547, guid: 38f333b75b520754795c656dc9af5320, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -11317,7 +11341,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-94916
+  m_Name: pb_Mesh-29390
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -12025,7 +12049,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-100826
+  m_Name: pb_Mesh-35300
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -12385,6 +12409,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1476014891}
+    - target: {fileID: 3213588430280870186, guid: 38f333b75b520754795c656dc9af5320, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 4916812937965866547, guid: 38f333b75b520754795c656dc9af5320, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -14695,7 +14723,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-98806
+  m_Name: pb_Mesh-33280
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -14933,7 +14961,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-96194
+  m_Name: pb_Mesh-30668
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -15981,6 +16009,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1850047151}
     m_Modifications:
+    - target: {fileID: 17965752908603845, guid: 28c62ca6334f2f84c8fa8e5f5943da50, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 2382403559920372382, guid: 28c62ca6334f2f84c8fa8e5f5943da50, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
