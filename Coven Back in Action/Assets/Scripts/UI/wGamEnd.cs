@@ -9,6 +9,7 @@ using TbsFramework.Grid;
 using TbsFramework.Gui;
 
 public enum eUnitSlider {ranger, shieldBearer, spotter, shotGunner }
+public enum eUnitBlood { ranger, shieldBearer, spotter, shotGunner }
 public class wGamEnd : MonoBehaviour
 {
    // public GameObject w_UpgradeRanger;
@@ -60,14 +61,14 @@ public class wGamEnd : MonoBehaviour
 
     void ShowBloodLustUi()
     {
-        ShowBloodLustBars(eUnitSlider.ranger, eUnitType.Ranger);
-        ShowBloodLustBars(eUnitSlider.shieldBearer, eUnitType.ShieldBearer);
-        ShowBloodLustBars(eUnitSlider.spotter, eUnitType.Spotter);
-        ShowBloodLustBars(eUnitSlider.shotGunner, eUnitType.Shotgunner);
+        ShowBloodLustBars(eUnitBlood.ranger, eUnitType.Ranger);
+        ShowBloodLustBars(eUnitBlood.shieldBearer, eUnitType.ShieldBearer);
+        ShowBloodLustBars(eUnitBlood.spotter, eUnitType.Spotter);
+        ShowBloodLustBars(eUnitBlood.shotGunner, eUnitType.Shotgunner);
 
     }
 
-    void ShowBloodLustBars(eUnitSlider _slider, eUnitType _Type)
+    void ShowBloodLustBars(eUnitBlood _slider, eUnitType _Type)
     {
         if (!CellGrid.GetPlayableUnitReference(_Type))
         {
