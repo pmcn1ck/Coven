@@ -3303,6 +3303,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -453805146751736192, guid: 0a712283ce71a7e42af36a7ea23e9bcc, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 614e23df64477f446bed5b81861559ea, type: 2}
     - target: {fileID: 919132149155446097, guid: 0a712283ce71a7e42af36a7ea23e9bcc, type: 3}
       propertyPath: m_Name
       value: Leap_anim_master_006
@@ -3349,6 +3353,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2359826983857582919, guid: 74a213df07cb136498bbed8272d1b2ef, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5878559632573253145, guid: 74a213df07cb136498bbed8272d1b2ef, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5878559632573253145, guid: 74a213df07cb136498bbed8272d1b2ef, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5878559632573253145, guid: 74a213df07cb136498bbed8272d1b2ef, type: 3}
+      propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6397673795915193353, guid: 74a213df07cb136498bbed8272d1b2ef, type: 3}
@@ -3442,6 +3458,10 @@ PrefabInstance:
     - target: {fileID: 6397673795915193357, guid: 74a213df07cb136498bbed8272d1b2ef, type: 3}
       propertyPath: m_Name
       value: Canvas_Health
+      objectReference: {fileID: 0}
+    - target: {fileID: 6397673795915193357, guid: 74a213df07cb136498bbed8272d1b2ef, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74a213df07cb136498bbed8272d1b2ef, type: 3}
