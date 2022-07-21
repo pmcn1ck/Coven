@@ -311,7 +311,7 @@ RectTransform:
   m_GameObject: {fileID: 3597704320934138316}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6, z: 1}
+  m_LocalScale: {x: 0.48, y: 0.45, z: 1}
   m_Children:
   - {fileID: 4826533137731042555}
   - {fileID: 4846477879707442237}
@@ -321,7 +321,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.325, y: 0.4}
   m_AnchorMax: {x: 0.675, y: 0.95}
-  m_AnchoredPosition: {x: -755, y: -114}
+  m_AnchoredPosition: {x: -778, y: -235}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5096048542149165196
@@ -352,7 +352,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3dd361b3518ee3a4a9c5ef5f5dcb21b4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7687a789c4c14f644a43b1ae0242dc81, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4916,6 +4916,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4881005990317521777, guid: 5a25d1e8b2ec9ca498f7b0fcb32d1ca9, type: 3}
+      propertyPath: Image
+      value: 
+      objectReference: {fileID: -2231329611143538974, guid: b59bff6a0d92a7943ac01f32ee14e9c0, type: 3}
+    - target: {fileID: 4881005990317521777, guid: 5a25d1e8b2ec9ca498f7b0fcb32d1ca9, type: 3}
       propertyPath: CancelButton
       value: 
       objectReference: {fileID: 8370086542801551493}
@@ -5015,6 +5019,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8421833534587043323}
     m_Modifications:
+    - target: {fileID: 276147978935474576, guid: 5d77762f4b8822245a34c9e2f8a36f2a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 3216029695571209409, guid: b59bff6a0d92a7943ac01f32ee14e9c0, type: 3}
+    - target: {fileID: 276147978935474576, guid: 5d77762f4b8822245a34c9e2f8a36f2a, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 276147978935474576, guid: 5d77762f4b8822245a34c9e2f8a36f2a, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 276147978935474576, guid: 5d77762f4b8822245a34c9e2f8a36f2a, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 525561764040724029, guid: 5d77762f4b8822245a34c9e2f8a36f2a, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -5254,6 +5274,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8546936605278228948, guid: a92f651a73b8acd46beff7bbe7fbf65c, type: 3}
+      propertyPath: Image
+      value: 
+      objectReference: {fileID: 3061210302884747168, guid: b59bff6a0d92a7943ac01f32ee14e9c0, type: 3}
     - target: {fileID: 9137525705523973019, guid: a92f651a73b8acd46beff7bbe7fbf65c, type: 3}
       propertyPath: m_Name
       value: Scatter Shot
