@@ -22,6 +22,8 @@ namespace TbsFramework.Gui
         public GameObject gameEndLossUI;
         public GameObject canvasHud;
         public GameObject w_CangeUint;
+        public GameObject pause;
+        public Transform tPause;
         public Transform tChangeUnit;
         public Transform tGameEnd;
         public Unit unit;
@@ -186,7 +188,9 @@ namespace TbsFramework.Gui
                 }
                 
 
-            } 
+            }
+
+            
 
         }
 

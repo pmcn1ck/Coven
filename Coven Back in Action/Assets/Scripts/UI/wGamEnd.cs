@@ -23,6 +23,8 @@ public class wGamEnd : MonoBehaviour
     public Slider[] healthSlider;
     public Slider[] bloodLustSlider;
     public GameObject victroy;
+    public Transform tVicroy;
+    public GameObject gameEnd;
     public GameObject w_CangeUint;
     public Transform tChangeUnit;
     public bool isChangeUnit;
@@ -101,9 +103,13 @@ public class wGamEnd : MonoBehaviour
 
     IEnumerator VictroyUi()
     {
-        victroy.SetActive(true);
+        //victroy.SetActive(true);
+        GameObject obj = Instantiate(victroy, tVicroy);
+        gameEnd.SetActive(false);
         yield return new WaitForSeconds(2);
-        victroy.SetActive(false);
+        //victroy.SetActive(false);
+        Destroy(obj);
+        gameEnd.SetActive(true);
     }
 
     public void OnClickUpgradeRanger()

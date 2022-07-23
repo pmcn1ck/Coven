@@ -8,6 +8,9 @@ public class cOption : MonoBehaviour
     public Slider musicSlider;
     public Slider sfxVol;
 
+    float animationTIme = 50;
+
+
     private void Start()
     {
         InitUI();
@@ -39,8 +42,16 @@ public class cOption : MonoBehaviour
 
     public void OnClickBack()
     {
+        Animator animator = GetComponent<Animator>();
+
+        bool Open = animator.GetBool("IsOpen");
+        animator.SetBool("IsOpen", !Open);
+
+
         GameManager.gm.audioManager.PlaySound(eSound.click);
-        Destroy(this.gameObject);
+
+        Destroy(gameObject, this.GetComponent<Animator>().GetCurrentAnimatorStateInfo(1).length + animationTIme);
+
     }
 
 }
