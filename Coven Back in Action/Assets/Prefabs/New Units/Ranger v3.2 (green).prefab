@@ -3449,7 +3449,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3067414643920558018
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4432,7 +4432,7 @@ RectTransform:
   m_AnchorMin: {x: 0.149, y: 0.13113809}
   m_AnchorMax: {x: 0.84816784, y: 0.89650756}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -334.8408, y: -449.62946}
+  m_SizeDelta: {x: -21.613594, y: -197.05754}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8999632894506616522
 CanvasRenderer:
@@ -4690,6 +4690,8 @@ GameObject:
   - component: {fileID: 8770971365853570264}
   - component: {fileID: 2892139406164318653}
   - component: {fileID: 4985007824012990381}
+  - component: {fileID: 4160554320845426828}
+  - component: {fileID: 5466725749538434045}
   m_Layer: 0
   m_Name: SpellPanel
   m_TagString: Untagged
@@ -4768,6 +4770,64 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &4160554320845426828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8977411277086395025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 081599a34925b3f43a50563fd23576ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: placeholder
+--- !u!114 &5466725749538434045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8977411277086395025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4160554320845426828}
+          m_TargetAssemblyTypeName: AbilityHintV2, Assembly-CSharp
+          m_MethodName: OnPointerEnter
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4160554320845426828}
+          m_TargetAssemblyTypeName: AbilityHintV2, Assembly-CSharp
+          m_MethodName: OnPointerExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &1484365431890068793
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5439,6 +5499,11 @@ PrefabInstance:
       objectReference: {fileID: 7314009006193529115, guid: b59bff6a0d92a7943ac01f32ee14e9c0, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d010b443eba1910458791778e06d7b69, type: 3}
+--- !u!4 &6088930778316978270 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3785809913969044191, guid: d010b443eba1910458791778e06d7b69, type: 3}
+  m_PrefabInstance: {fileID: 6920304501052166785}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1895775857972372681 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8811005004760757832, guid: d010b443eba1910458791778e06d7b69, type: 3}
@@ -5450,11 +5515,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9bfa5894b4bd8746b103c154ae3c244, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &6088930778316978270 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3785809913969044191, guid: d010b443eba1910458791778e06d7b69, type: 3}
-  m_PrefabInstance: {fileID: 6920304501052166785}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8740169495780623605
 PrefabInstance:
   m_ObjectHideFlags: 0

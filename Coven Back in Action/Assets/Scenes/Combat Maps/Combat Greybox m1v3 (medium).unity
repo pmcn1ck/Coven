@@ -4541,7 +4541,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-958370
+  m_Name: pb_Mesh-39522
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4779,7 +4779,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-943614
+  m_Name: pb_Mesh-22598
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -11785,7 +11785,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-952596
+  m_Name: pb_Mesh-32532
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -15097,7 +15097,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-945474
+  m_Name: pb_Mesh-24628
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -19527,11 +19527,16 @@ MonoBehaviour:
   CellGrid: {fileID: 824584631}
   EndTurnButton: {fileID: 1860049304}
   iTurnBanner: {fileID: 7226046091004138518, guid: 1044b375f05f57046a295869bb5fa184, type: 3}
-  tTurnBanner: {fileID: 1860049305}
+  tTurnBanner: {fileID: 0}
   gameEndLoss: {fileID: 6543111572189202227, guid: 7384410996ed0f143b082e83c5d106a6, type: 3}
   defeat: {fileID: 0}
   gameEndWin: {fileID: 6543111572189202227, guid: c6ef4d4c6a2b27043869c25a75991d6e, type: 3}
+  gameEndLossUI: {fileID: 0}
   canvasHud: {fileID: 0}
+  w_CangeUint: {fileID: 0}
+  pause: {fileID: 0}
+  tPause: {fileID: 0}
+  tChangeUnit: {fileID: 0}
   tGameEnd: {fileID: 688776878}
   unit: {fileID: 0}
   isGameWon: 0
@@ -31507,7 +31512,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-960256
+  m_Name: pb_Mesh-42516
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -36521,7 +36526,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-956958
+  m_Name: pb_Mesh-37668
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -37631,7 +37636,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-942426
+  m_Name: pb_Mesh-20842
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -68351,6 +68356,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2767933309642047552, guid: 5e565075f1d3be141a2763ff082284e8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2767933310964807050, guid: 5e565075f1d3be141a2763ff082284e8, type: 3}
       propertyPath: CellGrid
       value: 
@@ -68494,17 +68503,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1860049305 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2767933309905715452, guid: 5e565075f1d3be141a2763ff082284e8, type: 3}
-  m_PrefabInstance: {fileID: 1860049303}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1860049306 stripped
@@ -69685,7 +69683,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-954422
+  m_Name: pb_Mesh-34534
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2

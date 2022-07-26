@@ -458,7 +458,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!114 &2767933310964807049
 MonoBehaviour:
@@ -560,6 +560,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 8071542283563687912, guid: 69a10e7f6286e9e40b8ae18b0f894deb, type: 3}
   optionsUI: {fileID: 0}
+  pause: {fileID: 0}
+  tPause: {fileID: 0}
 --- !u!114 &2066399867050871058
 MonoBehaviour:
   m_ObjectHideFlags: 0

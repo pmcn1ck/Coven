@@ -47,6 +47,10 @@ namespace TbsFramework.HOMMExample
                 spellPanelInstance.GetComponent<SpellDetails>().Spell = spell;
                 spellPanelInstance.GetComponentInChildren<Image>().sprite = spell.GetComponent<SpellAbility>().Image;
                 spellPanelInstance.GetComponentInChildren<Image>().color = spell.GetComponent<SpellAbility>().ManaCost <= CurrentMana ? Color.white : Color.gray;
+                    if (spellPanelInstance.GetComponent<AbilityHintV2>() != null)
+                    {
+                        spellPanelInstance.GetComponent<AbilityHintV2>().description = spell.GetComponent<SpellAbility>().GetDetails();
+                    }
                 spellPanelInstance.SetActive(true);
                 spellPanelInstance.GetComponentInChildren<Button>().onClick.AddListener(() =>
                 {

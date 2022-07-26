@@ -246,6 +246,8 @@ GameObject:
   - component: {fileID: 7209695323716301637}
   - component: {fileID: 8952358326213078107}
   - component: {fileID: 4912123708429021223}
+  - component: {fileID: 7044468217053419404}
+  - component: {fileID: 7075787173313016613}
   m_Layer: 0
   m_Name: SpellPanel
   m_TagString: Untagged
@@ -324,6 +326,64 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &7044468217053419404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1746031751022104184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 081599a34925b3f43a50563fd23576ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: placeholder
+--- !u!114 &7075787173313016613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1746031751022104184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7044468217053419404}
+          m_TargetAssemblyTypeName: AbilityHintV2, Assembly-CSharp
+          m_MethodName: OnPointerEnter
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7044468217053419404}
+          m_TargetAssemblyTypeName: AbilityHintV2, Assembly-CSharp
+          m_MethodName: OnPointerExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1773880473585863800
 GameObject:
   m_ObjectHideFlags: 0
@@ -4096,7 +4156,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6901478095500210853
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5121,6 +5181,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d77762f4b8822245a34c9e2f8a36f2a, type: 3}
+--- !u!224 &6793374964335041614 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 5263579101661597268, guid: 5d77762f4b8822245a34c9e2f8a36f2a, type: 3}
+  m_PrefabInstance: {fileID: 1679024382473490970}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2248429922336088085 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 610537768707093007, guid: 5d77762f4b8822245a34c9e2f8a36f2a, type: 3}
@@ -5132,11 +5197,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!224 &6793374964335041614 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 5263579101661597268, guid: 5d77762f4b8822245a34c9e2f8a36f2a, type: 3}
-  m_PrefabInstance: {fileID: 1679024382473490970}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &8213947883403583434 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7399653688288660944, guid: 5d77762f4b8822245a34c9e2f8a36f2a, type: 3}
