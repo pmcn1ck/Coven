@@ -134,6 +134,7 @@ namespace TbsFramework.Units
         public bool levelUp;
         [Header("Blood Lust")]
         public double BloodLust;
+        public int bloodLust;
         public double BloodGainMin;
         public int bloodLustMin;
         public double BloodGainMax;
@@ -227,6 +228,7 @@ namespace TbsFramework.Units
             HealthSlider.maxValue = MaxHitPoints;
             bloodLustMax = (int)BloodGainMax;
             bloodLustMin = (int)BloodGainMin;
+            bloodLust = (int)BloodLust;
 
         }
 

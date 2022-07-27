@@ -14,7 +14,7 @@ public class wGamEnd : MonoBehaviour
 {
    // public GameObject w_UpgradeRanger;
    // public Transform tUpgradeRanger;
-    //public GameObject upgradeShieldBearer;
+   //public GameObject upgradeShieldBearer;
    // public GameObject upgradeSpotter;
    // public GameObject upgradeShotgunner;
    // public GameObject upgradeGrp;
@@ -46,9 +46,9 @@ public class wGamEnd : MonoBehaviour
         //tExp.text = playableUnits[1].experience.ToString();
         // levelSlider.value = (float)playableUnits[1].experience /100f;
         ShowHealthBarsUi();
-        //ShowBloodLustUi();
+        ShowBloodLustUi();
         
-        StartCoroutine(VictroyUi());
+        //StartCoroutine(VictroyUi());
     }
 
 
@@ -79,8 +79,8 @@ public class wGamEnd : MonoBehaviour
         }
         else
         {
-            bloodLustSlider[(int)_slider].maxValue = CellGrid.PlayableUnitReference(_Type).bloodLustMax;
-            bloodLustSlider[(int)_slider].value = CellGrid.PlayableUnitReference(_Type).bloodLustMin;
+            bloodLustSlider[(int)_slider].maxValue = CellGrid.GetPlayableUnitReference(_Type).bloodLust;
+            bloodLustSlider[(int)_slider].value = CellGrid.GetPlayableUnitReference(_Type).bloodLustMin;
         }
 
     }
@@ -106,10 +106,11 @@ public class wGamEnd : MonoBehaviour
         //victroy.SetActive(true);
         GameObject obj = Instantiate(victroy, tVicroy);
         gameEnd.SetActive(false);
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(4);
         //victroy.SetActive(false);
-        Destroy(obj);
         gameEnd.SetActive(true);
+        Destroy(obj);
+        
     }
 
     public void OnClickUpgradeRanger()
@@ -133,7 +134,7 @@ public class wGamEnd : MonoBehaviour
     public void OnClickUpgradeShotgunner()
     {
        // upgradeShotgunner.SetActive(true);
-        //bUnitClicked.SetActive(false);
+       //bUnitClicked.SetActive(false);
     }
 
 

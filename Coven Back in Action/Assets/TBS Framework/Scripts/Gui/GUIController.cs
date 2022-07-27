@@ -19,7 +19,9 @@ namespace TbsFramework.Gui
         public GameObject gameEndLoss;
         public GameObject defeat;
         public GameObject gameEndWin;
-        public GameObject gameEndLossUI;
+        public GameObject victory;
+        public Transform tVictory;
+       // public GameObject gameEndLossUI;
         public GameObject canvasHud;
         public GameObject w_CangeUint;
         public GameObject pause;
@@ -53,6 +55,14 @@ namespace TbsFramework.Gui
             yield return new WaitForSeconds(2);
             defeat.SetActive(false);
             gameEnd= Instantiate(gameEndLoss, tGameEnd).GetComponent<wGamEnd>();
+        }
+
+        IEnumerator VictoryUi()
+        {
+            GameObject obj = Instantiate(victory, tVictory);
+            yield return new WaitForSeconds(4);
+            Destroy(obj);
+            gameEnd = Instantiate(gameEndWin, tGameEnd).GetComponent<wGamEnd>();
 
         }
 
@@ -97,7 +107,8 @@ namespace TbsFramework.Gui
 
             if (isWinningGame)
             {
-                gameEnd=Instantiate(gameEndWin, tGameEnd). GetComponent<wGamEnd>();
+                StartCoroutine(VictoryUi());
+               //gameEnd=Instantiate(gameEndWin, tGameEnd). GetComponent<wGamEnd>();
                 Debug.Log("player as won the game");
                 unit = FindObjectOfType<Unit>();
             }
