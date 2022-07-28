@@ -60,7 +60,7 @@ namespace TbsFramework.Gui
         IEnumerator VictoryUi()
         {
             GameObject obj = Instantiate(victory, tVictory);
-            yield return new WaitForSeconds(4);
+            yield return new WaitForSeconds(2);
             Destroy(obj);
             gameEnd = Instantiate(gameEndWin, tGameEnd).GetComponent<wGamEnd>();
 
