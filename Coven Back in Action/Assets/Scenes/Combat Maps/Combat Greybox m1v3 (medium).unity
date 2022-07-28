@@ -68357,14 +68357,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1582869121, guid: 5e565075f1d3be141a2763ff082284e8, type: 3}
+      propertyPath: pause
+      value: 
+      objectReference: {fileID: 8071542283563687912, guid: 69a10e7f6286e9e40b8ae18b0f894deb, type: 3}
+    - target: {fileID: 1582869121, guid: 5e565075f1d3be141a2763ff082284e8, type: 3}
+      propertyPath: tPause
+      value: 
+      objectReference: {fileID: 688776878}
+    - target: {fileID: 1582869121, guid: 5e565075f1d3be141a2763ff082284e8, type: 3}
+      propertyPath: optionsUI
+      value: 
+      objectReference: {fileID: 8071542283563687912, guid: 69a10e7f6286e9e40b8ae18b0f894deb, type: 3}
     - target: {fileID: 2767933309642047552, guid: 5e565075f1d3be141a2763ff082284e8, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2767933310964807050, guid: 5e565075f1d3be141a2763ff082284e8, type: 3}
+      propertyPath: victory
+      value: 
+      objectReference: {fileID: 3108018915164687355, guid: 5d2023ad18a5b9844811ff42190170b7, type: 3}
+    - target: {fileID: 2767933310964807050, guid: 5e565075f1d3be141a2763ff082284e8, type: 3}
       propertyPath: CellGrid
       value: 
       objectReference: {fileID: 824584631}
+    - target: {fileID: 2767933310964807050, guid: 5e565075f1d3be141a2763ff082284e8, type: 3}
+      propertyPath: tVictory
+      value: 
+      objectReference: {fileID: 688776878}
     - target: {fileID: 2767933310964807051, guid: 5e565075f1d3be141a2763ff082284e8, type: 3}
       propertyPath: m_Pivot.x
       value: 0
