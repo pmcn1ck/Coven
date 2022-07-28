@@ -3188,6 +3188,7 @@ MonoBehaviour:
   totalExperience: 0
   levelUp: 0
   BloodLust: 0
+  bloodLust: 0
   BloodGainMin: 10
   bloodLustMin: 0
   BloodGainMax: 20
@@ -3345,7 +3346,7 @@ AudioSource:
   m_GameObject: {fileID: 4939021942460150420}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 2077570495140990844, guid: cdee56d84d5f3304ba688eaa60c3df35, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
