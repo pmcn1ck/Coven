@@ -9,7 +9,6 @@ using TbsFramework.Grid;
 using TbsFramework.Gui;
 
 public enum eUnitSlider {ranger, shieldBearer, spotter, shotGunner }
-public enum eUnitBlood { ranger, shieldBearer, spotter, shotGunner }
 public class wGamEnd : MonoBehaviour
 {
    // public GameObject w_UpgradeRanger;
@@ -63,25 +62,27 @@ public class wGamEnd : MonoBehaviour
 
     void ShowBloodLustUi()
     {
-        ShowBloodLustBars(eUnitBlood.ranger, eUnitType.Ranger);
-        ShowBloodLustBars(eUnitBlood.shieldBearer, eUnitType.ShieldBearer);
-        ShowBloodLustBars(eUnitBlood.spotter, eUnitType.Spotter);
-        ShowBloodLustBars(eUnitBlood.shotGunner, eUnitType.Shotgunner);
+        ShowBloodLustBars(eUnitSlider.ranger, eUnitType.Ranger);
+        ShowBloodLustBars(eUnitSlider.shieldBearer, eUnitType.ShieldBearer);
+        ShowBloodLustBars(eUnitSlider.spotter, eUnitType.Spotter);
+        ShowBloodLustBars(eUnitSlider.shotGunner, eUnitType.Shotgunner);
 
     }
 
-    void ShowBloodLustBars(eUnitBlood _slider, eUnitType _Type)
+    void ShowBloodLustBars(eUnitSlider _slider, eUnitType _Type)
     {
         if (!CellGrid.GetPlayableUnitReference(_Type))
         {
-            bloodLustSlider[(int)_slider].maxValue = 100;
+            
             bloodLustSlider[(int)_slider].value = 0;
         }
         else
         {
-            bloodLustSlider[(int)_slider].maxValue = CellGrid.GetPlayableUnitReference(_Type).bloodLust;
-            bloodLustSlider[(int)_slider].value = CellGrid.GetPlayableUnitReference(_Type).bloodLustMin;
+            bloodLustSlider[(int)_slider].value = (float)CellGrid.GetPlayableUnitReference(_Type).BloodLust;
+           // bloodLustSlider[(int)_slider].value = CellGrid.GetPlayableUnitReference(_Type).bloodLustMin;
         }
+
+        bloodLustSlider[(int)_slider].maxValue = 100;
 
     }
 

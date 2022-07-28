@@ -12,6 +12,8 @@ public class cPauseMenu : MonoBehaviour
     public GameObject pause;
     public Transform tPause;
 
+    float animationTIme = 50f;
+
     // Update is called once per frame
     void Update()
     {
@@ -35,9 +37,12 @@ public class cPauseMenu : MonoBehaviour
    public void Resume()
     {
         // pauseMenuUI.SetActive(false);
-        Destroy(gameObject);
+        // Destroy(gameObject);
+        Destroy(gameObject, this.GetComponent<Animator>().GetCurrentAnimatorStateInfo(1).length + animationTIme);
         Time.timeScale = 1f;
+        
         GameIsPaused = false;
+
     }
 
     void Pause()
