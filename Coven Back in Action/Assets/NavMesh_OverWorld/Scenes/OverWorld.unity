@@ -8828,7 +8828,7 @@ PrefabInstance:
     - target: {fileID: 8927622828441749794, guid: 88be8827924a17a458c3a6fef15846eb, type: 3}
       propertyPath: warning
       value: 
-      objectReference: {fileID: 8300000, guid: 7b9940fcb49876e4aacad7bd43e10425, type: 3}
+      objectReference: {fileID: 8300000, guid: 1ff70c40e0e2f304fb76fa77d478ad01, type: 3}
     - target: {fileID: 8927622828441749794, guid: 88be8827924a17a458c3a6fef15846eb, type: 3}
       propertyPath: complete
       value: 0
@@ -8953,7 +8953,7 @@ PrefabInstance:
     - target: {fileID: 8927622828441749794, guid: 88be8827924a17a458c3a6fef15846eb, type: 3}
       propertyPath: warning
       value: 
-      objectReference: {fileID: 8300000, guid: 7b9940fcb49876e4aacad7bd43e10425, type: 3}
+      objectReference: {fileID: 8300000, guid: 1ff70c40e0e2f304fb76fa77d478ad01, type: 3}
     - target: {fileID: 8927622828441749794, guid: 88be8827924a17a458c3a6fef15846eb, type: 3}
       propertyPath: complete
       value: 0
@@ -22444,6 +22444,7 @@ MonoBehaviour:
   totalExperience: 0
   levelUp: 0
   BloodLust: 0
+  bloodLust: 0
   BloodGainMin: 10
   bloodLustMin: 0
   BloodGainMax: 20
