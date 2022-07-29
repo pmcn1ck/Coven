@@ -18,6 +18,7 @@ namespace TbsFramework.Gui
         public Text tTurnBanner;
         public GameObject gameEndLoss;
         public GameObject defeat;
+        public Transform tdefeat;
         public GameObject gameEndWin;
         public GameObject victory;
         public Transform tVictory;
@@ -51,9 +52,11 @@ namespace TbsFramework.Gui
 
         IEnumerator DefeatUi()
         {
-            defeat.SetActive(true);
+            //defeat.SetActive(true);
+            GameObject obj = Instantiate(defeat, tdefeat);
             yield return new WaitForSeconds(2);
-            defeat.SetActive(false);
+            //defeat.SetActive(false);
+            Destroy(obj);
             gameEnd= Instantiate(gameEndLoss, tGameEnd).GetComponent<wGamEnd>();
         }
 
