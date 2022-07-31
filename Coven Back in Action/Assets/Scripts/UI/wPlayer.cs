@@ -131,7 +131,7 @@ public class wPlayer : MonoBehaviour
             case eUnitType.Shotgunner:
                 text.text = "Shotgunner";
                 playerImage.sprite = iShotGunner;
-                Stamp.color = new Color32(255, 150, 0, 100);
+                Stamp.color = new Color32(142, 74, 78, 100);
                 Ability.interactable = _isRang;
                 /*gameObject.SetActive(true);
                 GetComponent<sPlayerUnitStats>().ShowStats(cellGrid.GetCurrentSelectedUnit());
@@ -151,7 +151,7 @@ public class wPlayer : MonoBehaviour
             case eUnitType.Spotter:
                 text.text = "Spotter";
                 playerImage.sprite = iSpotter;
-                Stamp.color = new Color32(255, 0, 0, 100);
+                Stamp.color = new Color32(85, 116, 130, 100);
                 Ability.interactable = _isRang;
                 /*gameObject.SetActive(true);
                 GetComponent<sPlayerUnitStats>().ShowStats(cellGrid.GetCurrentSelectedUnit());
@@ -171,7 +171,7 @@ public class wPlayer : MonoBehaviour
             case eUnitType.Ranger:
                 text.text = "Ranger";
                 playerImage.sprite = iRanger;
-                Stamp.color = new Color32(15, 180, 0, 100);
+                Stamp.color = new Color32(101, 125, 88, 100);
                 Ability.interactable = _isRang; 
                 /*gameObject.SetActive(true);
                 GetComponent<sPlayerUnitStats>().ShowStats(cellGrid.GetCurrentSelectedUnit());
@@ -191,7 +191,7 @@ public class wPlayer : MonoBehaviour
             case eUnitType.ShieldBearer:
                 text.text = "ShieldBearer";
                 playerImage.sprite = iShieldBearer;
-                Stamp.color = new Color32(0, 30, 150, 100);
+                Stamp.color = new Color32(166, 154, 110, 100);
 
                 Ability.interactable = _isRang;
                 /*gameObject.SetActive(true);

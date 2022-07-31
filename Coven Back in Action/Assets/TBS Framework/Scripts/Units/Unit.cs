@@ -526,6 +526,7 @@ namespace TbsFramework.Units
         {
             yield return new WaitForSeconds((float)1.2);
             animScript.runDeathAnim();
+            yield return new WaitForSeconds((float)2f);
         }
 
         IEnumerator DamageAudioWait()
