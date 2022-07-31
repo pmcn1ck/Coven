@@ -3787,6 +3787,7 @@ MonoBehaviour:
   totalExperience: 0
   levelUp: 0
   BloodLust: 0
+  bloodLust: 0
   BloodGainMin: 0
   bloodLustMin: 0
   BloodGainMax: 0
@@ -3802,7 +3803,7 @@ MonoBehaviour:
   MovementAnimationSpeed: 5
   actionPoints: 1
   PlayerNumber: 0
-  characterPortrait: {fileID: -8179096408671432502, guid: bade48de0d5a22b41821e0b7f056e338, type: 3}
+  characterPortrait: {fileID: -22345202153757429, guid: 9b5d76b201188dd43a2a51ef0d853f62, type: 3}
   particlePlayer: {fileID: 0}
   pSoundManager: {fileID: 0}
   unitType: 0
@@ -5113,9 +5114,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6874946663308255200, guid: 5d77762f4b8822245a34c9e2f8a36f2a, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.000025749207
+      value: -2.1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3053604960058419394, guid: 5d77762f4b8822245a34c9e2f8a36f2a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5d77762f4b8822245a34c9e2f8a36f2a, type: 3}
 --- !u!114 &3604552845144002456 stripped
 MonoBehaviour:
@@ -5144,11 +5146,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &5197136719423225248 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8242450594284716087, guid: 5d77762f4b8822245a34c9e2f8a36f2a, type: 3}
+  m_PrefabInstance: {fileID: 4214491199602458007}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &8320149779764343747 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5263579101661597268, guid: 5d77762f4b8822245a34c9e2f8a36f2a, type: 3}
   m_PrefabInstance: {fileID: 4214491199602458007}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2783734132548010689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5197136719423225248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 0.15, y: -0.15}
+  m_UseGraphicAlpha: 1
 --- !u!1001 &4332229598241601744
 PrefabInstance:
   m_ObjectHideFlags: 0

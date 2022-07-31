@@ -832,7 +832,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -11696258320116928, guid: b59bff6a0d92a7943ac01f32ee14e9c0, type: 3}
+  m_Sprite: {fileID: -2977484369891103090, guid: 9b5d76b201188dd43a2a51ef0d853f62, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -943,6 +943,7 @@ GameObject:
   - component: {fileID: 7095578327292089696}
   - component: {fileID: 6968272838519996131}
   - component: {fileID: 276147978935474576}
+  - component: {fileID: 3053604960058419394}
   m_Layer: 0
   m_Name: Party Icon
   m_TagString: Untagged
@@ -1007,6 +1008,21 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &3053604960058419394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8242450594284716087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 0.15, y: -0.15}
+  m_UseGraphicAlpha: 1
 --- !u!1 &8615652563163031173
 GameObject:
   m_ObjectHideFlags: 0
