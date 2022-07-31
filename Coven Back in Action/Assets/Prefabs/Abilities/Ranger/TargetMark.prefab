@@ -8,8 +8,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7808645532528327458}
+  - component: {fileID: 3604278192105216141}
   - component: {fileID: 7011371867888719143}
+  - component: {fileID: 1522288712722657638}
   m_Layer: 0
   m_Name: TargetMark
   m_TagString: Untagged
@@ -17,20 +18,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7808645532528327458
-Transform:
+--- !u!224 &3604278192105216141
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7814392355678581283}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.625, y: 4, z: -6.98}
+  m_LocalPosition: {x: 0, y: 0, z: -6.98}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 85, y: 502}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &7011371867888719143
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58,3 +64,11 @@ MonoBehaviour:
   target: {fileID: 0}
   counter: 0
   duration: 3
+--- !u!222 &1522288712722657638
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7814392355678581283}
+  m_CullTransparentMesh: 1
