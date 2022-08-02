@@ -4667,9 +4667,7 @@ MonoBehaviour:
   label: 
   description: 
   listAssign: 6
-  trait:
-  - {fileID: 11400000, guid: 67f4e90c99846fd46b73f86253bdb605, type: 2}
-  - {fileID: 11400000, guid: 67f4e90c99846fd46b73f86253bdb605, type: 2}
+  trait: []
   Range: 1
   cellGridHolder: {fileID: 0}
 --- !u!114 &-7615028568949067067
@@ -4724,7 +4722,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SoundEffects: {fileID: -1259448286112763787}
   attack: {fileID: 8300000, guid: 5bc9a6b1f779fdd429c7aded5c23b1a7, type: 3}
-  damage: {fileID: 0}
+  damage: {fileID: 8300000, guid: 82cd3a58ad41bdc4bb15e8c0a21ffd5b, type: 3}
   extraSounds: []
 --- !u!82 &-1259448286112763787
 AudioSource:
