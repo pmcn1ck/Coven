@@ -1652,17 +1652,9 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2767933310964807050, guid: 5e565075f1d3be141a2763ff082284e8, type: 3}
-      propertyPath: victory
-      value: 
-      objectReference: {fileID: 6543111572189202227, guid: c6ef4d4c6a2b27043869c25a75991d6e, type: 3}
-    - target: {fileID: 2767933310964807050, guid: 5e565075f1d3be141a2763ff082284e8, type: 3}
       propertyPath: CellGrid
       value: 
       objectReference: {fileID: 381744543}
-    - target: {fileID: 2767933310964807050, guid: 5e565075f1d3be141a2763ff082284e8, type: 3}
-      propertyPath: tVictory
-      value: 
-      objectReference: {fileID: 1835809949}
     - target: {fileID: 2767933310964807051, guid: 5e565075f1d3be141a2763ff082284e8, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1751,18 +1743,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CanvasHUD
       objectReference: {fileID: 0}
-    - target: {fileID: 2767933310964807055, guid: 5e565075f1d3be141a2763ff082284e8, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2767933310964807093, guid: 5e565075f1d3be141a2763ff082284e8, type: 3}
       propertyPath: cam
       value: 
       objectReference: {fileID: 1205669821}
-    - target: {fileID: 2767933310964807093, guid: 5e565075f1d3be141a2763ff082284e8, type: 3}
-      propertyPath: wStats
-      value: 
-      objectReference: {fileID: 1835809942}
     - target: {fileID: 2767933310964807093, guid: 5e565075f1d3be141a2763ff082284e8, type: 3}
       propertyPath: cellGrid
       value: 
@@ -10863,7 +10847,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2767933310964807050, guid: 5e565075f1d3be141a2763ff082284e8, type: 3}
   m_PrefabInstance: {fileID: 206217582}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1835809942}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e7dc499557c656b49932cd86e3f8d4ed, type: 3}
@@ -14567,11 +14551,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 6735740976104867203, guid: 8c71cb2284ac8a24480f7916ee69171a, type: 3}
   m_PrefabInstance: {fileID: 1812512797}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1835809942 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2767933310964807055, guid: 5e565075f1d3be141a2763ff082284e8, type: 3}
-  m_PrefabInstance: {fileID: 206217582}
   m_PrefabAsset: {fileID: 0}
 --- !u!224 &1835809949 stripped
 RectTransform:

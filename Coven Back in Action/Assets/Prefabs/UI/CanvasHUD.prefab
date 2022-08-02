@@ -546,7 +546,7 @@ MonoBehaviour:
   cam: {fileID: 0}
   cellGrid: {fileID: 0}
   ptPlayerInfo: {fileID: 2577564565275731608}
-  wStats: {fileID: 0}
+  wStats: {fileID: 2767933310964807055}
 --- !u!114 &1582869121
 MonoBehaviour:
   m_ObjectHideFlags: 0
