@@ -5433,14 +5433,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 122115302622410766, guid: 0094985beb68c3e448e7c2b47534de84, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3f6487185a868bd42b4b178b6238d4c1, type: 2}
     - target: {fileID: 919132149155446097, guid: 0094985beb68c3e448e7c2b47534de84, type: 3}
       propertyPath: m_Name
       value: ShotG_anim_master_007
       objectReference: {fileID: 0}
+    - target: {fileID: 1023399867741026106, guid: 0094985beb68c3e448e7c2b47534de84, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 87b2767251e2dc140a51929004adca32, type: 2}
+    - target: {fileID: 3890204389722058850, guid: 0094985beb68c3e448e7c2b47534de84, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c3f6ade12e8ddd44db47f3f9c2d3627a, type: 2}
     - target: {fileID: 5866666021909216657, guid: 0094985beb68c3e448e7c2b47534de84, type: 3}
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 2b6bb014e46a11b48a9157849e9ccec3, type: 2}
+    - target: {fileID: 8460213985539869869, guid: 0094985beb68c3e448e7c2b47534de84, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7861e37a99eaa8b43bde57d18a6b1420, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0094985beb68c3e448e7c2b47534de84, type: 3}
 --- !u!1 &9027905009137303489 stripped

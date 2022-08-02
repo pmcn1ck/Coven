@@ -5387,6 +5387,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5193070014247531364}
     m_Modifications:
+    - target: {fileID: -9060822769530501168, guid: f3a6b6b793042424391fca6e7b10d538, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4c7b567bf9aa76c479ff44410b3aa4a3, type: 2}
     - target: {fileID: -8679921383154817045, guid: f3a6b6b793042424391fca6e7b10d538, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -5431,10 +5435,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6705281541807096256, guid: f3a6b6b793042424391fca6e7b10d538, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c3f6ade12e8ddd44db47f3f9c2d3627a, type: 2}
+    - target: {fileID: -2591221844945235540, guid: f3a6b6b793042424391fca6e7b10d538, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 83a8b5e0b88dcda48a1aebb5a59cc0fd, type: 2}
     - target: {fileID: 919132149155446097, guid: f3a6b6b793042424391fca6e7b10d538, type: 3}
       propertyPath: m_Name
       value: Spot_anim_master_007
       objectReference: {fileID: 0}
+    - target: {fileID: 7165374015236996854, guid: f3a6b6b793042424391fca6e7b10d538, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9d081ea017b3b824f9698a91549a4b33, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f3a6b6b793042424391fca6e7b10d538, type: 3}
 --- !u!4 &5587991069193456842 stripped
