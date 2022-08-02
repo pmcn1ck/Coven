@@ -4722,7 +4722,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SoundEffects: {fileID: -1259448286112763787}
   attack: {fileID: 8300000, guid: 5bc9a6b1f779fdd429c7aded5c23b1a7, type: 3}
-  damage: {fileID: 8300000, guid: 82cd3a58ad41bdc4bb15e8c0a21ffd5b, type: 3}
+  damage: {fileID: 8300000, guid: a5cc23179f6393d41bea163e1de07730, type: 3}
   extraSounds: []
 --- !u!82 &-1259448286112763787
 AudioSource:
