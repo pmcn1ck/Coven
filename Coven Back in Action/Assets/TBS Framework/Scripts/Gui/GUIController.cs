@@ -186,13 +186,13 @@ namespace TbsFramework.Gui
                 
             }
            
-            if(gameEnd.isChangeUnit == true)
+            if(/*gameEnd.isChangeUnit == true &&*/ isGameLoss == true)
             {
                 SpawnChangeUnit();
                 //gameEndLossUI.SetActive(false);
             }
 
-            if(changeUnit.isBack == true)
+            if(/*changeUnit.isBack == true &&*/ isGameLoss == true)
             {
                 if(isSpawnEndGame  == false)
                 {
