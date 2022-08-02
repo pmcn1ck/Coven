@@ -85,7 +85,7 @@ ModelImporter:
       name: ShieldB_anim_idle_001_Take_001
       takeName: ShieldB_anim_idle_001_Take_001
       internalID: 0
-      firstFrame: 0
+      firstFrame: 3
       lastFrame: 65
       wrapMode: 0
       orientationOffsetY: 0
