@@ -17,6 +17,6 @@ MonoBehaviour:
   affectedStat: 0
   Activator: 0
   Name: Close Bond
-  description: attack up with ally near
+  description: Increased attack when another ally is near.
   Range: 1
   BloodLustRemove: 10

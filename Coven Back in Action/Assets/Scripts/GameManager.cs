@@ -6,6 +6,7 @@ using TMPro;
 using TbsFramework.Units;
 using TbsFramework.Units.Abilities;
 using UnityEngine.Audio;
+using TbsFramework.Grid;
 using System;
 
 public enum eScene {start, fe, InGame, Combat1, Combat2 }
@@ -22,6 +23,7 @@ public class GameManager : MonoBehaviour
     public GameObject pCanvasRotation;
     public GameObject pCanvasRanger;
     public GameObject pCavasHud;
+    public CellGrid cellGrid;
 
     [Space]
     [Header("Spawn Canvas Script")]

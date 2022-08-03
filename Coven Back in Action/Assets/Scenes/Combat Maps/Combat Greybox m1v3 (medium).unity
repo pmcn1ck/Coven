@@ -5606,6 +5606,7 @@ MonoBehaviour:
   pCanvasRotation: {fileID: 0}
   pCanvasRanger: {fileID: 0}
   pCavasHud: {fileID: 0}
+  cellGrid: {fileID: 0}
   c_MainMenu: {fileID: 0}
   c_Options: {fileID: 0}
   c_grabRotation: {fileID: 0}
@@ -17878,6 +17879,53 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: bc4fb4dff927af74a95f0915bf0b38ac, type: 3}
   m_PrefabInstance: {fileID: 507898394}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &510359213
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 510359215}
+  - component: {fileID: 510359214}
+  m_Layer: 0
+  m_Name: LevelManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &510359214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510359213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 219a672a4d4b9b146b48fa0fd550a19d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnLocations: []
+  gm: {fileID: 0}
+  unitList: {fileID: 1406156690}
+  cellGrid: {fileID: 824584631}
+--- !u!4 &510359215
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510359213}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -79.3664, y: -133.32866, z: 101.67658}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &510467173
 PrefabInstance:
   m_ObjectHideFlags: 0
