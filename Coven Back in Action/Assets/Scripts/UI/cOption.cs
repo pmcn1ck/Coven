@@ -45,12 +45,13 @@ public class cOption : MonoBehaviour
         Animator animator = GetComponent<Animator>();
 
         bool Open = animator.GetBool("IsOpen");
+ 
         animator.SetBool("IsOpen", !Open);
 
-
+        Destroy(gameObject, this.GetComponent<Animator>().GetCurrentAnimatorStateInfo(1).length + animationTIme);
         GameManager.gm.audioManager.PlaySound(eSound.click);
 
-        Destroy(gameObject, this.GetComponent<Animator>().GetCurrentAnimatorStateInfo(1).length + animationTIme);
+       
 
     }
 

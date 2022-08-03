@@ -516,7 +516,7 @@ MonoBehaviour:
   iTurnBanner: {fileID: 7226046091004138518, guid: 1044b375f05f57046a295869bb5fa184, type: 3}
   tTurnBanner: {fileID: 0}
   gameEndLoss: {fileID: 6543111572189202227, guid: 7384410996ed0f143b082e83c5d106a6, type: 3}
-  defeat: {fileID: 3108018915164687355, guid: ca5e7858c149f8d45a54f04529643089, type: 3}
+  defeat: {fileID: 0}
   tdefeat: {fileID: 2767933310964807051}
   gameEndWin: {fileID: 6543111572189202227, guid: c6ef4d4c6a2b27043869c25a75991d6e, type: 3}
   victory: {fileID: 3108018915164687355, guid: 5d2023ad18a5b9844811ff42190170b7, type: 3}

@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class cMainMenu : MonoBehaviour
 {
+    public GameObject credit;
 
     // Start is called before the first frame update
     public void OnPlayClick()
@@ -26,6 +27,18 @@ public class cMainMenu : MonoBehaviour
         Application.Quit();
         Debug.Log("Player quit the game");
 
+    }
+
+    public void OnClickCredit()
+    {
+        credit.SetActive(true);
+        
+
+    }
+
+    public void OnClickBackCredit()
+    {
+        credit.SetActive(false);
     }
 
 

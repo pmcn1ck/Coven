@@ -12,7 +12,9 @@ public class cPauseMenu : MonoBehaviour
     public GameObject pause;
     public Transform tPause;
 
-    float animationTIme = 50f;
+    Animator anim;
+
+    float animationTIme = 100f;
 
     // Update is called once per frame
     void Update()
@@ -36,29 +38,49 @@ public class cPauseMenu : MonoBehaviour
 
    public void Resume()
     {
-        // pauseMenuUI.SetActive(false);
-        // Destroy(gameObject);
-        Destroy(gameObject, this.GetComponent<Animator>().GetCurrentAnimatorStateInfo(1).length + animationTIme);
-        Time.timeScale = 1f;
         
+        StartCoroutine(WaitToDestroy());
+        //pauseMenuUI.SetActive(false);
+        // Destroy(gameObject);
+        Time.timeScale = 1f;
         GameIsPaused = false;
+        
+       
+        
+        //Destroy(gameObject);
+        
+
+    }
+
+    IEnumerator WaitToDestroy()
+    {
+        Destroy(gameObject, this.GetComponent<Animator>().GetCurrentAnimatorStateInfo(1).length + animationTIme);
+        yield return new WaitForSeconds(0.8f);
+        Destroy(gameObject);
+
+    }
+
+    public void OnDisable()
+    {
+        
 
     }
 
     void Pause()
     {
 
-        //pauseMenuUI.SetActive(true);
+        pauseMenuUI.SetActive(true);
         Instantiate(pause, tPause);
         //Time.timeScale = 0f;
         //GameIsPaused = true;
         StartCoroutine(WaitToPause());
+    
     }
 
     IEnumerator WaitToPause()
     {
         
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.8f);
         Time.timeScale = 0f;
         GameIsPaused = true;
 
@@ -66,8 +88,9 @@ public class cPauseMenu : MonoBehaviour
 
     public void InitOptions()
     {
-        
-        GameObject obj= Instantiate(optionsUI);
+        Time.timeScale = 1f;
+        GameObject obj = Instantiate(optionsUI);
+
     }
 
     public void Quit()
