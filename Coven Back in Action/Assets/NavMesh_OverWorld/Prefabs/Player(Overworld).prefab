@@ -71,7 +71,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 0}
   agent: {fileID: 5879426422053455777}
-  animator: {fileID: 0}
+  animator: {fileID: 212382131180301946}
   isInCombat: 0
 --- !u!65 &5879426422053455776
 BoxCollider:
@@ -183,8 +183,31 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: b67ae69978bee2641859b2b1fb670277, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a1e1aea85aa45942b1d0bb9eb5e4d61, type: 3}
+--- !u!1 &6870650337161244346 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3a1e1aea85aa45942b1d0bb9eb5e4d61, type: 3}
+  m_PrefabInstance: {fileID: 6023597236613862379}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6058085562317386752 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3a1e1aea85aa45942b1d0bb9eb5e4d61, type: 3}
   m_PrefabInstance: {fileID: 6023597236613862379}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &212382131180301946 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 3a1e1aea85aa45942b1d0bb9eb5e4d61, type: 3}
+  m_PrefabInstance: {fileID: 6023597236613862379}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7227804786100516542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6870650337161244346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32cc64c4b54b127459a4bc84d26662a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Animator: {fileID: 0}
