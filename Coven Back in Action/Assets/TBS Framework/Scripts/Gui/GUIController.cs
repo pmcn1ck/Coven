@@ -22,6 +22,8 @@ namespace TbsFramework.Gui
         public GameObject gameEndWin;
         public GameObject victory;
         public Transform tVictory;
+        public GameObject creadit;
+        public Transform tcreadit;
        // public GameObject gameEndLossUI;
         public GameObject canvasHud;
         public GameObject w_CangeUint;
@@ -201,6 +203,12 @@ namespace TbsFramework.Gui
                     gameEnd.isChangeUnit = true;
                 }
                 
+
+            }
+
+            if (Input.GetKeyDown(KeyCode.C))
+            {
+                Instantiate(creadit, tcreadit);
 
             }
             

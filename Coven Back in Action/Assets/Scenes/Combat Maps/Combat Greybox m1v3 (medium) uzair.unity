@@ -11496,6 +11496,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38f333b75b520754795c656dc9af5320, type: 3}
+--- !u!224 &332594724 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 2767933310964807051, guid: 5e565075f1d3be141a2763ff082284e8, type: 3}
+  m_PrefabInstance: {fileID: 561566597}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &333970368
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18880,6 +18885,10 @@ PrefabInstance:
       propertyPath: CellGrid
       value: 
       objectReference: {fileID: 824584631}
+    - target: {fileID: 2767933310964807050, guid: 5e565075f1d3be141a2763ff082284e8, type: 3}
+      propertyPath: tcreadit
+      value: 
+      objectReference: {fileID: 332594724}
     - target: {fileID: 2767933310964807051, guid: 5e565075f1d3be141a2763ff082284e8, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -19018,7 +19027,7 @@ MonoBehaviour:
   victory: {fileID: 0}
   tVictory: {fileID: 0}
   creadit: {fileID: 0}
-  tCreadit: {fileID: 0}
+  tcreadit: {fileID: 0}
   canvasHud: {fileID: 0}
   w_CangeUint: {fileID: 0}
   pause: {fileID: 0}
