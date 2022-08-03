@@ -546,12 +546,12 @@ namespace TbsFramework.Units
         }
         IEnumerator DestroyUnit(Unit aggressor, int damage)
         {
-            yield return new WaitForSeconds(3);
+            yield return new WaitForSeconds(5);
                 UnitDestroyed.Invoke(this, new AttackEventArgs(aggressor, this, damage));
         }
         IEnumerator RunOnDestroy()
         {
-            yield return new WaitForSeconds(3);
+            yield return new WaitForSeconds(5);
             OnDestroyed();
         }
         void HideDamageIndicator() 
