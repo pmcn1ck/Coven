@@ -521,6 +521,8 @@ MonoBehaviour:
   gameEndWin: {fileID: 6543111572189202227, guid: c6ef4d4c6a2b27043869c25a75991d6e, type: 3}
   victory: {fileID: 3108018915164687355, guid: 5d2023ad18a5b9844811ff42190170b7, type: 3}
   tVictory: {fileID: 2767933310964807051}
+  creadit: {fileID: 7678527740753905850, guid: 99bed7bc212dbf244a3cddd3be91ef47, type: 3}
+  tCreadit: {fileID: 2767933310964807051}
   canvasHud: {fileID: 2767933310964807055}
   w_CangeUint: {fileID: 3672114414618020530, guid: d40d3015b21e4e54baba18d5526db46b, type: 3}
   pause: {fileID: 8071542283563687912, guid: 69a10e7f6286e9e40b8ae18b0f894deb, type: 3}

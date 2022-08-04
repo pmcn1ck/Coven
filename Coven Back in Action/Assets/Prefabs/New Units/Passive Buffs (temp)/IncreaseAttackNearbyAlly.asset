@@ -17,6 +17,6 @@ MonoBehaviour:
   affectedStat: 0
   Activator: 0
   Name: Ally near 2
-  description: this is another near by ally
+  description: Attack increases when near another ally Unit.
   Range: 1
   BloodLustRemove: 30

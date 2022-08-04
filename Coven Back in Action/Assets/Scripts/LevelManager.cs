@@ -16,6 +16,7 @@ public class LevelManager : MonoBehaviour
     void Start()
     {
         gm = GameManager.gm;
+        gm.cellGrid = cellGrid;
         SpawnPlayerUnits();
     }
 

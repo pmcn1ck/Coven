@@ -17,6 +17,6 @@ MonoBehaviour:
   affectedStat: 0
   Activator: 3
   Name: Fresh Air
-  description: this is attack with not enemy near
+  description: Attack increases when no enemy is near this unit.
   Range: 1
   BloodLustRemove: 20

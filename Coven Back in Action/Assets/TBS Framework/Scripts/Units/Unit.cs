@@ -484,6 +484,7 @@ namespace TbsFramework.Units
                     
                 }
                 StartCoroutine("RunOnDestroy");
+                
             }
             if (DamageIndicator != null)
             {
@@ -551,6 +552,10 @@ namespace TbsFramework.Units
         }
         IEnumerator RunOnDestroy()
         {
+            Cell.IsTaken = false;
+            Cell.CurrentUnits.Remove(this);
+            MarkAsDestroyed();
+            GameManager.gm.cellGrid.Units.Remove(this);
             yield return new WaitForSeconds(5);
             OnDestroyed();
         }

@@ -17,6 +17,6 @@ MonoBehaviour:
   affectedStat: 1
   Activator: 0
   Name: Turtle
-  description: defence with nearby ally
+  description: Defence increases when near another ally.
   Range: 1
   BloodLustRemove: 40
